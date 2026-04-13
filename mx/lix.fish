@@ -10,6 +10,9 @@ yes | curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 rustup update
 cargo --version
 
+# Wormhole Install
+sudo apt install -y magic-wormhole
+
 # Fish Install
 sudo apt-add-repository ppa:fish-shell/release-4 -y
 sudo apt update -y
