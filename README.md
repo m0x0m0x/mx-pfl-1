@@ -3,6 +3,7 @@
 
 1. [mx-pfl-1](#mx-pfl-1)
 2. [Url](#url)
+3. [Dirz](#dirz)
 
 # mx-pfl-1
 
@@ -16,3 +17,9 @@
 |                                                      Url                                                       |        What         |
 | :------------------------------------------------------------------------------------------------------------: | :-----------------: |
 | [`Full Flask Course For Python - From Basics To Deployment`](https://youtu.be/oQ5UfJqW5Jo?si=AqFDlaX_odFhCooL) | PantyFlash tutorial |
+
+# Dirz
+
+|     Dir     |        What         |
+| :---------: | :-----------------: |
+| [`W`](./W/) | Main Working Folder |
