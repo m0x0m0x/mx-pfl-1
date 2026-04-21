@@ -1,0 +1,17 @@
+./ins.sh: line 36: CMD[4]: unbound variable
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── PantySmellling ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue Apr 21 05:04:15 AM UTC 2026
+Executing:[1;95mcurl -fsSL https://raw.githubusercontent.com/render-oss/cli/refs/heads/main/bin/install.sh | sh[0m
+Installing Render CLI version v2.15.1...
+Downloading from https://github.com/render-oss/cli/releases/download/v2.15.1/cli_2.15.1_linux_amd64.zip...
+✨ Successfully installed Render CLI to /home/vscode/.local/bin/render
+
+render v2.15.1
+
+You are using the latest version
+[1;92mDone!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m

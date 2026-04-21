@@ -4,6 +4,7 @@
 1. [mx-pfl-1](#mx-pfl-1)
 2. [Url](#url)
 3. [Dirz](#dirz)
+4. [Note about `render-cli`](#note-about-render-cli)
 
 # mx-pfl-1
 
@@ -20,6 +21,12 @@
 
 # Dirz
 
-|     Dir     |        What         |
-| :---------: | :-----------------: |
-| [`W`](./W/) | Main Working Folder |
+|          Dir          |        What         |
+| :-------------------: | :-----------------: |
+|      [`W`](./W/)      | Main Working Folder |
+|   [`logz`](./logz/)   |     ins.sh Logs     |
+| [`ins.sh`](./ins.sh/) | ins.sh Actual Logs  |
+
+# Note about `render-cli`
+
+1. Has some problems to run from the CLI , the login doesnt work to you can rely on manual method
