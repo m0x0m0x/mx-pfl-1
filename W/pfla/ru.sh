@@ -60,6 +60,6 @@ uv_s1() {
 
 # --- Execution ---
 panty() {
-	uv_s1 2>&1 | tee -a logz/rushlogs.txt
+	uv_s1 2>&1 | tee -a logz/ru.sh.txt
 }
 panty

@@ -13,4 +13,6 @@
 |        Dir        |      What       |
 | :---------------: | :-------------: |
 | [`logz`](./logz/) | Logs from ru.sh |
-|  |
+|   [`p1`](./p1/)   |  v1 Flask App   |
+|   [`p2`](./p2/)   |  v2 Flask App   |
+|                   |
