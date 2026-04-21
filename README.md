@@ -30,3 +30,4 @@
 # Note about `render-cli`
 
 1. Has some problems to run from the CLI , the login doesnt work to you can rely on manual method
+2. [`Deploying Flask`](https://render.com/docs/deploy-flask) - Looking at this documentation for deploying flask app
