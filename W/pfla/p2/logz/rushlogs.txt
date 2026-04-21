@@ -382,3 +382,7 @@ UV Setup 1 with FastAPI$
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 09:46:04] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:56:22] "GET /pusy HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:57:03] "GET /pusy HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:58:06] "GET /greet/panty HTTP/1.1" 200 -
