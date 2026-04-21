@@ -226,3 +226,33 @@ Done!
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 10:57:16] "GET /hellopg HTTP/1.1" 200 -
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue Apr 21 10:58:04 AM UTC 2026
+Executing:[1;95mcurl -X POST https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hellopg[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0127.0.0.1 - - [21/Apr/2026 10:58:04] "POST /hellopg HTTP/1.1" 200 -
+100    23  100    23    0     0    101      0 --:--:-- --:--:-- --:--:--   101
+<code> PostStink</code>
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m

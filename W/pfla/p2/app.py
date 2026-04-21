@@ -66,6 +66,13 @@ def handle_params2():
 def hellopost():
     return "<code> bootyFarted </code>"
 
+# Making the same route with GET and POST
+
+
+@app.route('/hellopg', methods=['GET', 'POST'])
+def hellopg():
+    return "<code> PostStink</code>"
+
 
 # --- Run App ---
 if __name__ == '__main__':

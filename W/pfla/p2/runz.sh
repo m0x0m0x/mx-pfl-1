@@ -68,9 +68,12 @@ sendCurl() {
 		#4 - Testing post with post to see error
 		"curl https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hello"
 
+		#5 - hellopg endpoint
+		"curl -X POST https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hellopg"
+
 	)
 
-	CMDEXEC="${CMD[4]}"
+	CMDEXEC="${CMD[5]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
