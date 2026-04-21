@@ -3,7 +3,8 @@
 # ----------------------------
 
 # --- Imports ---
-from flask import Flask, request
+import requests
+from flask import Flask, Response, redirect, request
 
 # --- Create App ---
 app = Flask(__name__)
@@ -69,9 +70,33 @@ def hellopost():
 # Making the same route with GET and POST
 
 
-@app.route('/hellopg', methods=['GET', 'POST'])
+@app.route('/hellopg', methods=['GET', 'POST', 'PUT'])
 def hellopg():
-    return "<code> PostStink</code>"
+    if request.method == 'GET':
+        return '<h3> GET REQUEST - SmellPanty</h3>'
+    elif request.method == 'POST':
+        return '<h3> POST - Pussy</h3>'
+    elif request.method == 'PUT':
+        return '<h2><b> PUT - SuckNFuck </b></h2>'
+
+# Custom return response - Here its directing to an image
+
+
+@app.route('/customz')
+def customz():
+    image_url = "https://cdn05.iwantclips.com/uploads/contents/videos/1939935/4ab04b98e05ba1a80072036a14fecbba.jpg"
+    return redirect(image_url)
+
+
+# Display image in the browser
+@app.route('/customz2')
+def customz2():
+    # Example random image
+    image_url = "https://cdn05.iwantclips.com/uploads/contents/videos/1939935/4ab04b98e05ba1a80072036a14fecbba.jpg"
+    # Fetch image from URL
+    img_response = requests.get(image_url)
+    # Return as image
+    return Response(img_response.content, mimetype='image/jpeg')
 
 
 # --- Run App ---

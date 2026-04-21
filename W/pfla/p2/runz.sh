@@ -71,9 +71,21 @@ sendCurl() {
 		#5 - hellopg endpoint
 		"curl -X POST https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hellopg"
 
+		#6 - hellopg put request
+		"curl -X PUT https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hellopg"
+
+		#7 - hellopg put request in deployed EP
+		"curl -X PUT ${EP}/hellopg"
+
+		#8 - Custom End Point - Redirects to image
+		"curl ${EP}/customz"
+
+		#9 - Custom End Point - Displays Image in Page
+		"curl ${EP}/customz2"
+
 	)
 
-	CMDEXEC="${CMD[5]}"
+	CMDEXEC="${CMD[9]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
