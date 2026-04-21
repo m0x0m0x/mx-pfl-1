@@ -49,22 +49,25 @@ uv_s1() {
 sendCurl() {
 
 	# Endpoint
-	EP="https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/"
+	EP="https://ftut1.vercel.app"
 
 	declare -a CMD=(
 
 		#0 -  Install Render Cli -Docs - https://render.com/docs/cli
-		"curl https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/"
+		"curl ${EP}"
 
 		#1 -  Testing endpoint
-		"curl https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/greet/panty"
+		"curl ${EP}/greet/panty"
 
-		#2 - Testing the route which got deployed on vercel shows index
-		"curl https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/index"
+		#2 - Testing URL Handle Params
+		"curl ${EP}/handle_url_params?name=panty&age=18"
+
+		#3 - Testing post method
+		"curl -X POST ${EP}/handle_url_params?name=panty&age=18"
 
 	)
 
-	CMDEXEC="${CMD[2]}"
+	CMDEXEC="${CMD[3]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"

@@ -35,3 +35,82 @@ Executing:[1;95mcurl https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.de
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue Apr 21 10:15:07 AM UTC 2026
+Executing:[1;95mcurl https://ftut1.vercel.app//greet/panty[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    15    0    15    0     0    142      0 --:--:-- --:--:-- --:--:--   144
+Redirecting...
+[1;92mDone!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue Apr 21 10:17:42 AM UTC 2026
+Executing:[1;95mcurl https://ftut1.vercel.app//greet/panty[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    15    0    15    0     0    140      0 --:--:-- --:--:-- --:--:--   141
+Redirecting...
+[1;92mDone!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue Apr 21 10:18:04 AM UTC 2026
+Executing:[1;95mcurl https://ftut1.vercel.app/greet/panty[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    46  100    46    0     0     49      0 --:--:-- --:--:-- --:--:--    49100    46  100    46    0     0     49      0 --:--:-- --:--:-- --:--:--    49
+<code></h1> Sup, panty, My Niggaz </h1></code>[1;92mDone!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue Apr 21 10:18:27 AM UTC 2026
+Executing:[1;95mcurl https://ftut1.vercel.app/greet/panty[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    46  100    46    0     0    129      0 --:--:-- --:--:-- --:--:--   129
+<code></h1> Sup, panty, My Niggaz </h1></code>[1;92mDone!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue Apr 21 10:18:33 AM UTC 2026
+Executing:[1;95mcurl https://ftut1.vercel.app/handle_url_params?name=panty&age=18[0m
+[1;92mDone!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    39  100    39    0     0    105      0 --:--:-- --:--:-- --:--:--   105
+ImmutableMultiDict([('name', 'panty')])[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue Apr 21 10:21:51 AM UTC 2026
+Executing:[1;95mcurl -X POST https://ftut1.vercel.app/handle_url_params?name=panty&age=18[0m
+[1;92mDone!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   153  100   153    0     0    481      0 --:--:-- --:--:-- --:--:--   482
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
