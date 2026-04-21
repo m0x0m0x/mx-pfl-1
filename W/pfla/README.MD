@@ -10,6 +10,7 @@
 
 # Dirz
 
-|      Dir      |          What          |
-| :-----------: | :--------------------: |
-| [`w1`](./w1/) | First Version the work |
+|        Dir        |      What       |
+| :---------------: | :-------------: |
+| [`logz`](./logz/) | Logs from ru.sh |
+|  |
