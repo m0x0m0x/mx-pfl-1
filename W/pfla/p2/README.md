@@ -3,6 +3,7 @@
 1. [What](#what)
 2. [Dirz](#dirz)
 3. [App Summary](#app-summary)
+4. [Regarding params](#regarding-params)
 
 # What
 
@@ -18,3 +19,28 @@
 # App Summary
 
 1. Testing more endpoints to resemble a webapp
+
+# Regarding params
+
+```python
+@app.route('/handle_url_params')
+def handle_params():
+    return str(request.args)
+```
+
+- When you go to this route it will show an empty dictionary
+- Then you can add elements to this dictionary with the url below
+
+```sh
+https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/handle_url_params?=Nike&booty=Smell&Bonda=Lunda
+
+# Output
+ImmutableMultiDict([('', 'Nike'), ('booty', 'Smell'), ('Bonda', 'Lunda')])
+
+# Another variation
+https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/handle_url_params2?name=Mike&greeting=Fuck
+# Result
+Fuck, Mike!
+```
+
+- The `params` in the url are actualy adding to the python dictionary

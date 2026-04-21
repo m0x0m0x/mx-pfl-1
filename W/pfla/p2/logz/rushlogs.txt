@@ -144,3 +144,241 @@ UV Setup 1 with FastAPI$
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 387-311-061
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run app.py ---
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.6:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 09:05:48] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:05:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 09:06:28] "[33mGET /mul HTTP/1.1[0m" 404 -
+127.0.0.1 - - [21/Apr/2026 09:06:37] "GET /mul/999/999 HTTP/1.1" 200 -
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 09:07:20] "GET /mul/999/999 HTTP/1.1" 200 -
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run app.py ---
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.6:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 09:12:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:13:07] "[33mGET /add2/2 HTTP/1.1[0m" 404 -
+127.0.0.1 - - [21/Apr/2026 09:13:11] "GET /add/2/2 HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:13:58] "[33mGET /add/2/sad HTTP/1.1[0m" 404 -
+127.0.0.1 - - [21/Apr/2026 09:14:02] "GET /add/2/22 HTTP/1.1" 200 -
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+  File "/workspaces/mx-pfl-1/W/pfla/p2/app.py", line 50
+    if __name__ == '__main__':
+    ^^
+IndentationError: expected an indented block after function definition on line 46
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run app.py ---
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.6:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 09:21:17] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:21:29] "GET /handle_url_params HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:21:56] "GET /handle_url_params?=Nike HTTP/1.1" 200 -
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 09:24:06] "GET /handle_url_params?=Nike%25booty=Smell HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:24:21] "GET /handle_url_params?=Nike&booty=Smell HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:24:39] "GET /handle_url_params?=Nike&booty=Smell&Bonda=Lunda HTTP/1.1" 200 -
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+Traceback (most recent call last):
+  File "/workspaces/mx-pfl-1/W/pfla/p2/app.py", line 52, in <module>
+    @app.route('/handle_url_params')
+     ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/sansio/scaffold.py", line 362, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/sansio/scaffold.py", line 47, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/sansio/app.py", line 657, in add_url_rule
+    raise AssertionError(
+    ...<2 lines>...
+    )
+AssertionError: View function mapping is overwriting an existing endpoint function: handle_params
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run app.py ---
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.6:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 09:32:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:33:03] "[35m[1mGET /handle_url_params2 HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/workspaces/mx-pfl-1/W/pfla/p2/app.py", line 54, in handle_params2
+    greeting = request.args['greeting']
+               ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/werkzeug/datastructures/structures.py", line 238, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'greeting'
+127.0.0.1 - - [21/Apr/2026 09:33:03] "GET /handle_url_params2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:33:03] "GET /handle_url_params2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:33:03] "GET /handle_url_params2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:33:03] "GET /handle_url_params2?__debugger__=yes&cmd=resource&f=console.png&s=yQoPwVrZwbyARiug89Q7 HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:33:04] "[36mGET /handle_url_params2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Apr/2026 09:34:16] "[35m[1mGET /handle_url_params2?name=Mike&greetings=Fuck HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 1514, in wsgi_app
+    response = self.handle_exception(e)
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/workspaces/mx-pfl-1/W/pfla/p2/app.py", line 54, in handle_params2
+    greeting = request.args['greeting']
+               ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/workspaces/mx-pfl-1/W/pfla/p2/.venv/lib/python3.14/site-packages/werkzeug/datastructures/structures.py", line 238, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+KeyError: 'greeting'
+127.0.0.1 - - [21/Apr/2026 09:34:16] "[36mGET /handle_url_params2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Apr/2026 09:34:16] "[36mGET /handle_url_params2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Apr/2026 09:34:16] "[36mGET /handle_url_params2?__debugger__=yes&cmd=resource&f=console.png&s=yQoPwVrZwbyARiug89Q7 HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Apr/2026 09:34:16] "[36mGET /handle_url_params2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Apr/2026 09:34:16] "[36mGET /handle_url_params2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+127.0.0.1 - - [21/Apr/2026 09:34:27] "GET /handle_url_params2?name=Mike&greeting=Fuck HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:35:57] "GET /handle_url_params2?name=Panty&greeting=Sniff HTTP/1.1" 200 -
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+  File "/workspaces/mx-pfl-1/W/pfla/p2/app.py", line 55
+    greeting = request.args['greeting']
+    ^^^^^^^^
+IndentationError: expected an indented block after 'if' statement on line 54
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run app.py ---
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.4.6:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
+127.0.0.1 - - [21/Apr/2026 09:39:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:40:07] "GET /handle_url_params2 HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 09:40:26] "GET /handle_url_params2?greeting=Booty&name=Sniff HTTP/1.1" 200 -
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p2/app.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 125-899-344
