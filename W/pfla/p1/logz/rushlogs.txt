@@ -30,3 +30,45 @@ UV Setup 1 with FastAPI$
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 871-264-118
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run main.py ---
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.2.12:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 871-264-118
+127.0.0.1 - - [21/Apr/2026 04:38:06] "GET / HTTP/1.1" 200 -
+ * Detected change in '/workspaces/mx-pfl-1/W/pfla/p1/main.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 871-264-118
+127.0.0.1 - - [21/Apr/2026 04:38:19] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [21/Apr/2026 04:39:07] "[33mHEAD /.aws/ HTTP/1.1[0m" 404 -
+127.0.0.1 - - [21/Apr/2026 04:39:07] "[33mHEAD /.ada/ HTTP/1.1[0m" 404 -
+127.0.0.1 - - [21/Apr/2026 04:39:07] "[33mHEAD /.ssh/ HTTP/1.1[0m" 404 -
+127.0.0.1 - - [21/Apr/2026 04:39:07] "[33mHEAD /.midway/ HTTP/1.1[0m" 404 -
+127.0.0.1 - - [21/Apr/2026 04:39:16] "GET / HTTP/1.1" 200 -
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run main.py ---
+ * Serving Flask app 'main'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 871-264-118
+127.0.0.1 - - [21/Apr/2026 04:43:02] "GET / HTTP/1.1" 200 -
