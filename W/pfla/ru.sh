@@ -42,7 +42,7 @@ uv_s1() {
 	CO1="uv init $name_of_project"
 	CO2="cd $name_of_project"
 
-	DEPS="rich wikipedia"
+	DEPS="rich flask"
 	CO3="uv add  $DEPS"
 	CO4="uv tree"
 
