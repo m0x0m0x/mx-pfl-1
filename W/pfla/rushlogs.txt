@@ -1,0 +1,45 @@
+[0;36m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[0;35mUV Setup 1 with FastAPI[0m
+[0;36m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+Enter the name of the project: 
+--- Executing uv init bonda ---
+Initialized project `bonda` at `/workspaces/mx-pfl-1/W/pfla/bonda`
+--- Executing cd bonda ---
+--- Executing uv add  rich wikipedia ---
+Using CPython 3.14.4 interpreter at: /usr/local/python/current/bin/python3.14
+Creating virtual environment at: .venv
+Resolved 14 packages in 10ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 13 packages in 204ms
+ + beautifulsoup4==4.14.3
+ + certifi==2026.2.25
+ + charset-normalizer==3.4.7
+ + idna==3.11
+ + markdown-it-py==4.0.0
+ + mdurl==0.1.2
+ + pygments==2.20.0
+ + requests==2.33.1
+ + rich==15.0.0
+ + soupsieve==2.8.3
+ + typing-extensions==4.15.0
+ + urllib3==2.6.3
+ + wikipedia==1.4.0
+--- Executing uv tree ---
+Resolved 14 packages in 0.99ms
+bonda v0.1.0
+├── rich v15.0.0
+│   ├── markdown-it-py v4.0.0
+│   │   └── mdurl v0.1.2
+│   └── pygments v2.20.0
+└── wikipedia v1.4.0
+    ├── beautifulsoup4 v4.14.3
+    │   ├── soupsieve v2.8.3
+    │   └── typing-extensions v4.15.0
+    └── requests v2.33.1
+        ├── certifi v2026.2.25
+        ├── charset-normalizer v3.4.7
+        ├── idna v3.11
+        └── urllib3 v2.6.3
+[0;32m***** Installation Completed *****[0m

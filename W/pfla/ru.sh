@@ -1,78 +1,65 @@
 #!/usr/bin/env bash
 
-#---------------------------------
-#  Flask Setup
-#---------------------------------
-
-# /// Housekeeping ///
+# -------------------------
+#  UV Script Setup
+# -------------------------
 
 # Error Handling
 set -euo pipefail
 
 # Colors
-BBLACK='\033[1;90m'
-BRED='\033[1;91m'
-BGREEN='\033[1;92m'
-BYELLOW='\033[1;93m'
-BBLUE='\033[1;94m'
-BMAGENTA='\033[1;95m'
-BCYAN='\033[1;96m'
-BWHITE='\033[1;97m'
-RESET='\033[0m'
+export RED='\033[0;31m'
+export GREEN='\033[0;32m'
+export YELLOW='\033[0;33m'
+export BLUE='\033[0;34m'
+export PURPLE='\033[0;35m'
+export CYAN='\033[0;36m'
+export WHITE='\033[0;37m'
+export NC='\033[0m' # No Color
 
-# /// Variables ///
+# Commands
 
-# /// Functions ///
-
-# Function Single
-pussy1() {
-	declare -a CMD=(
-
-		#0 -  Step1 - Make Iam compartment vmlab1
-		"curl ifconfig.co | jq"
-
-	)
-
-	CMDEXEC="${CMD[4]}"
-	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
-	echo -e "${BBLUE} · · ────── PantySmellling ────── · ·"
-	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
-	date
-	echo -e "Executing:${BMAGENTA}${CMDEXEC}${RESET}"
-	eval "${CMDEXEC}"
-	echo -e "${BGREEN}Done!"
-	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
-	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
-	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
+hea1() {
+	echo -e "${CYAN}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NC}"
+	echo -e "${PURPLE}$1${NC}"
+	echo -e "${CYAN}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~${NC}"
 }
 
-# Looping Booties
-booty1() {
-	declare -a CMD=(
+# UV Setup
 
-		#0 - Get Compartment List
-		echo -e "Drink Her Piss"
-	)
+uv_s1() {
+	hea1 "UV Setup 1 with FastAPI"
 
-	for CMDEXEC in "${CMD[@]}"; do
-		echo -e "${BBLUE}────── ꒰ঌ·✦·໒꒱ ──────${RESET}"
-		echo -e "${BBLUE}────── Woman Ass Poop Eating ──────${RESET}"
-		echo -e "${BBLUE}────── ꒰ঌ·✦·໒꒱ ──────${RESET}"
-		echo -e "Executing: ${CMDEXEC}"
-		eval "${CMDEXEC}"
-		echo -e "${BGREEN}Done!${RESET}"
-		echo -e "${BBLUE}───── ⋆⋅☆⋅⋆ ─────${RESET}"
-		echo -e "${BBLUE}───── ⋆⋅☆⋅⋆ ─────${RESET}"
-		echo -e "${BBLUE}───── ⋆⋅☆⋅⋆ ─────${RESET}"
-		echo # Add blank line between commands
-	done
+	# Get Name of project
+	echo -e "Enter the name of the project: "
+	read -r name_of_project
+	if [ -z "$name_of_project" ]; then
+		echo -e "${RED}BASTARD ! Project name cannot be empty${NC}"
+		exit 1
+	fi
+
+	# UC Commands
+	CO1="uv init $name_of_project"
+	CO2="cd $name_of_project"
+
+	DEPS="rich wikipedia"
+	CO3="uv add  $DEPS"
+	CO4="uv tree"
+
+	## RUN Above Commands
+	echo -e "--- Executing ${CO1} ---"
+	eval "$CO1"
+	echo -e "--- Executing ${CO2} ---"
+	eval "$CO2"
+	echo -e "--- Executing ${CO3} ---"
+	eval "$CO3"
+	echo -e "--- Executing ${CO4} ---"
+	eval "$CO4"
+	echo -e "${GREEN}***** Installation Completed *****${NC}"
 }
 
-# /// Execiton ///
-
+# --- Execution ---
 panty() {
-	pussy1 2>&1 | tee -a logz/pussylick.txt
-	booty1 2>&1 | tee -a logz/bootylick.txt
-
+	uv_s1 2>&1 | tee -a rushlogs.txt
 }
 panty

@@ -10,7 +10,6 @@
 
 # Dirz
 
-|        Dir        |         What          |
-| :---------------: | :-------------------: |
-| [`pfla`](./pfla/) |  Python Flash study   |
-| [`pfap`](./pfap/) | Python Fast Api Study |
+|      Dir      |          What          |
+| :-----------: | :--------------------: |
+| [`w1`](./w1/) | First Version the work |
