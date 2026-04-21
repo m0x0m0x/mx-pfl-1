@@ -63,18 +63,23 @@ sendCurl() {
 		"curl ${EP}/handle_url_params?name=panty&age=18"
 
 		#3 - Testing post method
-		"curl -X POST ${EP}/handle_url_params?name=panty&age=18"
+		"curl -X POST https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hello"
+
+		#4 - Testing post with post to see error
+		"curl https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hello"
 
 	)
 
-	CMDEXEC="${CMD[3]}"
+	CMDEXEC="${CMD[4]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	date
 	echo -e "Executing:${BMAGENTA}${CMDEXEC}${RESET}"
+	echo -e "///////////"
 	eval "${CMDEXEC}"
-	echo -e "${BGREEN}Done!"
+	echo -e "\n///////////"
+	echo -e "${BGREEN}\nDone!"
 	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
 	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
 	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"

@@ -61,7 +61,13 @@ def handle_params2():
         return '<h2 align="center">Missing required parameters</h2>'
 
 
-    # --- Run App ---
+# Making a post request on hello endpoint
+@app.route('/hello', methods=['POST'])
+def hellopost():
+    return "<code> bootyFarted </code>"
+
+
+# --- Run App ---
 if __name__ == '__main__':
     app.run(
         host="0.0.0.0",
