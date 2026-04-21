@@ -31,9 +31,12 @@ pussy1() {
 		#0 -  Install Render Cli -Docs - https://render.com/docs/cli
 		"curl -fsSL https://raw.githubusercontent.com/render-oss/cli/refs/heads/main/bin/install.sh | sh"
 
+		#1 -  Install Vercel Cli -Docs - https://vercel.com/docs/cli?package-manager=bun
+		"bun add -g vercel"
+
 	)
 
-	CMDEXEC="${CMD[0]}"
+	CMDEXEC="${CMD[1]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── PantySmellling ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
