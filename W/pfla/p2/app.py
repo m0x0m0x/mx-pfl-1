@@ -100,6 +100,24 @@ def customz2():
     # Return as image
     return Response(img_response.content, mimetype='image/jpeg')
 
+# Custom Response Second Example - This was given my AI , exactly what i wanted
+# Black background , everything centered and spread woman ass
+
+
+@app.route('/customz3')
+def customz3():
+    custom_html = """
+    <html>
+        <head><title>BootyFart</title></head>
+        <body style="background-color: black; color: #00FF9F; text-align: center;">
+            <h1>Welcome to the Custom Response Page</h1>
+            <p>This page demonstrates a custom HTML response.</p>
+            <img src="https://cdn05.iwantclips.com/uploads/contents/videos/1939935/4ab04b98e05ba1a80072036a14fecbba.jpg" alt="Random Image" style="width: 50%; border-radius: 10px;">
+        </body>
+    </html>
+    """
+    return Response(custom_html, mimetype='text/html')
+
 
 # --- Run App ---
 if __name__ == '__main__':
