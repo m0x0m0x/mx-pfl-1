@@ -4,6 +4,8 @@
 2. [Dirz](#dirz)
 3. [App Summary](#app-summary)
 4. [Regarding params](#regarding-params)
+5. [Active Deployment](#active-deployment)
+   1. [Current Endpoint](#current-endpoint)
 
 # What
 
@@ -44,3 +46,16 @@ Fuck, Mike!
 ```
 
 - The `params` in the url are actualy adding to the python dictionary
+
+# Active Deployment
+
+1. This was deployed to VerPANTYcel , since it allows simple python flaskapps
+2. Easy deploy with `vc --prod`
+
+## Current Endpoint
+
+```sh
+https://ftut1.vercel.app/
+```
+
+- Note just a direct UL
