@@ -86,14 +86,26 @@ sendCurl() {
 		#10 - Testing endpoint /hellopg unknown request
 		"curl -X DELETE https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hellopg"
 
+		#11 - Get the Response header
+		"curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/cu4"
+
+		#12 - Get the Response header for custom route
+		"curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz3"
+
+		#13 - Get the response header from deployed route
+		"curl -I ${EP}/customz3"
+
+		#14 - Get the response header from deployed route
+		"curl -I ${EP}/cu4"
+
 	)
 
-	CMDEXEC="${CMD[10]}"
+	CMDEXEC="${CMD[12]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	date
-	echo -e "Executing:${BMAGENTA}${CMDEXEC}${RESET}"
+	echo -e "Executing:${BMAGENTA}\n${CMDEXEC}\n${RESET}"
 	echo -e "///////////"
 	eval "${CMDEXEC}"
 	echo -e "\n///////////"

@@ -118,6 +118,24 @@ def customz3():
     """
     return Response(custom_html, mimetype='text/html')
 
+# Custom Route 4 - From tutz
+
+
+@app.route('/cu4')
+def cu4():
+    return 'such and fuck'
+
+
+# Custom Headers
+@app.after_request
+def add_custom_headers(response):
+    # Simple header message (always works, doesn't break content)
+    response.headers['X-Greeting'] = 'Hi Friend'
+    response.headers['X-My-App'] = 'Flask-Delivery-Service'
+    response.headers['X-Backblaze-Status'] = 'Ready'
+    response.headers['X-Rape-Kill'] = 'Lick Asss and pussy'
+    return response
+
 
 # --- Run App ---
 if __name__ == '__main__':

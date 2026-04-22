@@ -504,3 +504,373 @@ Done!
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 02:57:25 PM UTC 2026
+Executing:[1;95mcurl -X DELETE https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hellopg[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   153  100   153    0     0    727      0 --:--:-- --:--:-- --:--:--   725100   153  100   153    0     0    726      0 --:--:-- --:--:-- --:--:--   725
+<!doctype html>
+<html lang=en>
+<title>405 Method Not Allowed</title>
+<h1>Method Not Allowed</h1>
+<p>The method is not allowed for the requested URL.</p>
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 02:57:37 PM UTC 2026
+Executing:[1;95mcurl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/cu4[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0    13    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+date: Wed, 22 Apr 2026 14:57:37 GMT
+content-type: text/html; charset=utf-8
+content-length: 13
+cache-control: no-cache,no-store
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+pragma: no-cache
+set-cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW37mBNJd8fYfQISL41S54ecbIde95gGF1bKOVhzetAEqSjuYevBpncBHejQz-s0QPc5UPVi7Qyy6zfdN7brBpv8Hc6LP6WA8-85H9G1px3zzSj7teoJaERRBf06LodcTyIuDiNuZBrflZ1pJTi5lvTWuFpRG64ZhGTwngzju_n3l_as_FKyTdJOHzOGw33kGAthxvBNaG-QE-bAEB0lQWqhNX_xRQYxOlpBtupgXl304fL6LyN7eJ-qwxHKUvjuJ64K4szLdmsnexmLXXjrybb3NsVawg3OE9bk8mhTTPLW5DJkCN77mCAJ90ibRSQX0_yNLl0F346DDtrDUmhb7UdZNS4TAz1Url1ZlSbCYkB6kNKAzoiWk5L6xL737YQZUNbN2sYZ0J9aDpLoFSLARyCeeErL-a3WVN3aqJDzt4nDv6XmhK33T_6GXD8dZQ7gzXCQFxZBqL_lAKgTAX3wh0a5XFdZ850Fme7jvggA0aFztg5QLYAgRneCZ780Ian2gLdQ1fp8ndx6O9BWFfxALtX4bebsrDtcx7HwDR-SrXJalvbqLZcXMlBX9L4ILA6KInZflK2E0CbeYmPYlInTz_R8ELpsIzEOPm9ORKs5ust7yCYciQzPxZzEGK0xSD4xdYr337u6dV28DpQv3QTqPwOqUSffwoCxVHKzocRsR2WayCydnfFPRKQGvHDsxR6BQDir8tgfF805wc58EZGoK1AgaMlGpfJ6Y_Zolg9PIHtpvpj92NZrWwRxDAJq3nhkliOv0h1l_PN9RgrVuoIyK23qMjoGi_Hlqvur3uZ7vQLo9Tl9xgCsfsH75x5zkxfjZH64flZymzSIlBvoaPq5STRVv7ZGh_ivjlqRiwTQijaaloKy_i79SvaIkcDat7Pxjrbofh8rUgzVQ06gF3mAfP-V0iQkDIQea7jj2x6UGa7CQZYvZJndoh32DxKZd_Ui2hj7QU11eYqIYToARuMpWlEg7lN5yC5IF7DTpQdNNu0l1w; path=/; secure; samesite=none; Partitioned
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-limit: ClientConnectionsPerPort: max 1000
+ratelimit-remaining: HttpRequestRatePerPort:1498
+ratelimit-remaining: ClientConnectionsPerPort:1000
+ratelimit-reset: HttpRequestRatePerPort:4s
+x-report-abuse: https://msrc.microsoft.com/report/abuse
+x-ms-ratelimit-limit: 1500
+x-ms-ratelimit-remaining: 1497
+x-ms-ratelimit-used: 3
+x-ms-ratelimit-reset: 0
+x-robots-tag: noindex, nofollow
+referrer-policy: same-origin
+vssaas-request-id: 709a175b-467c-4b22-aa0a-1fdd4850696e
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 02:58:49 PM UTC 2026
+Executing:[1;95mcurl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz4[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 404 
+date: Wed, 22 Apr 2026 14:58:49 GMT
+content-type: text/html; charset=utf-8
+content-length: 207
+cache-control: no-cache,no-store
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+pragma: no-cache
+set-cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW2skcd3xjLXYj1xhw-hnacyBqGX7LER5sjLti8-taEcbUc7TxTuYfTknLFP-_Zc1X-k9sTon8VACemg1QswVVMqlDhkO1ztQhgv_upOSxIe9KAk5kiFO5Jjh6MeG_RY2JuGnDWllmzhZVKCvYdb4IefmFz8cNRGVic6ZpeRXF07qUz__PYVef9-YgXRiu0Cams47DdE3Vl-IrAljP3xYqiROwm47gIEgRZ-NNJ4flsm1VGY2umWRYPK1eJYmdoiUIDOXiXHjLfLhzfznnYTYVml1S2712IEfaHAHz26ul_Fw2fpmdUIiaz-3S7OjC_8C-rMpDrrpbjlbBuXrj82Oo-95tXueINZDeODO08Q-uS3PBtR0jGgbZ8LOIbzlnixRv55hjlPEi5MXQ0iTeA5Z51Yf2pRXkxHS-NS6eWUGOuak59pOzBFmKpOvkKHFUCpWOZb_xM2mXOzhmak_NGiywOysWCoDO5MkULQsWqWpxtolh24ktysJfSvmV5hYodUlT8BXTP68kDlJ4NeUJVE1-2EeNcsEi2QCBW-G3-2Flh8JVlzZYo8KjIP_Pt8_H8gDtafdqSmHUvfOkX9zQCoBcExK-sDVCSX0ID60XmCHrSgKXu4uKEynxzbM1fwE1SzRaa99gFa4UYyXIy-5EZS6eoy5upUD6cdMssonQtOcvfufZBM0yVlUCJZrvdrmLa03Xe_38zbsgYU-QP05_8wDmFoe8AzzEQuB38X49gVF1VauSSqo-1LoODcDaITsyRfzPIglRnNIxsEJMTuwB3Y_Ao6GRv4crhd47IZzbCpsJdpw50XmVS_IIC0MPXSjVsteQTIRVz3JXRQqPlX5TNGova69J-j-2FnEj5toPPOCizHSBX0AJUzYdvIRf0E4tVIinRQ-ztSi7pXHWTiiDaPN6hEoPik2DtcxsdqhsOq6st4gkZT7_ev5LTyuZXUlTwPXidQpBfRLrzoiWcT0ok5BPGHzD0Dpld14Nmuu1FrUktOOA; path=/; secure; samesite=none; Partitioned
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-remaining: HttpRequestRatePerPort:1499
+ratelimit-reset: HttpRequestRatePerPort:9s
+x-report-abuse: https://msrc.microsoft.com/report/abuse
+x-ms-ratelimit-limit: 1500
+x-ms-ratelimit-remaining: 1498
+x-ms-ratelimit-used: 2
+x-ms-ratelimit-reset: 0
+x-robots-tag: noindex, nofollow
+referrer-policy: same-origin
+vssaas-request-id: 9e09dc07-723c-45ac-8cb7-4cb0b82aa030
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 02:59:26 PM UTC 2026
+Executing:[1;95m
+curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz4$
+{RESET}
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 404 
+date: Wed, 22 Apr 2026 14:59:26 GMT
+content-type: text/html; charset=utf-8
+content-length: 207
+cache-control: no-cache,no-store
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+pragma: no-cache
+set-cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW2-mZywJor5byb0o94TgrUsY8CrNy1JAyicNebwpcBlP3OjS6r-sww6W5LF22sV0wyTdSyfLZC8X00bzVKdcOfsuB5ctiffY-H4MaVGdOWFza_uG2BosLTvFYlKeShEL0l5mp3HYl-cghoIoWuSAxxK46yMm2KOiIyJwj1DjF41fe8uPMkMVCHV6BJtBg2Y84vtAJ6S69XkFF_GEOIOYNFHoFY5zq7m35BLViggJuYoSV6-oAvC-w2CrxNTme2iqNXq-v3ADOyrK9a6Njrbua_I47lpMVtV0LGaR__C83ldXAC6-h7bnjoOS09NgvtBBTDNz4n2Y_OQ6lOiDw4cLqOcsLGbKFwnDxeejj0mhcW2LptlPFgLNeFzFOxWNryV52KQsRAbjvAHEAmzBKGxJNjYwDP-3MmO9o0FgET9FBWEiH8ZM6jt__wa3LXVrYpyU61jwDDkMa1QLZIc1gChj98GVSKwj65u43NnRyMj9MOxQFg4O7fraN9CGRJ5MqbpyGYd7bDbEnXUva9t_q7PlC2HM5Kj_ikG1gQDZPQtVCxi1n0SXuUlARWVtACGecst7qc4oFrg7vSIAjj5aipo_4q3EdRLnBBqjE-TPYlv_klG20l9NwcN3CtwVdPj_UPvBv6gYsedB5bgCffXd8ZWXO68guG_KDylIZilj4y-KtPxT3dX_S2dTbw6jmU5Cc5o85SSeTlRuHgT5IOvko015v16NqA-3bMhY6LEfbMo2D-AibidFZ2yh_FgD4NiFp7xcUwLXnTWDFDsjIUOkeRpuozESP9GozoDM3AR3wzScApMXlIEWQlRJkAYMfkpK3sBNe9PQkqBC8QQEsEncnaegEy6U7KeNGizdodrUTkU_nPur_a_PW5HbKBX78x2ddivI3-fU0c2qSmaU2sEAKkt5wuQgbqMssBJVHPi0kwpAuHs_e1oFJrwRpbp2idqSRH0LJLIGNh_YevuOcN-33A1sFz5QA3xtV10v67cA92RpnAGGw; path=/; secure; samesite=none; Partitioned
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-remaining: HttpRequestRatePerPort:1499
+ratelimit-reset: HttpRequestRatePerPort:29s
+x-report-abuse: https://msrc.microsoft.com/report/abuse
+x-ms-ratelimit-limit: 1500
+x-ms-ratelimit-remaining: 1497
+x-ms-ratelimit-used: 3
+x-ms-ratelimit-reset: 0
+x-robots-tag: noindex, nofollow
+referrer-policy: same-origin
+vssaas-request-id: 16a8bb97-7d95-4cd4-ab97-dfce149d2ff1
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 02:59:47 PM UTC 2026
+Executing:[1;95m
+curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz4
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 404 
+date: Wed, 22 Apr 2026 14:59:47 GMT
+content-type: text/html; charset=utf-8
+content-length: 207
+cache-control: no-cache,no-store
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+pragma: no-cache
+set-cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW0br7EahC-7FgPbM06kXdKgDKD3_34VRcG6jThmLHDdPp1H-62cGUtY8NIivfRfjZVOst62iPAf2etPyhgqEMQv2bDmbkVzkbdWZuhgS0gf32-slTNXQbrC4cucrLpONwmbeeJpFPqpzmVtyMYowHedOpLvAKXwRfiFKCFLWGiO1TQHIkskSW5FDLwy2vRgFsLDUo2xTn7t3Q0nowBAWLeYDBfVlMfcoogU4ROUCq3vchFayrRZnBfHS9aG2NTh_f-UZzN-rvGNfZnl7o7u_24iBlFIdTMn8xY7gqTctVZfDR3BTRfB6gsIzTQCQyEStLPUu4Bz25EvQcIgj70_VkQEvgjBGlF55Vn7r4-DD1AnaPc6Vpkr76B-4h5JVzpKF6ArIw35rinmOh-R4BCzSx7MBz34S6sbEaZ56bQ6K8LKJJk6ZB0C9rxhU_fFolZeYJ6QY8M66PoY1enzpS47whhz_3F5xnmGeeNL3C5tp9w_Ita8LsGj126Q1yAt_E94Iv-G80i7dtSIhmXWfQeFkZs9uvr3zwgKQJwokbJ4rsjv1XUb__UUeubCzkYRPYSIXtBeing778mYPEsvk7eR8dEce3Q0eFpkII3bVwAk8b-TRZL1EH4TT_hTyVpNmE7zGyK1bzxsquTGpMYwvQ9oloFLJeHqjfAO2DBDNj6FKXatvTf7X-IhijwIMjw79ItRNp3yrAMzHljFv_U_eyOcJIf1yFR-bdoTSV45CWrTnYJmhGLHQ_XbMNi9F9f6jrWSOg_jruHyXoOoZeqNUUFozurjayhSvd_GnBlMh2B1_51embrC_IuPhJMqkVkklusah6cxItHZW8Vw3UNnUN76FUq_NIWnAfPXkgcI5L72yrR761i5dbaIfrSZnvK5qBqD0DhJG7hTNeJhle6e4RKiIlCV6pEqQmv2VpuAkmS6iucKojynXi9048921qcCfD3YhNEt3qEhf4GpxZCCs0qLL95uyAvxt68ryIbguhQfeSsgrw; path=/; secure; samesite=none; Partitioned
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-remaining: HttpRequestRatePerPort:1499
+ratelimit-reset: HttpRequestRatePerPort:33s
+x-report-abuse: https://msrc.microsoft.com/report/abuse
+x-ms-ratelimit-limit: 1500
+x-ms-ratelimit-remaining: 1496
+x-ms-ratelimit-used: 4
+x-ms-ratelimit-reset: 0
+x-robots-tag: noindex, nofollow
+referrer-policy: same-origin
+vssaas-request-id: ca5acfc3-8a5c-404b-a3e1-2aa2e898cd13
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 03:01:27 PM UTC 2026
+Executing:[1;95m
+curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz3
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+date: Wed, 22 Apr 2026 15:01:27 GMT
+content-type: text/html; charset=utf-8
+content-length: 479
+cache-control: no-cache,no-store
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+pragma: no-cache
+set-cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW1uShuQI7mzs7qWCBnhgJ2euyMVCdzPiDxmeQe7eN-IF_IWrtfrKxusHj7BKuvFF_q6nNuGtyCWKuy52gnehm6ePP2hsT32-qmvkr2IH6ae9gbTMGFGav0adGTv5q6NVqOk1VNoPLCi4Btg2AjxCIPOWMNRpgSNgq3ILpWgQeUdKGyQAy_Q1qsQGgQs-3BfdfDdD42WD2Za58WOQsyEyKf66fbBSavlb3_Yg3q0MuIceh4-LNe0DurmqFRaG2sRbxseJ1TQ1JlrmkLocaMmYKRhpvwSqu8tpkBMkCzGH6fTsi2v9ZQQjXo9TakIo2STk-z-avOkW4jzTecw3-om9BG3QASKvn5_g31PHFbRQi3l8HnGoEWwQ-3seA2FN9WZDqhwmy1YNbtYl2pf9FUCYXfos9md3Fby46D4hDGj4-XII6L2b0oQrD2b236QotBmBBhd-LSTwysEjTC6Qz2SMqzHRtscqzZvvngeGlGgXO7ZJOebsvCMwTDkVce7S83BniZ7Pw1IIp9WMoPbn6XPciIcABmnFYNUEhoL2yVQwMi4pVIDSDvsVLZ7dlVtUQbq9WaH2CrWyRb4L5zJcSMZEi7F9_-mOOqv1J4kFP_eVdEN61qGRrqvG7neZvEw11LL3MtsKWfcR03xrvtU5qfCvQTOeNi-Y_cEXqsA-VtOR1XzqKEb-OgrRIQZCNhChiHKnziKmjCFhWmJ8Ad1aFIHmK2PzT5wMN38MCCbp81ox0MxaZ5oyB6mVBemOQeZBo2fDXzt3ndNppMhFOu-GqgPozqbVW0RAuV9zSQKvI-oNG7Sc2oVMgTKFHDSmMxZV8Bfr0DU_w0bF2Gs4OoNIe9yzL6ch6h8YQ-7n1cNdQGTcz8KbEsK_kRtrQrI6aiNj1b2Q_y5F8wjBUkqa4Y9BZbWEb9zTyUhnAL1Keky9Dt9m6KXpr-XgInizxe1CIuzIjPnwf6894dOqB4NHA9_fp-VCyWaO-YnH6M7AGhhI39U-sIvTg; path=/; secure; samesite=none; Partitioned
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-remaining: HttpRequestRatePerPort:1499
+ratelimit-reset: HttpRequestRatePerPort:31s
+x-report-abuse: https://msrc.microsoft.com/report/abuse
+x-ms-ratelimit-limit: 1500
+x-ms-ratelimit-remaining: 1498
+x-ms-ratelimit-used: 2
+x-ms-ratelimit-reset: 0
+x-robots-tag: noindex, nofollow
+referrer-policy: same-origin
+vssaas-request-id: 2769d04a-a2b0-4dcc-baad-68361145f747
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 03:05:11 PM UTC 2026
+Executing:[1;95m
+curl -I https://ftut1.vercel.app/customz3
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0   479    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Wed, 22 Apr 2026 15:05:14 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::tm4jr-1776870312128-505f18b080c5
+content-length: 479
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 03:12:01 PM UTC 2026
+Executing:[1;95m
+curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz3
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+date: Wed, 22 Apr 2026 15:12:01 GMT
+content-type: text/html; charset=utf-8
+content-length: 479
+cache-control: no-cache,no-store
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+pragma: no-cache
+set-cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW2ZFZAlBzPnhs1vnIn7AMI-sD0fqAa3wLVujXSzla79T-vr1oTdpWk7x2L8wuj_ZWPH1fjVPwOQ0O-nVe3pYnSwS9qcdOHlaeliyMf7WndWMTbBsPYEN7loRR7nXLhOf8988-bLWmgA-qbjU_V5ysjTowArHljAp57s-ldv95CzFqcGhkKNMIeQVNK1cIewyvvZGfQMrZZLkxbEsIQ41GfX9XD9XB4nfJkYIz4BjFDk9FrWvcKrvnn2UFkMnZYP07BszogjNrs5dyjXapz51aRbVURXH_NQfhgQijDSS0BqHK8EdhZeU6Q3Qx5u4GDjz21m7wLPsV-hcwOe5SUs1lkqpYjw8HA_8xF5_MS1yN-K6I8cvHyH09iPLUYLrAJFOD8RMEGA8ROhn7qnGnFEIsYkh7P71eOD1v3N6A8RvjFjiBZL8WXXbcoEyVGJF2pIVSgsIhiPFBj1a4DMyak1EIoxZWp0iqdytcb1mQMOg_spok8XWOeXOPxJEbbMJcgdmnqSORmE7zxUCk934Ouuj97eeMHEwIituaJQVJfL_Tlt788lapyr279hMbdVv17U3fMEO8eRk9aU1U6W45MjdYLw5G6QbTd2YlF3eN0vO1DRijUiUj0kZt-3_owDu1s9LiAN1Lq_-A8KcVKTnLbAitESMNxEA_mHpFBPFvHy4b_-c3-rim9lVTr5ID4QjZil0dirmrugSR9gMsl9MjwH8lC6f4cqhuFfOPJfUTnp-JlvJMxrddLi7v-Q_bJFfKoaUZagyB-NGJ88l9rw9sgMMqFA9jJoAM0UCrt7Vxy86FiSEDGs76-_veSXVLi8i9-19eMV36FQdP5ODenffHD7oA9TX51mq1hs87B_AFP3_sbmtAC5sw4JY45sewj_vHy-evYjTTJZyjFzeHYmve2LOytrnxBXNBWNEIfQBsJ6dKqF6a-FxGYp8mtDlBKqy6E3_V3pyrX1dtDuL0NEjiVOFd_gPQ5YCiF6J9BdBBIHSIyHtg; path=/; secure; samesite=none; Partitioned
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-remaining: HttpRequestRatePerPort:1499
+ratelimit-reset: HttpRequestRatePerPort:29s
+x-report-abuse: https://msrc.microsoft.com/report/abuse
+x-ms-ratelimit-limit: 1500
+x-ms-ratelimit-remaining: 1498
+x-ms-ratelimit-used: 2
+x-ms-ratelimit-reset: 0
+x-robots-tag: noindex, nofollow
+referrer-policy: same-origin
+vssaas-request-id: 3cf17f40-569b-4508-ba68-d9023806e697
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 03:21:41 PM UTC 2026
+Executing:[1;95m
+curl -I https://ftut1.vercel.app/cu4
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0    13    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Wed, 22 Apr 2026 15:21:42 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::crlkr-1776871301653-1cf23b3190cf
+content-length: 13
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Wed Apr 22 03:35:31 PM UTC 2026
+Executing:[1;95m
+curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz3
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+date: Wed, 22 Apr 2026 15:35:31 GMT
+content-type: text/html; charset=utf-8
+content-length: 479
+cache-control: no-cache,no-store
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+pragma: no-cache
+set-cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW2Xo7zte0q2_MYxNmrnpXEDKlAaIl0iNAuJ5lr6qCo1gzr0XYCCsZzJgqJqocesbnQP9CHG2EaouFl5DMHk7QtZW27s9NuKL9hcvzzQJlPEWJlHLq94F2ytnnFzRj06f4rLRxMVJHrguT2-0MfJPuz0T8qKqTDe-TC85B-YzjLaA0rs2G1-mpQk6hgI9xjAVaSIqb0Ptk9P4pIzt2CYI6OW_iCKSnAoaTZLFWD3UFqSxKIbZStY-XG2qwkFGx0t8VZbU2loNwZs3O1yHpA6mPEIfi_s9NILB2JU2WoG-mEiSck-z0b2KsEX9vbTe_haLWoBqE9GrlvIriLuvt8SBEOHtwP9q6J2ccXsiCXheWdyz9-CbLBwe3TVabPgoviUW-dJAkjX7Q_pD7lX86u2KQ3QrQQD7x6tJ7yIQdqjb0cu38kv4JanGmBYvBu7DMlFS2gy8eH3m5KL1d8SLOEhloEdu2kF92s_NA1HvRucyESrEUeFkFO9kkl6MsElL2cRz4VfILgqoTVpYqNgCMEh_SC8mjmZKPBG73wChODiZV_OEdmV9w24CE-nAThWymKo8l79GJhRpBwg8jpjGv7uAg5YKZPamwGF2msxLOVWThpDEoFw7CVb9QJcHWLDoPjOMh4APY6v_mwG9OD0xsXjzuOWtqeq9l44we_WW6I2nyoTWELqOHeQmqDr1QRynfDlN86Yc-8cFgsgJV61VEQ-j53-ki-a-ADfgt2hvCZoErq3MSV7I1jp6iWvdCNX-VxzwwLN1aZrsgz65jPgGp2Hv3Q6T4HoEMNc-Cl78ksJG11RnU7EvjcHdBiQtvZ3tglKy9DQh0zfz4G-qSkHVQCET33rky8xSx_iQtxR35xoMy9U7Mv-0QWtJuuP25BWVrA-6BBYb3v6fhyGfpftJmsGK0L93FHa_nvPb_LB2g2u_do-8-SHdqndkEmvHjUlPCf80wTunp8wA_rCJHcFjyqKLB9grKxW0r4s83BXCqArQ6T7wg; path=/; secure; samesite=none; Partitioned
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-remaining: HttpRequestRatePerPort:1499
+ratelimit-reset: HttpRequestRatePerPort:21s
+x-report-abuse: https://msrc.microsoft.com/report/abuse
+x-ms-ratelimit-limit: 1500
+x-ms-ratelimit-remaining: 1497
+x-ms-ratelimit-used: 3
+x-ms-ratelimit-reset: 0
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-backblaze-status: Ready
+x-rape-kill: Lick Asss and pussy
+x-robots-tag: noindex, nofollow
+referrer-policy: same-origin
+vssaas-request-id: b66fdd1f-0e85-464d-835a-cb5be56ae86d
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
