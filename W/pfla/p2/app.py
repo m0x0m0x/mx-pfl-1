@@ -78,6 +78,8 @@ def hellopg():
         return '<h3> POST - Pussy</h3>'
     elif request.method == 'PUT':
         return '<h2><b> PUT - SuckNFuck </b></h2>'
+    else:
+        return 'SmellFarts'
 
 # Custom return response - Here its directing to an image
 
