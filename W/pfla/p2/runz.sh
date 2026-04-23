@@ -115,6 +115,9 @@ sendCurl() {
 	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
 }
 
+# Sending multiple curl commands
+se_cu_lo
+
 # --- Execution ---
 panty() {
 	# uv_s1 2>&1 | tee -a logz/runz.sh.txt

@@ -126,7 +126,7 @@ def cu4():
     return 'such and fuck'
 
 
-# Custom Headers
+# Custom Headers - This should be displayed on every call
 @app.after_request
 def add_custom_headers(response):
     # Simple header message (always works, doesn't break content)
