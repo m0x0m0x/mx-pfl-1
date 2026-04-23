@@ -99,12 +99,15 @@ sendCurl() {
 		#14 - Get the response header from deployed route
 		"curl -I ${EP}/cu4"
 
-		#15 - Get the response header from deployed route
+		#15 - Get the response header from localroute
 		"curl -I ${DP}/cu5"
+
+		#16 - Get the response header from deployed route
+		"curl -I ${EP}/cu5"
 
 	)
 
-	CMDEXEC="${CMD[15]}"
+	CMDEXEC="${CMD[16]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"

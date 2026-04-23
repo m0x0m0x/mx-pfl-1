@@ -136,15 +136,24 @@ def add_custom_headers(response):
     response.headers['X-Rape-Kill'] = 'Lick Asss and pussy'
     return response
 
-# Custom header codes
+# Custom header codes - Not sure why would i need this
 
 
 @app.route('/cu5')
 def cu5():
-    return 'BootySmells', 200
+    return 'BootySmells', 404
 
 
-# --- Run App ---
+# Making custom response
+# Making custom response
+@app.route("/cu6")
+def cu6():
+    response = Response()
+    response.status_code = 202
+    response.headers['content-type'] = 'application/octet-stream'
+    return response
+
+
 if __name__ == '__main__':
     app.run(
         host="0.0.0.0",
