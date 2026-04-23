@@ -50,6 +50,7 @@ sendCurl() {
 
 	# Endpoint
 	EP="https://ftut1.vercel.app"
+	DP="https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev"
 
 	declare -a CMD=(
 
@@ -63,16 +64,16 @@ sendCurl() {
 		"curl ${EP}/handle_url_params?name=panty&age=18"
 
 		#3 - Testing post method
-		"curl -X POST https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hello"
+		"curl -X POST ${DP}/hello"
 
 		#4 - Testing post with post to see error
-		"curl https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hello"
+		"curl ${DP}/hello"
 
 		#5 - hellopg endpoint
-		"curl -X POST https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hellopg"
+		"curl -X POST ${DP}/hellopg"
 
 		#6 - hellopg put request
-		"curl -X PUT https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hellopg"
+		"curl -X PUT ${DP}/hellopg"
 
 		#7 - hellopg put request in deployed EP
 		"curl -X PUT ${EP}/hellopg"
@@ -84,13 +85,13 @@ sendCurl() {
 		"curl ${EP}/customz2"
 
 		#10 - Testing endpoint /hellopg unknown request
-		"curl -X DELETE https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/hellopg"
+		"curl -X DELETE ${DP}/hellopg"
 
 		#11 - Get the Response header
-		"curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/cu4"
+		"curl -I ${DP}/cu4"
 
 		#12 - Get the Response header for custom route
-		"curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz3"
+		"curl -I ${DP}/customz3"
 
 		#13 - Get the response header from deployed route
 		"curl -I ${EP}/customz3"
@@ -98,9 +99,12 @@ sendCurl() {
 		#14 - Get the response header from deployed route
 		"curl -I ${EP}/cu4"
 
+		#15 - Get the response header from deployed route
+		"curl -I ${DP}/cu5"
+
 	)
 
-	CMDEXEC="${CMD[12]}"
+	CMDEXEC="${CMD[15]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
@@ -116,11 +120,43 @@ sendCurl() {
 }
 
 # Sending multiple curl commands
-se_cu_lo
+se_cu_lo() {
+
+	# Deployed Endpoint
+	EP="https://ftut1.vercel.app"
+
+	declare -a CMD=(
+
+		#Test the custom response headers for multiple routes
+		"curl -I ${EP}"
+		"curl -I ${EP}/pusy"
+		"curl -I ${EP}/hello"
+		"curl -I ${EP}/hellopg"
+		"curl -I ${EP}/customz"
+		"curl -I ${EP}/customz2"
+		"curl -I ${EP}/customz3"
+		"curl -I ${EP}/cu4"
+
+	)
+
+	for CMDEXEC in "${CMD[@]}"; do
+		echo -e "${BBLUE}────── ꒰ঌ·✦·໒꒱ ──────${RESET}"
+		echo -e "${BBLUE}────── Curl -I on Deployed endpoints ──────${RESET}"
+		echo -e "${BBLUE}────── ꒰ঌ·✦·໒꒱ ──────${RESET}"
+		echo -e "Executing: ${CMDEXEC}"
+		eval "${CMDEXEC}"
+		echo -e "${BGREEN}Done!${RESET}"
+		echo -e "${BBLUE}───── ⋆⋅☆⋅⋆ ─────${RESET}"
+		echo -e "${BBLUE}───── ⋆⋅☆⋅⋆ ─────${RESET}"
+		echo -e "${BBLUE}───── ⋆⋅☆⋅⋆ ─────${RESET}"
+		echo # Add blank line between commands
+	done
+}
 
 # --- Execution ---
 panty() {
 	# uv_s1 2>&1 | tee -a logz/runz.sh.txt
 	sendCurl 2>&1 | tee -a logz/runz.sh.txt
+	# se_cu_lo 2>&1 | tee -a logz/runz.sh.txt
 }
 panty

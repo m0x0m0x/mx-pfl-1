@@ -491,7 +491,9 @@ Executing:[1;95mcurl -X DELETE https://fluffy-telegram-97679qp95pvf4xg-5000.app
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   153  100   153    0     0    668      0 --:--:-- --:--:-- --:--:--   671
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   153  100   153    0     0    668      0 --:--:-- --:--:-- --:--:--   671
 <!doctype html>
 <html lang=en>
 <title>405 Method Not Allowed</title>
@@ -512,7 +514,10 @@ Executing:[1;95mcurl -X DELETE https://fluffy-telegram-97679qp95pvf4xg-5000.app
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   153  100   153    0     0    727      0 --:--:-- --:--:-- --:--:--   725100   153  100   153    0     0    726      0 --:--:-- --:--:-- --:--:--   725
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   153  100   153    0     0    727      0 --:--:-- --:--:-- --:--:--   725
+100   153  100   153    0     0    726      0 --:--:-- --:--:-- --:--:--   725
 <!doctype html>
 <html lang=en>
 <title>405 Method Not Allowed</title>
@@ -533,7 +538,9 @@ Executing:[1;95mcurl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0    13    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0    13    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 HTTP/2 200 
 date: Wed, 22 Apr 2026 14:57:37 GMT
 content-type: text/html; charset=utf-8
@@ -574,7 +581,9 @@ Executing:[1;95mcurl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 HTTP/2 404 
 date: Wed, 22 Apr 2026 14:58:49 GMT
 content-type: text/html; charset=utf-8
@@ -615,7 +624,9 @@ curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz4$
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 HTTP/2 404 
 date: Wed, 22 Apr 2026 14:59:26 GMT
 content-type: text/html; charset=utf-8
@@ -656,7 +667,9 @@ curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz4
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   207    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 HTTP/2 404 
 date: Wed, 22 Apr 2026 14:59:47 GMT
 content-type: text/html; charset=utf-8
@@ -697,7 +710,9 @@ curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz3
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 HTTP/2 200 
 date: Wed, 22 Apr 2026 15:01:27 GMT
 content-type: text/html; charset=utf-8
@@ -738,7 +753,11 @@ curl -I https://ftut1.vercel.app/customz3
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0   479    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+  0   479    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
 HTTP/2 200 
 age: 0
 cache-control: public, max-age=0, must-revalidate
@@ -768,7 +787,9 @@ curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz3
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 HTTP/2 200 
 date: Wed, 22 Apr 2026 15:12:01 GMT
 content-type: text/html; charset=utf-8
@@ -809,7 +830,10 @@ curl -I https://ftut1.vercel.app/cu4
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0    13    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0    13    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 HTTP/2 200 
 age: 0
 cache-control: public, max-age=0, must-revalidate
@@ -839,7 +863,9 @@ curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/customz3
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 HTTP/2 200 
 date: Wed, 22 Apr 2026 15:35:31 GMT
 content-type: text/html; charset=utf-8
@@ -864,6 +890,320 @@ x-rape-kill: Lick Asss and pussy
 x-robots-tag: noindex, nofollow
 referrer-policy: same-origin
 vssaas-request-id: b66fdd1f-0e85-464d-835a-cb5be56ae86d
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+./runz.sh: line 120: EP: unbound variable
+
+--------------------------------------------------------------
+Note in the section below your custom headers are visible on every endpoint
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: curl -I https://ftut1.vercel.app
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0    29    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Thu, 23 Apr 2026 10:29:12 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-backblaze-status: Ready
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-rape-kill: Lick Asss and pussy
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::tcf8l-1776940151736-86fa0c66f761
+content-length: 29
+
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: curl -I https://ftut1.vercel.app/pusy
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0    34    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Thu, 23 Apr 2026 10:29:13 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-backblaze-status: Ready
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-rape-kill: Lick Asss and pussy
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::4q7wd-1776940152734-6da0a3f0c3ec
+content-length: 34
+
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: curl -I https://ftut1.vercel.app/hello
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   153    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   153    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 405 
+age: 0
+allow: POST, OPTIONS
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Thu, 23 Apr 2026 10:29:14 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-backblaze-status: Ready
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-rape-kill: Lick Asss and pussy
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::pphkt-1776940154225-fc470b1f33f8
+content-length: 153
+
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: curl -I https://ftut1.vercel.app/hellopg
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0    10    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Thu, 23 Apr 2026 10:29:15 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-backblaze-status: Ready
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-rape-kill: Lick Asss and pussy
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::zrvtg-1776940154794-863af46c0f53
+content-length: 10
+
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: curl -I https://ftut1.vercel.app/customz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   381    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   381    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 302 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Thu, 23 Apr 2026 10:29:15 GMT
+location: https://cdn05.iwantclips.com/uploads/contents/videos/1939935/4ab04b98e05ba1a80072036a14fecbba.jpg
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-backblaze-status: Ready
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-rape-kill: Lick Asss and pussy
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::x8fzd-1776940155361-7e675d8c31a7
+content-length: 381
+
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: curl -I https://ftut1.vercel.app/customz2
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  166k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: image/jpeg
+date: Thu, 23 Apr 2026 10:29:16 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-backblaze-status: Ready
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-rape-kill: Lick Asss and pussy
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::lx8q7-1776940155911-edd53f332f27
+content-length: 170250
+
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: curl -I https://ftut1.vercel.app/customz3
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0   479    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Thu, 23 Apr 2026 10:29:16 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-backblaze-status: Ready
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-rape-kill: Lick Asss and pussy
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::frc6q-1776940156430-b13d7ed26994
+content-length: 479
+
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: curl -I https://ftut1.vercel.app/cu4
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0    13    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Thu, 23 Apr 2026 10:29:17 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-backblaze-status: Ready
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-rape-kill: Lick Asss and pussy
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::4vxhq-1776940156958-769f1320a360
+content-length: 13
+
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Thu Apr 23 10:44:44 AM UTC 2026
+Executing:[1;95m
+curl -I https://ftut1.vercel.app/cu5
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0   207    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0   207    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+HTTP/2 404 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Thu, 23 Apr 2026 10:44:46 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-backblaze-status: Ready
+x-greeting: Hi Friend
+x-my-app: Flask-Delivery-Service
+x-rape-kill: Lick Asss and pussy
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::pphkt-1776941084549-528807e98e2c
+content-length: 207
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Thu Apr 23 10:45:32 AM UTC 2026
+Executing:[1;95m
+curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/cu5
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 401 
+date: Thu, 23 Apr 2026 10:45:32 GMT
+www-authenticate: tunnel
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-remaining: HttpRequestRatePerPort:1499
+ratelimit-reset: HttpRequestRatePerPort:11s
+vssaas-request-id: e0ec8d8e-18ec-4508-be94-ca24f5dd8b1d
 strict-transport-security: max-age=31536000; includeSubDomains
 x-served-by: tunnels-prod-rel-inc1-v3-cluster
 
