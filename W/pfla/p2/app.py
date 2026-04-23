@@ -148,7 +148,7 @@ def cu5():
 # Making custom response
 @app.route("/cu6")
 def cu6():
-    response = Response()
+    response = Response('Booty')  # Here the file will contain text booty
     response.status_code = 202
     response.headers['content-type'] = 'application/octet-stream'
     return response

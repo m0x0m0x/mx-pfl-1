@@ -105,9 +105,12 @@ sendCurl() {
 		#16 - Get the response header from deployed route
 		"curl -I ${EP}/cu5"
 
+		#17 - Custom Response on local deployed route
+		"curl -I ${DP}/cu6"
+
 	)
 
-	CMDEXEC="${CMD[16]}"
+	CMDEXEC="${CMD[17]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
