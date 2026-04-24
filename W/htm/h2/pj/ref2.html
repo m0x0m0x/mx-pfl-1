@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>PicoCSS | Centered Hero, Cards, Middle Section & Footer</title>
+    <!-- PicoCSS classless version + minimal grid utilities -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+    <!-- Tiny custom overrides to ensure perfect centering and visual harmony,
+       without fighting Pico's core philosophy. Uses Pico's variables for consistency. -->
+    <style>
+      /* ensure hero, card container, middle section, footer all feel cohesive */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      /* make main content push footer down naturally */
+      main {
+        flex: 1;
+      }
+
+      /* Hero section: centered text, extra vertical breathing, smooth background */
+      .hero {
+        text-align: center;
+        padding: 3rem 1rem;
+        margin: 1rem 0 2rem;
+        background: linear-gradient(
+          145deg,
+          var(--pico-card-background-color) 0%,
+          var(--pico-background-color) 100%
+        );
+        border-radius: var(--pico-border-radius);
+        border: 1px solid var(--pico-muted-border-color);
+      }
+
+      /* For extra large hero title elegance */
+      .hero h1 {
+        font-size: clamp(2.2rem, 6vw, 3.5rem);
+        margin-bottom: 0.5rem;
+      }
+
+      .hero .lead {
+        font-size: 1.25rem;
+        color: var(--pico-muted-color);
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      /* card container: centered with grid, consistent spacing */
+      .cards-container {
+        margin: 2rem 0 3rem;
+      }
+
+      .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.75rem;
+        margin: 1.5rem 0;
+      }
+
+      /* each card uses Pico's article styling + additional centering and consistent width */
+      .card {
+        flex: 1;
+        min-width: 260px;
+        max-width: 320px;
+        text-align: center;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+        background: var(--pico-card-background-color);
+        border-radius: var(--pico-border-radius);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      }
+
+      /* consistent spacing inside cards */
+      .card > *:first-child {
+        margin-top: 0;
+      }
+
+      .card hgroup h3 {
+        margin-bottom: 0.25rem;
+      }
+
+      /* middle section: centered text with max-width for readability */
+      .middle-section {
+        text-align: center;
+        max-width: 880px;
+        margin: 2rem auto;
+        padding: 2rem 1rem;
+        background: var(--pico-card-background-color);
+        border-radius: var(--pico-border-radius);
+        border-left: 6px solid var(--pico-primary);
+      }
+
+      .middle-section .content-inner {
+        text-align: left;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      /* footer styling stays minimal but elegant, centered, respects Pico */
+      footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 2rem 1rem 1.5rem;
+        border-top: 1px solid var(--pico-muted-border-color);
+      }
+
+      footer .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 1rem 0;
+      }
+
+      /* responsiveness: ensure cards always centered on mobile */
+      @media (max-width: 768px) {
+        .card-grid {
+          gap: 1.25rem;
+        }
+        .hero {
+          padding: 2rem 1rem;
+        }
+      }
+
+      /* optional subtle icons for cards (purely decorative) using emoji, keeps Pico simple */
+      .card-icon {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ========== HERO SECTION (centered) ========== -->
+    <div class="hero">
+      <h1>✨ Crafted with PicoCSS</h1>
+      <p class="lead">
+        Minimalist. Semantic. Centered perfection.<br />
+        A clean hero section, three cards, rich middle text, and a humble footer
+        — all powered by Pico’s classless magic.
+      </p>
+      <div style="margin-top: 1.5rem">
+        <a href="#" role="button">Get started</a>
+        <a href="#" role="button" class="secondary">Learn more →</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- ========== 3 CARDS (centered) ========== -->
+      <div class="cards-container">
+        <header style="text-align: center; margin-bottom: 1rem">
+          <h2>Why PicoCSS feels right</h2>
+          <p>Three pillars — clean, responsive, accessible</p>
+        </header>
+        <div class="card-grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card-icon">🎨</div>
+            <hgroup>
+              <h3>Classless design</h3>
+              <p>No bloated utilities</p>
+            </hgroup>
+            <p>
+              Write semantic HTML and get beautiful, responsive styling out of
+              the box. Pico respects your markup, not override classes.
+            </p>
+            <footer>
+              <small>✨ just &lt;article&gt;</small>
+            </footer>
+          </article>
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card-icon">🌓</div>
+            <hgroup>
+              <h3>Auto dark mode</h3>
+              <p>Follows system preference</p>
+            </hgroup>
+            <p>
+              No JavaScript toggles needed. PicoCSS adapts seamlessly to light
+              or dark themes, respecting user choice.
+            </p>
+            <footer>
+              <small>⚡ accessible contrast</small>
+            </footer>
+          </article>
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card-icon">📱</div>
+            <hgroup>
+              <h3>Fully responsive</h3>
+              <p>Mobile-first approach</p>
+            </hgroup>
+            <p>
+              Fluid typography, flexible grids, and components that stack
+              beautifully on any device — effortless.
+            </p>
+            <footer>
+              <small>📐 no media query hacks</small>
+            </footer>
+          </article>
+        </div>
+      </div>
+
+      <!-- ========== MIDDLE SECTION (text centered with readable block) ========== -->
+      <div class="middle-section">
+        <h2>🌿 A space for meaningful content</h2>
+        <p>
+          PicoCSS keeps the spotlight on your words. This middle section is
+          centered but internally uses balanced width for great readability.
+          <strong>No extra CSS frameworks needed</strong> — just semantic HTML
+          with Pico’s baseline.
+        </p>
+        <div class="content-inner">
+          <h3>Why semantic HTML wins</h3>
+          <p>
+            When you embrace classless frameworks, you focus on structure, not
+            presentational clutter. PicoCSS styles <code>&lt;section&gt;</code>,
+            <code>&lt;article&gt;</code>, buttons, and forms intelligently. You
+            get consistent spacing, accessible interactive states, and native
+            form styles.
+          </p>
+
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              justify-content: center;
+              margin: 1.5rem 0;
+            ">
+            <span
+              class="badge-note"
+              style="
+                background: var(--pico-primary-focus);
+                padding: 0.3rem 1rem;
+                border-radius: 2rem;
+              "
+              >📦 Lightweight (~10kb)</span
+            >
+            <span
+              class="badge-note"
+              style="
+                background: var(--pico-primary-focus);
+                padding: 0.3rem 1rem;
+                border-radius: 2rem;
+              "
+              >♿ ARIA ready</span
+            >
+            <span
+              class="badge-note"
+              style="
+                background: var(--pico-primary-focus);
+                padding: 0.3rem 1rem;
+                border-radius: 2rem;
+              "
+              >🎯 Customizable via CSS vars</span
+            >
+          </div>
+
+          <p>
+            The combination of a centered hero, three flexible cards, and a
+            compelling middle area like this demonstrates how PicoCSS allows
+            <strong>rapid prototyping</strong> without sacrificing design
+            aesthetics. Everything stays in harmony, and the footer completes
+            the page structure.
+          </p>
+          <hr />
+          <p>
+            <small
+              >💡 Tip: This layout is 100% responsive — try resizing your
+              browser to see cards wrap and typography adapt gracefully.</small
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- optional extra: subtle callout but still keeping design -->
+      <div style="text-align: center; margin: 1rem 0 1rem 0">
+        <p>
+          🌟 PicoCSS also styles <code>&lt;details&gt;</code>, progress bars,
+          and tables. Rich functionality with zero bloat.
+        </p>
+      </div>
+    </main>
+
+    <!-- ========== FOOTER (centered, clean) ========== -->
+    <footer>
+      <div>
+        <h3>PicoCSS basics demo</h3>
+        <p>
+          Hero centered · 3 cards · middle section · footer — built with pure
+          HTML + Pico v2 classless.
+        </p>
+        <div class="footer-links">
+          <a href="#">Documentation</a>
+          <a href="#">GitHub</a>
+          <a href="#">Getting started</a>
+          <a href="#">Themes & vars</a>
+        </div>
+        <div style="margin-top: 1.5rem; font-size: 0.85rem">
+          <span
+            >📄 Minimalist by design — no extra CSS frameworks, just Pico’s
+            intelligent defaults.</span
+          ><br />
+          <span
+            >© 2026 — Semantic web demo | PicoCSS delivers responsive, classless
+            elegance.</span
+          >
+        </div>
+        <div style="margin-top: 1rem">
+          <small
+            >⚡ Auto dark/light mode · works across devices · MIT
+            licensed</small
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- No JavaScript needed: Pico handles dark mode automatically, the page is fully functional. -->
+  </body>
+</html>

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>PicoCSS • Clean Hover Effect • Hero • Cards • Footer</title>
+    <!-- PicoCSS classless version -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+    <style>
+      /* ---------- ONE SIMPLE HOVER RULE ----------
+       Apply to any element you want. Add class="hover-grow" to specific parts.
+       No massive selector lists. Clean, maintainable.
+    */
+      .hover-grow {
+        display: inline-block;
+        transition: transform 0.25s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+        transform-origin: center;
+      }
+
+      .hover-grow:hover {
+        transform: scale(1.05);
+      }
+
+      /* Optional: for buttons maybe slightly less scale, but same class works great */
+
+      /* ---------- LAYOUT STYLES (unchanged, clean) ---------- */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      main {
+        flex: 1;
+      }
+      .hero {
+        text-align: center;
+        padding: 3rem 1rem;
+        margin: 1rem 0 2rem;
+        background: linear-gradient(
+          145deg,
+          var(--pico-card-background-color) 0%,
+          var(--pico-background-color) 100%
+        );
+        border-radius: var(--pico-border-radius);
+        border: 1px solid var(--pico-muted-border-color);
+      }
+      .hero h1 {
+        font-size: clamp(2.2rem, 6vw, 3.5rem);
+        margin-bottom: 0.5rem;
+      }
+      .hero .lead {
+        font-size: 1.25rem;
+        color: var(--pico-muted-color);
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .cards-container {
+        margin: 2rem 0 3rem;
+      }
+      .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.75rem;
+        margin: 1.5rem 0;
+      }
+      .card {
+        flex: 1;
+        min-width: 260px;
+        max-width: 320px;
+        text-align: center;
+        transition:
+          box-shadow 0.2s ease,
+          transform 0.2s ease;
+        background: var(--pico-card-background-color);
+        border-radius: var(--pico-border-radius);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      }
+      .card-icon {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+      }
+      .middle-section {
+        text-align: center;
+        max-width: 880px;
+        margin: 2rem auto;
+        padding: 2rem 1rem;
+        background: var(--pico-card-background-color);
+        border-radius: var(--pico-border-radius);
+        border-left: 6px solid var(--pico-primary);
+      }
+      .content-inner {
+        text-align: left;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 2rem 1rem 1.5rem;
+        border-top: 1px solid var(--pico-muted-border-color);
+      }
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 1rem 0;
+      }
+      @media (max-width: 768px) {
+        .card-grid {
+          gap: 1.25rem;
+        }
+        .hero {
+          padding: 2rem 1rem;
+        }
+      }
+      .badge-note {
+        background: var(--pico-primary-focus);
+        padding: 0.3rem 1rem;
+        border-radius: 2rem;
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ========== HERO SECTION ========== -->
+    <div class="hero">
+      <!-- apply hover-grow to specific text pieces you want to animate -->
+      <h1 class="hover-grow">✨ PicoCSS · Clean hover effect</h1>
+      <p class="lead">
+        Only <strong class="hover-grow">specific parts</strong> expand on hover
+        — just add class="hover-grow".<br />
+        Hero centered · 3 cards · middle section · footer ·
+        <span class="hover-grow">minimal CSS</span>
+      </p>
+      <div style="margin-top: 1.5rem">
+        <a href="#" role="button" class="hover-grow">Hover me ✨</a>
+        <a href="#" role="button" class="secondary hover-grow">Grows too →</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- ========== 3 CARDS ========== -->
+      <div class="cards-container">
+        <header style="text-align: center; margin-bottom: 1rem">
+          <h2 class="hover-grow">Hover on card titles</h2>
+          <p>
+            Only <span class="hover-grow">specific elements</span> have the grow
+            effect
+          </p>
+        </header>
+        <div class="card-grid">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card-icon hover-grow">🎨</div>
+            <hgroup>
+              <h3 class="hover-grow">Classless design</h3>
+              <p class="hover-grow">No bloated utilities</p>
+            </hgroup>
+            <p>
+              Write semantic HTML —
+              <span class="hover-grow">beautiful styling</span> out of the box.
+            </p>
+            <footer>
+              <small class="hover-grow">✨ just &lt;article&gt;</small>
+            </footer>
+          </article>
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card-icon hover-grow">🌓</div>
+            <hgroup>
+              <h3 class="hover-grow">Auto dark mode</h3>
+              <p class="hover-grow">Follows system preference</p>
+            </hgroup>
+            <p>
+              No JavaScript needed —
+              <span class="hover-grow">seamless theme switching</span>.
+            </p>
+            <footer>
+              <small class="hover-grow">⚡ accessible contrast</small>
+            </footer>
+          </article>
+          <!-- Card 3 -->
+          <article class="card">
+            <div class="card-icon hover-grow">📱</div>
+            <hgroup>
+              <h3 class="hover-grow">Fully responsive</h3>
+              <p class="hover-grow">Mobile-first approach</p>
+            </hgroup>
+            <p>
+              Fluid typography and
+              <span class="hover-grow">flexible grids</span> on any device.
+            </p>
+            <footer>
+              <small class="hover-grow">📐 no media query hacks</small>
+            </footer>
+          </article>
+        </div>
+      </div>
+
+      <!-- ========== MIDDLE SECTION ========== -->
+      <div class="middle-section">
+        <h2 class="hover-grow">🌿 One style, many uses</h2>
+        <p>
+          <span class="hover-grow">Just one CSS rule</span> —
+          <code class="hover-grow"
+            >.hover-grow:hover { transform: scale(1.05); }</code
+          >
+          — and you apply it anywhere.
+        </p>
+        <div class="content-inner">
+          <h3 class="hover-grow">Why keep it simple?</h3>
+          <p>
+            No massive selector lists. No
+            <span class="hover-grow">overly specific rules</span>. Just add the
+            class to any element you want to animate. Clean, maintainable, and
+            works everywhere.
+          </p>
+
+          <div
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+              justify-content: center;
+              margin: 1.5rem 0;
+            ">
+            <span class="badge-note hover-grow">🎈 Hover badge</span>
+            <span class="badge-note hover-grow">✨ scales nicely</span>
+            <span class="badge-note hover-grow">⚡ returns smoothly</span>
+          </div>
+
+          <p>
+            The <strong class="hover-grow">same class</strong> works on
+            headings, spans, buttons, icons, and footer links.
+            <a href="#" class="hover-grow">This link grows too</a> — because I
+            added the class.
+          </p>
+          <hr />
+          <p>
+            <small
+              >💡
+              <span class="hover-grow"
+                >Only elements with class="hover-grow"</span
+              >
+              get the effect. Everything else stays normal.</small
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- extra demo -->
+      <div style="text-align: center; margin: 1.5rem 0 1rem 0">
+        <p>
+          <span class="hover-grow">🔍 Hover this whole sentence? No.</span> Only
+          <span class="hover-grow">these words</span> expand.
+        </p>
+      </div>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <div>
+        <h3 class="hover-grow">PicoCSS • Clean hover demo</h3>
+        <p>
+          Hero · 3 cards · middle section · footer — only
+          <span class="hover-grow">elements with the class</span> expand.
+        </p>
+        <div class="footer-links">
+          <a href="#" class="hover-grow">Documentation</a>
+          <a href="#" class="hover-grow">GitHub</a>
+          <a href="#" class="hover-grow">Getting started</a>
+          <a href="#" class="hover-grow">One style rule</a>
+        </div>
+        <div style="margin-top: 1.5rem; font-size: 0.85rem">
+          <span
+            >📄 <span class="hover-grow">Only specific text</span> gets the
+            hover effect.</span
+          ><br />
+          <span
+            >© 2026 — <span class="hover-grow">Semantic web</span> +
+            PicoCSS</span
+          >
+        </div>
+        <div style="margin-top: 1rem">
+          <button class="secondary hover-grow" style="margin-top: 0.3rem">
+            Hover button grows
+          </button>
+          <button class="contrast hover-grow" style="margin-left: 0.75rem">
+            This too ✨
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
