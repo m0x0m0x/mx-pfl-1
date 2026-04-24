@@ -17,6 +17,7 @@
 | :---------------------: | :---------------: |
 | [`runs.sh`](./runs.sh/) | Logs from runz.sh |
 |    [`logz`](./logz/)    |  Logs from ru.sh  |
+|     [`scr`](./scr/)     |      Scripts      |
 
 # App Summary
 
