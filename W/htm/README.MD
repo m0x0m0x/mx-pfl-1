@@ -29,8 +29,6 @@ This combination (Flask backend + PicoCSS for styling + HTMX for interactivity) 
 
 # Dirz
 
-|        Dir        |         What          |
-| :---------------: | :-------------------: |
-| [`pfla`](./pfla/) |  Python Flash study   |
-| [`pfap`](./pfap/) | Python Fast Api Study |
-|  [`htm`](./htm/)  |    HTML Frameworks    |
+|      Dir      |        What         |
+| :-----------: | :-----------------: |
+| [`h1`](./h1/) | PicoCSS HTMl Test 1 |
