@@ -9,6 +9,7 @@ from flask import Flask, Response, redirect, request
 # --- Create App ---
 app = Flask(__name__)
 
+
 # --- Routes ---
 
 
@@ -42,7 +43,9 @@ def add(num1, num2):
 def mul(num1, num2):
     return f"<h2>{num1} ** {num2} = {num1 ** num2}</h2>"
 
-# Handling url params
+# Handling url params - You use this
+# Use = https://ftut1.vercel.app/handle_url_params?name=Panty&juice=Stink
+# Results will be -ImmutableMultiDict([('name', 'Panty'), ('juice', 'Stink')])
 
 
 @app.route('/handle_url_params')

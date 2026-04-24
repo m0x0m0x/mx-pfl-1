@@ -34,7 +34,7 @@ dep1() {
 	declare -a CMD=(
 
 		#0 -  Serve with bun
-		"bun index.html"
+		"vc --prod"
 
 	)
 
