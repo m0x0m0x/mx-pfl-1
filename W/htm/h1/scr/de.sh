@@ -40,7 +40,7 @@ dep1() {
 
 	CMDEXEC="${CMD[0]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
-	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
+	echo -e "${BBLUE} · · ────── Bun Server Page ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	date
 	echo -e "Executing:${BMAGENTA}\n${CMDEXEC}\n${RESET}"
@@ -55,6 +55,6 @@ dep1() {
 
 # --- Execution ---
 panty() {
-	dep1 2>&1 | tee -a scr/logz/deployz.sh.txt
+	dep1 2>&1 | tee -a scr/logz/dep.sh.txt
 }
 panty

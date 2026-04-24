@@ -1,11 +1,310 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document - Booty</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Flask API Demo - Pico CSS</title>
+    <!-- Pico CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <!-- HTMX for API calls -->
+    <script src="https://unpkg.com/htmx.org@2.0.4"></script>
+    <style>
+      .api-section {
+        margin: 2rem 0;
+        padding: 1.5rem;
+        border-radius: var(--pico-border-radius);
+        background: var(--pico-card-background-color);
+      }
+
+      .result-area {
+        margin-top: 1rem;
+        padding: 1rem;
+        background: var(--pico-muted-color);
+        border-radius: var(--pico-border-radius);
+        font-family: monospace;
+        word-break: break-word;
+      }
+
+      .api-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .center {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .loading {
+        opacity: 0.6;
+        pointer-events: none;
+      }
+
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="center">
+        <h1>🚀 Flask API Demo with HTMX</h1>
+        <p>
+          Simple API interactions with automatic result display - optimized for
+          2G/3G connections
+        </p>
+      </div>
+
+      <!-- API Documentation Section -->
+      <details open>
+        <summary>📚 Available APIs (5 endpoints)</summary>
+        <div class="api-grid">
+          <div>
+            <h4>1️⃣ GET /api/hello</h4>
+            <p>
+              <strong>What it does:</strong> Returns a friendly greeting message
+            </p>
+            <code>GET /api/hello?name=YourName</code>
+            <p>
+              <small>💡 Optional query param: <code>name</code></small>
+            </p>
+          </div>
+
+          <div>
+            <h4>2️⃣ POST /api/submit</h4>
+            <p>
+              <strong>What it does:</strong> Processes form data and returns a
+              confirmation
+            </p>
+            <code>POST /api/submit</code>
+            <p>
+              <small
+                >💡 Expects: <code>email</code>, <code>message</code></small
+              >
+            </p>
+          </div>
+
+          <div>
+            <h4>3️⃣ GET /api/time</h4>
+            <p>
+              <strong>What it does:</strong> Returns current server time and
+              timestamp
+            </p>
+            <code>GET /api/time</code>
+            <p><small>💡 No parameters needed</small></p>
+          </div>
+
+          <div>
+            <h4>4️⃣ POST /api/calculate</h4>
+            <p>
+              <strong>What it does:</strong> Performs simple math operations
+            </p>
+            <code>POST /api/calculate</code>
+            <p>
+              <small
+                >💡 Expects: <code>num1</code>, <code>num2</code>,
+                <code>operation</code> (add/subtract/multiply/divide)</small
+              >
+            </p>
+          </div>
+
+          <div>
+            <h4>5️⃣ GET /api/stats</h4>
+            <p>
+              <strong>What it does:</strong> Returns usage statistics and server
+              metrics
+            </p>
+            <code>GET /api/stats</code>
+            <p><small>💡 Shows request count and uptime</small></p>
+          </div>
+        </div>
+      </details>
+
+      <!-- API Demo Cards -->
+      <div class="api-grid">
+        <!-- API 1: Hello World -->
+        <div class="api-section">
+          <h3>1️⃣ Hello API</h3>
+          <p>Get a personalized greeting</p>
+          <div style="display: flex; gap: 0.5rem">
+            <input
+              type="text"
+              id="helloName"
+              name="name"
+              placeholder="Your name"
+              style="flex: 1" />
+            <button
+              hx-get="https://ftut1.vercel.app/greet/"
+              hx-target="#helloResult"
+              hx-swap="innerHTML"
+              hx-include="[name='name']"
+              hx-params="none"
+              class="primary"
+              onclick="
+                this.setAttribute(
+                  'hx-get',
+                  'https://ftut1.vercel.app/greet/' +
+                    document.getElementById('helloName').value,
+                )
+              ">
+              Say Hello
+            </button>
+          </div>
+          <div id="helloResult" class="result-area">
+            <small>✨ Click the button to see response</small>
+          </div>
+          <div id="helloLoading" class="htmx-indicator">
+            <small>Loading...</small>
+          </div>
+        </div>
+
+        <!-- API 2: Form Submit -->
+        <div class="api-section">
+          <h3>2️⃣ Submit Form</h3>
+          <p>Send data to Flask backend</p>
+          <form
+            hx-post="/api/submit"
+            hx-target="#submitResult"
+            hx-swap="innerHTML">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required />
+              <textarea
+                name="message"
+                placeholder="Your message"
+                rows="2"
+                required></textarea>
+              <button type="submit" class="primary">Submit Form</button>
+            </div>
+          </form>
+          <div id="submitResult" class="result-area">
+            <small>📝 Fill form and submit</small>
+          </div>
+        </div>
+
+        <!-- API 3: Server Time -->
+        <div class="api-section">
+          <h3>3️⃣ Server Time</h3>
+          <p>Get current server timestamp</p>
+          <button
+            hx-get="/api/time"
+            hx-target="#timeResult"
+            hx-swap="innerHTML"
+            class="secondary">
+            Get Server Time
+          </button>
+          <div id="timeResult" class="result-area">
+            <small>⏰ Click to get current time</small>
+          </div>
+        </div>
+
+        <!-- API 4: Calculator -->
+        <div class="api-section">
+          <h3>4️⃣ Calculator API</h3>
+          <p>Perform math operations</p>
+          <form
+            hx-post="/api/calculate"
+            hx-target="#calcResult"
+            hx-swap="innerHTML">
+            <div style="display: grid; gap: 0.5rem">
+              <input
+                type="number"
+                name="num1"
+                placeholder="First number"
+                required
+                step="any" />
+              <select name="operation" required>
+                <option value="add">➕ Add (+)</option>
+                <option value="subtract">➖ Subtract (-)</option>
+                <option value="multiply">✖️ Multiply (×)</option>
+                <option value="divide">➗ Divide (÷)</option>
+              </select>
+              <input
+                type="number"
+                name="num2"
+                placeholder="Second number"
+                required
+                step="any" />
+              <button type="submit" class="primary">Calculate</button>
+            </div>
+          </form>
+          <div id="calcResult" class="result-area">
+            <small>🧮 Enter numbers and choose operation</small>
+          </div>
+        </div>
+
+        <!-- API 5: Stats -->
+        <div class="api-section">
+          <h3>5️⃣ Server Stats</h3>
+          <p>View usage metrics and uptime</p>
+          <button
+            hx-get="/api/stats"
+            hx-target="#statsResult"
+            hx-swap="innerHTML"
+            class="contrast">
+            Load Stats
+          </button>
+          <div id="statsResult" class="result-area">
+            <small>📊 Click to view server statistics</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Global Result Message -->
+      <div
+        style="
+          text-align: center;
+          margin: 2rem 0;
+          padding: 1rem;
+          background: var(--pico-primary-focus);
+          border-radius: var(--pico-border-radius);
+        ">
+        <p>
+          <strong>💡 Tip:</strong> All API calls are made via HTMX - responses
+          update in real-time without page reload!
+        </p>
+      </div>
+    </main>
+
+    <style>
+      /* HTMX loading indicator */
+      .htmx-indicator {
+        display: none;
+        color: var(--pico-primary);
+        margin-top: 0.5rem;
+      }
+      .htmx-request .htmx-indicator {
+        display: inline-block;
+      }
+      .htmx-request.htmx-indicator {
+        display: inline-block;
+      }
+
+      /* Mobile optimization */
+      @media (max-width: 768px) {
+        .api-grid {
+          grid-template-columns: 1fr;
+        }
+        .api-section {
+          padding: 1rem;
+        }
+      }
+
+      /* Smooth transitions */
+      .result-area {
+        transition: all 0.2s ease;
+      }
+    </style>
+  </body>
 </html>
