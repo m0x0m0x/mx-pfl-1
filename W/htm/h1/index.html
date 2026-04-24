@@ -3,57 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>URL Parameter Inspector</title>
+    <title>URL Inspector - Working Version</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
-    <style>
-      body {
-        font-family: system-ui, sans-serif;
-        max-width: 600px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-      }
-      input,
-      select {
-        display: block;
-        width: 100%;
-        margin-bottom: 0.75rem;
-        padding: 0.5rem;
-      }
-      .result {
-        background: #f0f0f0;
-        padding: 1rem;
-        border-radius: 8px;
-        font-family: monospace;
-        margin-top: 1rem;
-      }
-      h1 {
-        font-size: 1.5rem;
-      }
-    </style>
+
+    <!-- USE HTMX 1.9.12 - NOT 2.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@1.9.12/dist/htmx.min.js"></script>
   </head>
   <body>
-    <h1>🔍 URL Parameter Inspector</h1>
-    <p>Type in any field - parameters appear below</p>
+    <main class="container">
+      <h1>🔍 URL Parameter Inspector</h1>
 
-    <form
-      hx-get="https://ftut1.vercel.app/handle_url_params"
-      hx-target="#result"
-      hx-swap="innerHTML"
-      hx-trigger="input changed delay:300ms">
-      <input type="text" name="name" placeholder="Name" />
-      <input type="text" name="email" placeholder="Email" />
-      <input type="text" name="search" placeholder="Search" />
+      <form
+        hx-get="https://ftut1.vercel.app/handle_url_params"
+        hx-target="#result"
+        hx-swap="innerHTML"
+        hx-trigger="input changed delay:300ms">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="text" name="email" placeholder="Email" />
+        <input type="text" name="search" placeholder="Search" />
 
-      <select name="filter">
-        <option value="">No filter</option>
-        <option value="active">Active</option>
-        <option value="pending">Pending</option>
-      </select>
-    </form>
+        <select name="filter">
+          <option value="">No filter</option>
+          <option value="active">Active</option>
+          <option value="pending">Pending</option>
+        </select>
+      </form>
 
-    <div id="result" class="result">✨ Type anything above</div>
+      <div
+        id="result"
+        class="result-area"
+        style="
+          margin-top: 1rem;
+          padding: 1rem;
+          background: #f0f0f0;
+          border-radius: 8px;
+        ">
+        ✨ Type anything above
+      </div>
+    </main>
   </body>
 </html>

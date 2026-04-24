@@ -118,3 +118,122 @@ Done!
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 03:27:21 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+Retrieving project…
+Deploying mx0mxtutas-projects/ftut1
+Uploading [--------------------] (0.0B/40.4KB)
+Uploading [============--------] (25.9KB/40.4KB)
+Uploading [====================] (40.4KB/40.4KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/ftut1/J5jXxwWf3Bz8M67rfZV9qPBmjsmG [3s]
+Production: https://ftut1-3s1agojvm-mx0mxtutas-projects.vercel.app [3s]
+https://ftut1-3s1agojvm-mx0mxtutas-projects.vercel.appBuilding...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Previous build caches not available.
+Building: Downloading 12 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 51.6.1
+Building: Using Python 3.14 from .python-version
+Building: Using uv 0.10.11
+Building: Creating virtual environment at "/vercel/path0/.vercel/python/.venv"...
+Building: Installing required dependencies from uv.lock...
+Building: Build Completed in /vercel/output [2s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://ftut1-3s1agojvm-mx0mxtutas-projects.vercel.app [14s]
+Completing...
+Aliased: https://ftut1.vercel.app [14s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 03:38:53 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+Retrieving project…
+Deploying mx0mxtutas-projects/ftut1
+Uploading [--------------------] (0.0B/11.3KB)
+Uploading [=======-------------] (4.4KB/11.3KB)
+Uploading [====================] (11.3KB/11.3KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/ftut1/B3KWBbnNz4DTaFM1eX4rpCi64Nsh [2s]
+Production: https://ftut1-g4rjfcegp-mx0mxtutas-projects.vercel.app [2s]
+https://ftut1-g4rjfcegp-mx0mxtutas-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 12 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 51.6.1
+Building: Using Python 3.14 from .python-version
+Building: Using uv 0.10.11
+Building: Creating virtual environment at "/vercel/path0/.vercel/python/.venv"...
+Building: Installing required dependencies from uv.lock...
+Building: Build Completed in /vercel/output [2s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://ftut1-g4rjfcegp-mx0mxtutas-projects.vercel.app [13s]
+Completing...
+Aliased: https://ftut1.vercel.app [13s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 03:41:38 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+Retrieving project…
+Deploying mx0mxtutas-projects/ftut1
+Uploading [--------------------] (0.0B/8.6KB)
+Uploading [====================] (8.6KB/8.6KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/ftut1/5svudNW3hUpS9YTp9QMbG4bLKG9o [3s]
+Production: https://ftut1-drh37mhgw-mx0mxtutas-projects.vercel.app [3s]
+https://ftut1-drh37mhgw-mx0mxtutas-projects.vercel.appBuilding...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Previous build caches not available.
+Building: Downloading 12 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 51.6.1
+Building: Using Python 3.14 from .python-version
+Building: Using uv 0.10.11
+Building: Creating virtual environment at "/vercel/path0/.vercel/python/.venv"...
+Building: Installing required dependencies from uv.lock...
+Building: Build Completed in /vercel/output [2s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://ftut1-drh37mhgw-mx0mxtutas-projects.vercel.app [12s]
+Completing...
+Aliased: https://ftut1.vercel.app [12s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m

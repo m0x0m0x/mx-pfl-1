@@ -5,10 +5,11 @@
 # --- Imports ---
 import requests
 from flask import Flask, Response, redirect, request
+from flask_cors import CORS
 
 # --- Create App ---
 app = Flask(__name__)
-
+CORS(app)
 
 # --- Routes ---
 
