@@ -161,8 +161,8 @@ se_cu_lo() {
 
 # --- Execution ---
 panty() {
-	# uv_s1 2>&1 | tee -a logz/runz.sh.txt
-	sendCurl 2>&1 | tee -a logz/runz.sh.txt
-	# se_cu_lo 2>&1 | tee -a logz/runz.sh.txt
+	# uv_s1 2>&1 | tee -a scr/logz/runz.sh.txt
+	sendCurl 2>&1 | tee -a scr/logz/runz.sh.txt
+	# se_cu_lo 2>&1 | tee -a scr/logz/runz.sh.txt
 }
 panty

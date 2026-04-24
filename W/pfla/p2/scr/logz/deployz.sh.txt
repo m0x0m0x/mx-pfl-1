@@ -1,0 +1,51 @@
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 12:21:28 PM UTC 2026
+Executing:[1;95m
+vc --deploy
+[0m
+///////////
+Error: unknown or unexpected option: --deploy
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 12:21:59 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+Retrieving project…
+Deploying mx0mxtutas-projects/ftut1
+Uploading [--------------------] (0.0B/100.8KB)
+Uploading [=======-------------] (37.5KB/100.8KB)
+Uploading [==========----------] (53.5KB/100.8KB)
+Uploading [===============-----] (75.7KB/100.8KB)
+Uploading [====================] (100.8KB/100.8KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/ftut1/8eYc7A62C7e17ReYHsj6YfwhJAaN [3s]
+Production: https://ftut1-h735zltml-mx0mxtutas-projects.vercel.app [3s]
+https://ftut1-h735zltml-mx0mxtutas-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 12 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 51.6.1
+Building: Using Python 3.14 from .python-version
+Building: Using uv 0.10.11
+Building: Creating virtual environment at "/vercel/path0/.vercel/python/.venv"...
+Building: Installing required dependencies from uv.lock...
+Building: Build Completed in /vercel/output [1s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://ftut1-h735zltml-mx0mxtutas-projects.vercel.app [14s]
+Completing...
+Aliased: https://ftut1.vercel.app [14s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
