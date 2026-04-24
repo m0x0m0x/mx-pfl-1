@@ -1,0 +1,214 @@
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Bun Server Page ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 02:43:33 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+? Set up and deploy “/workspaces/mx-pfl-1/W/htm/h1”? (Y/n)[60G[2K[G? Set up and deploy “/workspaces/mx-pfl-1/W/htm/h1”? (Y/n) Y[61G[2K[G? Set up and deploy “/workspaces/mx-pfl-1/W/htm/h1”? yes[57G
+[?25hLoading scopes…
+? Which scope should contain your project? (Use arrow keys)
+❯ mx0mxtuta's projects[?25l[23G[2K[1A[2K[G? Which scope should contain your project? mx0mxtuta's projects[64G
+[?25hSearching for existing projects…
+? Link to existing project? (y/N)[35G[2K[G? Link to existing project? (y/N) N[36G[2K[G? Link to existing project? no[31G
+[?25h? What’s your project’s name? (h1)[36G[2K[G? What’s your project’s name? m[32G[2K[G? What’s your project’s name? mx[33G[2K[G? What’s your project’s name? mx-[34G[2K[G? What’s your project’s name? mx-p[35G[2K[G? What’s your project’s name? mx-pf[36G[2K[G? What’s your project’s name? mx-pfl[37G[2K[G? What’s your project’s name? mx-pfl-[38G[2K[G? What’s your project’s name? mx-pfl-1[39G[2K[G? What’s your project’s name? mx-pfl-1-[40G[2K[G? What’s your project’s name? mx-pfl-1-h[41G[2K[G? What’s your project’s name? mx-pfl-1-h1[42G[2K[G? What’s your project’s name? mx-pfl-1-h[41G[2K[G? What’s your project’s name? mx-pfl-1-[40G[2K[G? What’s your project’s name? mx-pfl-1-h[41G[2K[G? What’s your project’s name? mx-pfl-1-ht[42G[2K[G? What’s your project’s name? mx-pfl-1-htm[43G[2K[G? What’s your project’s name? mx-pfl-1-htm-[44G[2K[G? What’s your project’s name? mx-pfl-1-htm-h[45G[2K[G? What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠋ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠙ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠹ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠸ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠼ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠴ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠦ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠧ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠇ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G⠏ What’s your project’s name? mx-pfl-1-htm-h1[46G[2K[G? What’s your project’s name? mx-pfl-1-htm-h1[46G
+[?25h? In which directory is your code located? ./[46G[2K[G⠋ In which directory is your code located? ./[46G[2K[G? In which directory is your code located? ./[46G
+[?25h> No framework detected. Default Project Settings:
+
+- Build Command: `npm run vercel-build` or `npm run build`
+- Development Command: None
+- Install Command: `yarn install`, `pnpm install`, `npm install`, or `bun install`
+- Output Directory: `public` if it exists, or `.`
+? Want to modify these settings? (y/N)[40G[2K[G? Want to modify these settings? (y/N) N[41G[2K[G? Want to modify these settings? no[36G
+[?25h? Do you want to change additional project settings? (y/N)[60G[2K[G? Do you want to change additional project settings? (y/N) N[61G[2K[G? Do you want to change additional project settings? no[56G
+[?25hLinked to mx0mxtutas-projects/mx-pfl-1-htm-h1 (created .vercel and added it to .gitignore)
+Deploying mx0mxtutas-projects/mx-pfl-1-htm-h1
+Uploading [--------------------] (0.0B/14.6KB)
+Uploading [=============-------] (9.7KB/14.6KB)
+Uploading [==================--] (13.3KB/14.6KB)
+Uploading [====================] (14.6KB/14.6KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/mx-pfl-1-htm-h1/95u1jVEoDYFjwPd4Dk4fshkuo2ne [3s]
+Production: https://mx-pfl-1-htm-h1-3kcksajl3-mx0mxtutas-projects.vercel.app [3s]
+https://mx-pfl-1-htm-h1-3kcksajl3-mx0mxtutas-projects.vercel.appBuilding...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 4 deployment files...
+Building: Running "vercel build"
+Building: Running "vercel build"
+[2K[1A[2K[GProduction: https://mx-pfl-1-htm-h1-3kcksajl3-mx0mxtutas-projects.vercel.app [8s]
+Completing...
+Aliased: https://mx-pfl-1-htm-h1.vercel.app [8s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Bun Server Page ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 02:57:31 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+Retrieving project…
+Deploying mx0mxtutas-projects/mx-pfl-1-htm-h1
+Uploading [--------------------] (0.0B/14.1KB)
+Uploading [=======-------------] (5.0KB/14.1KB)
+Uploading [====================] (14.1KB/14.1KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/mx-pfl-1-htm-h1/oDE18qjTffn5xGizYj83eygXmy19 [2s]
+Production: https://mx-pfl-1-htm-h1-owtft00rd-mx0mxtutas-projects.vercel.app [2s]
+https://mx-pfl-1-htm-h1-owtft00rd-mx0mxtutas-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+[2K[1A[2K[GProduction: https://mx-pfl-1-htm-h1-owtft00rd-mx0mxtutas-projects.vercel.app [7s]
+Completing...
+Aliased: https://mx-pfl-1-htm-h1.vercel.app [7s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Bun Server Page ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 03:16:50 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+Retrieving project…
+Deploying mx0mxtutas-projects/mx-pfl-1-htm-h1
+Uploading [--------------------] (0.0B/12.4KB)
+Uploading [==========----------] (6.3KB/12.4KB)
+Uploading [====================] (12.4KB/12.4KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/mx-pfl-1-htm-h1/fL5Q2XAnMphw7EZraUvHLAiCtmkG [2s]
+Production: https://mx-pfl-1-htm-h1-k82llly97-mx0mxtutas-projects.vercel.app [2s]
+https://mx-pfl-1-htm-h1-k82llly97-mx0mxtutas-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 4 deployment files...
+Building: Running "vercel build"
+[2K[1A[2K[GProduction: https://mx-pfl-1-htm-h1-k82llly97-mx0mxtutas-projects.vercel.app [7s]
+Completing...
+Aliased: https://mx-pfl-1-htm-h1.vercel.app [7s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Bun Server Page ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 03:23:42 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+Retrieving project…
+Deploying mx0mxtutas-projects/mx-pfl-1-htm-h1
+Uploading [--------------------] (0.0B/9.3KB)
+Uploading [====================] (9.3KB/9.3KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/mx-pfl-1-htm-h1/GnU3RQYLoST7jCfVoh284iVpngJH [2s]
+Production: https://mx-pfl-1-htm-h1-ev5ye3t14-mx0mxtutas-projects.vercel.app [2s]
+https://mx-pfl-1-htm-h1-ev5ye3t14-mx0mxtutas-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 4 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 51.6.1
+Building: Build Completed in /vercel/output [18ms]
+[2K[1A[2K[GProduction: https://mx-pfl-1-htm-h1-ev5ye3t14-mx0mxtutas-projects.vercel.app [7s]
+Completing...
+Aliased: https://mx-pfl-1-htm-h1.vercel.app [7s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Bun Server Page ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 03:30:35 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+Retrieving project…
+Deploying mx0mxtutas-projects/mx-pfl-1-htm-h1
+Uploading [--------------------] (0.0B/10.7KB)
+Uploading [====================] (10.7KB/10.7KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/mx-pfl-1-htm-h1/8S9evuRmTA7rvybtADMhdEKwV41q [2s]
+Production: https://mx-pfl-1-htm-h1-fidr108eo-mx0mxtutas-projects.vercel.app [2s]
+https://mx-pfl-1-htm-h1-fidr108eo-mx0mxtutas-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 4 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 51.6.1
+Building: Build Completed in /vercel/output [18ms]
+[2K[1A[2K[GProduction: https://mx-pfl-1-htm-h1-fidr108eo-mx0mxtutas-projects.vercel.app [8s]
+Completing...
+Aliased: https://mx-pfl-1-htm-h1.vercel.app [8s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Bun Server Page ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Fri Apr 24 03:46:11 PM UTC 2026
+Executing:[1;95m
+vc --prod
+[0m
+///////////
+Retrieving project…
+Deploying mx0mxtutas-projects/mx-pfl-1-htm-h1
+Uploading [--------------------] (0.0B/11.9KB)
+Uploading [====================] (11.9KB/11.9KB)
+Inspect: https://vercel.com/mx0mxtutas-projects/mx-pfl-1-htm-h1/9s6L4w2cbS11UnV6As8dXWVS76Fz [2s]
+Production: https://mx-pfl-1-htm-h1-ah3ioglal-mx0mxtutas-projects.vercel.app [2s]
+https://mx-pfl-1-htm-h1-ah3ioglal-mx0mxtutas-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 4 deployment files...
+Building: Running "vercel build"
+[2K[1A[2K[GProduction: https://mx-pfl-1-htm-h1-ah3ioglal-mx0mxtutas-projects.vercel.app [7s]
+Completing...
+Aliased: https://mx-pfl-1-htm-h1.vercel.app [7s]
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m

@@ -29,6 +29,7 @@ This combination (Flask backend + PicoCSS for styling + HTMX for interactivity) 
 
 # Dirz
 
-|      Dir      |        What         |
-| :-----------: | :-----------------: |
-| [`h1`](./h1/) | PicoCSS HTMl Test 1 |
+|      Dir      |                                 What                                  |
+| :-----------: | :-------------------------------------------------------------------: |
+| [`h1`](./h1/) | PicoCSS HTMl Test 1 - testing HTMX and Flask Routes (results no good) |
+| [`h2`](./h2/) |                PicoCSS HTMl Test 2 - Only PicoCSS Test                |
