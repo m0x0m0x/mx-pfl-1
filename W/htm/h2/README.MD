@@ -10,7 +10,8 @@ e<h2 align="center"> <i> h2 - PicoCSS testing </i> </h2>
 
 # Dirz
 
-|       Dir       |      What      |
-| :-------------: | :------------: |
-| [`scr`](./scr/) |    Scripts     |
-|  [`pj`](./pj/)  | Actual Project |
+|       Dir       |        What        |
+| :-------------: | :----------------: |
+| [`scr`](./scr/) |      Scripts       |
+| [`pj1`](./pj1/) | Actual Project - 1 |
+| [`pj2`](./pj2/) | Actual Project - 2 |
