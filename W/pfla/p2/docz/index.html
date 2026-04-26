@@ -208,7 +208,7 @@
             </footer>
           </article>
 
-          <!-- Card 7: POST Requuest Hello -->
+          <!-- Card 7: POST Request Hello -->
           <article class="card-custom" id="hello-card">
             <header>
               <h3>🧪 POST Request Hello</h3>
@@ -222,20 +222,69 @@
                   <code>curl -X POST https://ftut1.vercel.app/hello</code>
                 </li>
               </ul>
-              <!-- Response appears here -->
+              <!-- Terminal-style response -->
               <div id="hello-response" style="display: none; margin-top: 1rem">
-                <p style="text-align: left"><strong>📬 Response:</strong></p>
-                <pre
-                  id="hello-output"
+                <div
                   style="
-                    background: #1a1a2e;
-                    padding: 0.8rem;
+                    background: #0d0d1a;
+                    border: 1px solid #333;
                     border-radius: 8px;
-                    color: #9bbdf0;
-                    text-align: left;
-                    font-size: 0.9rem;
-                    min-height: 40px;
-                  "></pre>
+                    overflow: hidden;
+                  ">
+                  <div
+                    style="
+                      background: #1a1a2e;
+                      padding: 0.4rem 0.8rem;
+                      display: flex;
+                      align-items: center;
+                      gap: 0.4rem;
+                      border-bottom: 1px solid #333;
+                    ">
+                    <span
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: #ff5f56;
+                        border-radius: 50%;
+                      "></span>
+                    <span
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: #ffbd2e;
+                        border-radius: 50%;
+                      "></span>
+                    <span
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: #27c93f;
+                        border-radius: 50%;
+                      "></span>
+                    <span
+                      style="
+                        color: #888;
+                        font-size: 0.75rem;
+                        margin-left: 0.5rem;
+                      "
+                      >terminal — response</span
+                    >
+                  </div>
+                  <pre
+                    id="hello-output"
+                    style="
+                      background: transparent;
+                      color: #00ff88;
+                      padding: 0.8rem;
+                      margin: 0;
+                      text-align: left;
+                      font-size: 0.85rem;
+                      font-family: 'Courier New', monospace;
+                      min-height: 30px;
+                      white-space: pre-wrap;
+                      word-break: break-word;
+                    "></pre>
+                </div>
               </div>
             </div>
             <footer>
@@ -252,68 +301,128 @@
             </footer>
           </article>
 
-          <!-- Card 6: Deployment -->
-          <article class="card-custom">
+          <!-- Card 8: Hello with multiple requests -->
+          <article class="card-custom" id="hellopg-card">
             <header>
-              <h3>🚀 Docker & Deploy</h3>
+              <h3>🚀 /hellopg - Multiple Methods</h3>
+              <span class="endpoint-tag">GET | POST | PUT /hellopg</span>
             </header>
             <div class="card-body">
               <p>
-                Containerized with Docker Compose. Ready for Render, Railway, or
-                any cloud platform. Gunicorn + Uvicorn workers.
+                This endpoint handles multiple HTTP methods with different
+                responses coded directly in the route.
               </p>
               <ul>
-                <li>Dockerfile + compose</li>
-                <li>Environment configs</li>
-                <li>Health check endpoint</li>
+                <li><strong>GET</strong> → GET REQUEST - SmellPanty</li>
+                <li><strong>POST</strong> → POST - Pussy</li>
+                <li><strong>PUT</strong> → PUT - SUCK AND FUCK</li>
               </ul>
+              <!-- Terminal-style response -->
+              <div
+                id="hellopg-response"
+                style="display: none; margin-top: 1rem">
+                <div
+                  style="
+                    background: #0d0d1a;
+                    border: 1px solid #333;
+                    border-radius: 8px;
+                    overflow: hidden;
+                  ">
+                  <div
+                    style="
+                      background: #1a1a2e;
+                      padding: 0.4rem 0.8rem;
+                      display: flex;
+                      align-items: center;
+                      gap: 0.4rem;
+                      border-bottom: 1px solid #333;
+                    ">
+                    <span
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: #ff5f56;
+                        border-radius: 50%;
+                      "></span>
+                    <span
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: #ffbd2e;
+                        border-radius: 50%;
+                      "></span>
+                    <span
+                      style="
+                        width: 10px;
+                        height: 10px;
+                        background: #27c93f;
+                        border-radius: 50%;
+                      "></span>
+                    <span
+                      style="
+                        color: #888;
+                        font-size: 0.75rem;
+                        margin-left: 0.5rem;
+                      "
+                      >terminal — response</span
+                    >
+                  </div>
+                  <pre
+                    id="hellopg-output"
+                    style="
+                      background: transparent;
+                      color: #00ff88;
+                      padding: 0.8rem;
+                      margin: 0;
+                      text-align: left;
+                      font-size: 0.85rem;
+                      font-family: 'Courier New', monospace;
+                      min-height: 30px;
+                      white-space: pre-wrap;
+                      word-break: break-word;
+                    "></pre>
+                </div>
+              </div>
             </div>
             <footer>
-              <a href="#" role="button" class="outline">Docker</a>
-              <a href="#" role="button" class="secondary">Deploy</a>
+              <a
+                href="#"
+                role="button"
+                class="outline"
+                onclick="
+                  testHellopg('GET')
+                  return false
+                "
+                >🟢 GET</a
+              >
+              <a
+                href="#"
+                role="button"
+                class="secondary"
+                onclick="
+                  testHellopg('POST')
+                  return false
+                "
+                >🔵 POST</a
+              >
+              <a
+                href="#"
+                role="button"
+                class="contrast"
+                onclick="
+                  testHellopg('PUT')
+                  return false
+                "
+                >🟠 PUT</a
+              >
             </footer>
           </article>
         </div>
-      </div>
-      <!-- API Test Response Area -->
-      <div id="api-test-area" style="display: none; margin-top: 2rem">
-        <article>
-          <header>
-            <h3>📩 API Response</h3>
-          </header>
-          <div style="text-align: left">
-            <p><strong>📍 Request:</strong></p>
-            <pre
-              style="
-                background: #1a1a2e;
-                padding: 1rem;
-                border-radius: 8px;
-                color: #80c080;
-                overflow-x: auto;
-              ">
-curl -X POST https://ftut1.vercel.app/hello</pre
-            >
-            <p><strong>📬 Response:</strong></p>
-            <pre
-              id="api-output"
-              style="
-                background: #1a1a2e;
-                padding: 1rem;
-                border-radius: 8px;
-                color: #9bbdf0;
-                overflow-x: auto;
-                min-height: 80px;
-              ">
-Click "🧪 Test API" to see response...</pre
-            >
-          </div>
-        </article>
       </div>
 
       <!-- Third Section – About / Text -->
       <div class="container section-spacing" id="about">
         <h2 class="section-title">💡 Why This Flask API?</h2>
-
         <div class="text-section">
           <p>
             This API was built with <strong>simplicity</strong> and
