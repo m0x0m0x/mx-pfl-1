@@ -6,6 +6,7 @@
 4. [Regarding params](#regarding-params)
 5. [Active Deployment](#active-deployment)
    1. [Current Endpoint](#current-endpoint)
+   2. [Docs Deployment](#docs-deployment)
 
 # What
 
@@ -18,6 +19,7 @@
 | [`runs.sh`](./runs.sh/) | Logs from runz.sh |
 |    [`logz`](./logz/)    |  Logs from ru.sh  |
 |     [`scr`](./scr/)     |      Scripts      |
+|    [`docs`](./docs/)    |     API Docs      |
 
 # App Summary
 
@@ -60,3 +62,10 @@ https://ftut1.vercel.app/
 ```
 
 - Note just a direct UL
+
+## Docs Deployment
+
+1. The docs are deployed from [`docz/index.html`](./docz/index.html)
+   1. This is a pico.css html which has simple notes about the flask api ur building
+   2. Note it is not for actually testing api output such as fetch etc , that will be done in another place
+   3.
