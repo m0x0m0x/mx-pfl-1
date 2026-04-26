@@ -111,7 +111,7 @@
           <article class="card-custom">
             <header>
               <h3>🗄️ Adding Two Numbers</h3>
-              <span class="endpoint-tag"> /greet/int-num1/int-num2</span>
+              <span class="endpoint-tag"> /add/int-num1/int-num2</span>
             </header>
             <div class="card-body">
               <p>Using Endpoint to add to numbers</p>
@@ -131,50 +131,124 @@
             </footer>
           </article>
 
-          <!-- Card 4: Validation & Docs -->
+          <!-- Card 4: Multiplying Two Numbers -->
           <article class="card-custom">
             <header>
-              <h3>
-                📋 Request Validation
-                <span class="endpoint-tag">Marshmallow</span>
-              </h3>
+              <h3>🗄️ Multiplying (Power)Two Numbers</h3>
+              <span class="endpoint-tag"> /mul/int-num1/int-num2</span>
             </header>
             <div class="card-body">
-              <p>
-                Automatic request/response serialization with detailed error
-                messages. OpenAPI spec generated from schemas.
-              </p>
+              <p>Using Endpoint to Multiply to numbers</p>
               <ul>
-                <li>Input validation</li>
-                <li>Swagger UI ready</li>
-                <li>Custom error formats</li>
+                <li>Adding numbers directly</li>
               </ul>
             </div>
             <footer>
-              <a href="#" role="button" class="outline">Schemas</a>
-              <a href="#" role="button" class="secondary">Swagger</a>
+              <a
+                href="https://ftut1.vercel.app/mul/6/9"
+                role="button"
+                class="outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MulNum</a
+              >
             </footer>
           </article>
 
-          <!-- Card 5: Testing -->
+          <!-- Card 5: Handle Params -->
           <article class="card-custom">
             <header>
-              <h3>🧪 Pytest Coverage</h3>
+              <h3>
+                📋 Handling URl Params
+                <span class="endpoint-tag">/handle_url_params</span>
+              </h3>
             </header>
             <div class="card-body">
-              <p>
-                Comprehensive test suite with fixtures, factories, and isolated
-                test database. 90%+ code coverage maintained.
-              </p>
+              <p>Add params to an empty dict</p>
               <ul>
-                <li>Pytest + factory_boy</li>
-                <li>Test isolation</li>
-                <li>CI/CD ready</li>
+                <li>Adding params to get empty dict</li>
               </ul>
             </div>
             <footer>
-              <a href="#" role="button" class="outline">Tests</a>
-              <a href="#" role="button" class="secondary">Coverage</a>
+              <a
+                href="https://ftut1.vercel.app/handle_url_params?Booty=Snif&&Pussy=Lick"
+                role="button"
+                class="outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >HandleUrlParams</a
+              >
+            </footer>
+          </article>
+
+          <!-- Card 6: Handle Params 2 -->
+          <article class="card-custom">
+            <header>
+              <h3>
+                📋 Handling URl Params with Error
+                <span class="endpoint-tag">/handle_url_params2</span>
+              </h3>
+            </header>
+            <div class="card-body">
+              <p>Add params to an empty dict</p>
+              <ul>
+                <li>Adding params to get empty dict</li>
+                <li>If no params show error</li>
+              </ul>
+            </div>
+            <footer>
+              <a
+                href="https://ftut1.vercel.app/handle_url_params2?name=Bitch&greeting=Pussy"
+                role="button"
+                class="outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >HandleUrlParams2</a
+              >
+            </footer>
+          </article>
+
+          <!-- Card 7: POST Requuest Hello -->
+          <article class="card-custom" id="hello-card">
+            <header>
+              <h3>🧪 POST Request Hello</h3>
+              <span class="endpoint-tag">POST /hello</span>
+            </header>
+            <div class="card-body">
+              <p>POST request to hello endpoint</p>
+              <ul>
+                <li>
+                  Testing from CLI:
+                  <code>curl -X POST https://ftut1.vercel.app/hello</code>
+                </li>
+              </ul>
+              <!-- Response appears here -->
+              <div id="hello-response" style="display: none; margin-top: 1rem">
+                <p style="text-align: left"><strong>📬 Response:</strong></p>
+                <pre
+                  id="hello-output"
+                  style="
+                    background: #1a1a2e;
+                    padding: 0.8rem;
+                    border-radius: 8px;
+                    color: #9bbdf0;
+                    text-align: left;
+                    font-size: 0.9rem;
+                    min-height: 40px;
+                  "></pre>
+              </div>
+            </div>
+            <footer>
+              <a
+                href="#"
+                role="button"
+                class="outline"
+                onclick="
+                  testHelloCard()
+                  return false
+                "
+                >🧪 Test API</a
+              >
             </footer>
           </article>
 
@@ -200,6 +274,40 @@
             </footer>
           </article>
         </div>
+      </div>
+      <!-- API Test Response Area -->
+      <div id="api-test-area" style="display: none; margin-top: 2rem">
+        <article>
+          <header>
+            <h3>📩 API Response</h3>
+          </header>
+          <div style="text-align: left">
+            <p><strong>📍 Request:</strong></p>
+            <pre
+              style="
+                background: #1a1a2e;
+                padding: 1rem;
+                border-radius: 8px;
+                color: #80c080;
+                overflow-x: auto;
+              ">
+curl -X POST https://ftut1.vercel.app/hello</pre
+            >
+            <p><strong>📬 Response:</strong></p>
+            <pre
+              id="api-output"
+              style="
+                background: #1a1a2e;
+                padding: 1rem;
+                border-radius: 8px;
+                color: #9bbdf0;
+                overflow-x: auto;
+                min-height: 80px;
+              ">
+Click "🧪 Test API" to see response...</pre
+            >
+          </div>
+        </article>
       </div>
 
       <!-- Third Section – About / Text -->
@@ -248,10 +356,13 @@
             <a href="#">GitHub</a>
           </div>
           <p class="copyright">
-            © 2026 FlaskAPI · Built with ❤️ using Python & Pico CSS
+            © 2026 FlaskAPI · Built with ❤️ using Python & Pico CSS -
+            LickAssAndPussy
           </p>
         </div>
       </div>
     </footer>
+    <!-- JavaScript -->
+    <script src="pantyscript.js"></script>
   </body>
 </html>
