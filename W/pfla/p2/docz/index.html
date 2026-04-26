@@ -59,74 +59,75 @@
         <h2 class="section-title">📦 Core Features</h2>
 
         <div class="card-grid">
-          <!-- Card 1: Authentication -->
+          <!-- Card 1: Entry point -->
           <article class="card-custom">
             <header>
-              <h3>
-                🔐 JWT Auth <span class="endpoint-tag">POST /auth/login</span>
-              </h3>
+              <h3>🔐 Entry point</h3>
+              <span class="endpoint-tag"> / </span>
             </header>
             <div class="card-body">
-              <p>
-                Secure token-based authentication with access and refresh
-                tokens. Supports role-based permissions and token blacklisting.
-              </p>
+              <p>Default entry point shows message</p>
               <ul>
-                <li>Access token (15min)</li>
-                <li>Refresh token (7 days)</li>
-                <li>Role-based guards</li>
+                <li>Return Statement NO Templates</li>
               </ul>
             </div>
             <footer>
-              <a href="#" role="button" class="outline">Docs</a>
-              <a href="#" role="button" class="secondary">Test</a>
+              <a
+                href="https://ftut1.vercel.app/"
+                role="button"
+                class="outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Vercel Deployed</a
+              >
             </footer>
           </article>
 
-          <!-- Card 2: Users CRUD -->
+          <!-- Card 2: Return Greeting -->
           <article class="card-custom">
             <header>
-              <h3>
-                👥 User Management <span class="endpoint-tag">/api/users</span>
-              </h3>
+              <h3>👥 Return Greeting</h3>
+              <span class="endpoint-tag"> /greet/name</span>
             </header>
             <div class="card-body">
-              <p>
-                Full CRUD operations for user resources with validation,
-                pagination, and filtering. Connected to PostgreSQL via
-                SQLAlchemy.
-              </p>
+              <p>Returns string with name</p>
               <ul>
-                <li>GET, POST, PUT, DELETE</li>
-                <li>Query parameters filtering</li>
-                <li>Pagination support</li>
+                <li>Enter text afer the /</li>
               </ul>
             </div>
             <footer>
-              <a href="#" role="button" class="outline">Schema</a>
-              <a href="#" role="button" class="secondary">Endpoints</a>
+              <a
+                href="https://ftut1.vercel.app/greet/SmellPanty"
+                role="button"
+                class="outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GreetName</a
+              >
             </footer>
           </article>
 
-          <!-- Card 3: Database -->
+          <!-- Card 3: Adding Two Numbers -->
           <article class="card-custom">
             <header>
-              <h3>🗄️ PostgreSQL + SQLAlchemy</h3>
+              <h3>🗄️ Adding Two Numbers</h3>
+              <span class="endpoint-tag"> /greet/int-num1/int-num2</span>
             </header>
             <div class="card-body">
-              <p>
-                Async-ready database layer with migration support (Alembic),
-                connection pooling, and model relationships.
-              </p>
+              <p>Using Endpoint to add to numbers</p>
               <ul>
-                <li>SQLAlchemy 2.0 ORM</li>
-                <li>Alembic migrations</li>
-                <li>Asyncpg support</li>
+                <li>Adding numbers directly</li>
               </ul>
             </div>
             <footer>
-              <a href="#" role="button" class="outline">Models</a>
-              <a href="#" role="button" class="secondary">Migrations</a>
+              <a
+                href="https://ftut1.vercel.app/add/6/9"
+                role="button"
+                class="outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >AddNumbers</a
+              >
             </footer>
           </article>
 
