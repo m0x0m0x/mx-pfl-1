@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask API · Pico CSS Dark</title>
+
+    <!-- Pico CSS latest (v2) from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+
+    <!-- Custom styles for Flask API page - all text centered -->
+    <style>
+      /* Global text centering */
+      body {
+        text-align: center;
+      }
+
+      /* Hero section – clean, no rounded bottom */
+      .hero {
+        background: linear-gradient(
+          135deg,
+          #1a1a2e 0%,
+          #16213e 50%,
+          #0f3460 100%
+        );
+        color: #f0f0f0;
+        padding: 4rem 0;
+        margin-bottom: 2.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .hero h1 {
+        margin-bottom: 0.75rem;
+        font-size: 2.9rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        color: #ffffff;
+      }
+      .hero p {
+        font-size: 1.25rem;
+        opacity: 0.85;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #d0d0e0;
+      }
+      .hero .badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #b0d0ff;
+        padding: 0.35rem 1.2rem;
+        border-radius: 2rem;
+        font-size: 0.9rem;
+        margin-top: 1.2rem;
+        font-weight: 500;
+      }
+
+      /* 2 cards per row */
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.8rem;
+        margin-top: 1rem;
+      }
+      @media (max-width: 768px) {
+        .card-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Card styling - centered text inside */
+      article.card-custom {
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--pico-card-background-color);
+        border: 1px solid var(--pico-card-border-color);
+        text-align: center;
+      }
+      article.card-custom header,
+      article.card-custom .card-body,
+      article.card-custom footer {
+        text-align: center;
+      }
+      article.card-custom ul {
+        display: inline-block;
+        text-align: left;
+        margin: 0 auto;
+        padding-left: 1.2rem;
+      }
+      article.card-custom:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 22px rgba(0, 0, 0, 0.45);
+        border-color: rgba(255, 255, 255, 0.15);
+      }
+      .card-custom .card-body {
+        flex: 1;
+      }
+      .card-custom footer {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card-custom footer a {
+        flex: 1;
+      }
+
+      /* Section heading centered */
+      .section-title {
+        margin-bottom: 1.5rem;
+        font-weight: 600;
+        font-size: 2rem;
+        color: var(--pico-h2-color);
+        text-align: center;
+      }
+      .endpoint-tag {
+        font-family: monospace;
+        font-size: 0.8rem;
+        background: rgba(100, 150, 255, 0.15);
+        color: #9bbdf0;
+        padding: 0.15rem 0.6rem;
+        border-radius: 4px;
+        margin-left: 0.5rem;
+        display: inline-block;
+      }
+
+      /* Center container content */
+      .container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container-fluid" style="padding: 0">
+      <!-- Hero Section – Flask API -->
+      <section class="hero">
+        <div class="container">
+          <h1>🐍 Flask REST API</h1>
+          <p>
+            A production-ready Python Flask API with JWT authentication,
+            PostgreSQL integration, and clean architecture. Built for speed and
+            scalability.
+          </p>
+          <span class="badge">v2.0 · OpenAPI 3.0 documented</span>
+        </div>
+      </section>
+
+      <!-- Cards Section – 2 per row -->
+      <div class="container" id="cards">
+        <h2 class="section-title">📦 Core Features</h2>
+
+        <div class="card-grid">
+          <!-- Card 1: Authentication -->
+          <article class="card-custom">
+            <header>
+              <h3>
+                🔐 JWT Auth <span class="endpoint-tag">POST /auth/login</span>
+              </h3>
+            </header>
+            <div class="card-body">
+              <p>
+                Secure token-based authentication with access and refresh
+                tokens. Supports role-based permissions and token blacklisting.
+              </p>
+              <ul>
+                <li>Access token (15min)</li>
+                <li>Refresh token (7 days)</li>
+                <li>Role-based guards</li>
+              </ul>
+            </div>
+            <footer>
+              <a href="#" role="button" class="outline">Docs</a>
+              <a href="#" role="button" class="secondary">Test</a>
+            </footer>
+          </article>
+
+          <!-- Card 2: Users CRUD -->
+          <article class="card-custom">
+            <header>
+              <h3>
+                👥 User Management <span class="endpoint-tag">/api/users</span>
+              </h3>
+            </header>
+            <div class="card-body">
+              <p>
+                Full CRUD operations for user resources with validation,
+                pagination, and filtering. Connected to PostgreSQL via
+                SQLAlchemy.
+              </p>
+              <ul>
+                <li>GET, POST, PUT, DELETE</li>
+                <li>Query parameters filtering</li>
+                <li>Pagination support</li>
+              </ul>
+            </div>
+            <footer>
+              <a href="#" role="button" class="outline">Schema</a>
+              <a href="#" role="button" class="secondary">Endpoints</a>
+            </footer>
+          </article>
+
+          <!-- Card 3: Database -->
+          <article class="card-custom">
+            <header>
+              <h3>🗄️ PostgreSQL + SQLAlchemy</h3>
+            </header>
+            <div class="card-body">
+              <p>
+                Async-ready database layer with migration support (Alembic),
+                connection pooling, and model relationships.
+              </p>
+              <ul>
+                <li>SQLAlchemy 2.0 ORM</li>
+                <li>Alembic migrations</li>
+                <li>Asyncpg support</li>
+              </ul>
+            </div>
+            <footer>
+              <a href="#" role="button" class="outline">Models</a>
+              <a href="#" role="button" class="secondary">Migrations</a>
+            </footer>
+          </article>
+
+          <!-- Card 4: Validation & Docs -->
+          <article class="card-custom">
+            <header>
+              <h3>
+                📋 Request Validation
+                <span class="endpoint-tag">Marshmallow</span>
+              </h3>
+            </header>
+            <div class="card-body">
+              <p>
+                Automatic request/response serialization with detailed error
+                messages. OpenAPI spec generated from schemas.
+              </p>
+              <ul>
+                <li>Input validation</li>
+                <li>Swagger UI ready</li>
+                <li>Custom error formats</li>
+              </ul>
+            </div>
+            <footer>
+              <a href="#" role="button" class="outline">Schemas</a>
+              <a href="#" role="button" class="secondary">Swagger</a>
+            </footer>
+          </article>
+
+          <!-- Card 5: Testing -->
+          <article class="card-custom">
+            <header>
+              <h3>🧪 Pytest Coverage</h3>
+            </header>
+            <div class="card-body">
+              <p>
+                Comprehensive test suite with fixtures, factories, and isolated
+                test database. 90%+ code coverage maintained.
+              </p>
+              <ul>
+                <li>Pytest + factory_boy</li>
+                <li>Test isolation</li>
+                <li>CI/CD ready</li>
+              </ul>
+            </div>
+            <footer>
+              <a href="#" role="button" class="outline">Tests</a>
+              <a href="#" role="button" class="secondary">Coverage</a>
+            </footer>
+          </article>
+
+          <!-- Card 6: Deployment -->
+          <article class="card-custom">
+            <header>
+              <h3>🚀 Docker & Deploy</h3>
+            </header>
+            <div class="card-body">
+              <p>
+                Containerized with Docker Compose. Ready for Render, Railway, or
+                any cloud platform. Gunicorn + Uvicorn workers.
+              </p>
+              <ul>
+                <li>Dockerfile + compose</li>
+                <li>Environment configs</li>
+                <li>Health check endpoint</li>
+              </ul>
+            </div>
+            <footer>
+              <a href="#" role="button" class="outline">Docker</a>
+              <a href="#" role="button" class="secondary">Deploy</a>
+            </footer>
+          </article>
+        </div>
+
+        <div style="height: 3rem"></div>
+      </div>
+    </main>
+  </body>
+</html>
