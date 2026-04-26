@@ -58,10 +58,17 @@ Fuck, Mike!
 ## Current Endpoint
 
 ```sh
+
+# DP -Docs Deployment
+https://pfla-pr-docz.vercel.app/
+
+# Ep - Actual EP deployment
 https://ftut1.vercel.app/
 ```
 
 - Note just a direct UL
+- Note the AP gets interactions from the DP
+- Interactions directly in JS since HTMX was givin you problems
 
 ## Docs Deployment
 
