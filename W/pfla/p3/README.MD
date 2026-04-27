@@ -10,10 +10,9 @@
 
 # Dirz
 
-|       Dir       |            What            |
-| :-------------: | :------------------------: |
-|  [`sc`](./sc/)  |     Execution Scripts      |
-|  [`do`](./do/)  |         HTML Docs          |
-| [`pyz`](./pyz/) | Actual Python Project Here |
+|      Dir      |       What        |
+| :-----------: | :---------------: |
+| [`sc`](./sc/) | Execution Scripts |
+| [`do`](./do/) |     HTML Docs     |
 
 # Deployed
