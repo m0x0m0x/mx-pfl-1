@@ -1,0 +1,10 @@
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run ./pyz/app.py ---
+Hello from pyz!
+
+
+
