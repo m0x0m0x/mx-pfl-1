@@ -16,3 +16,7 @@
 | [`do`](./do/) |     HTML Docs     |
 
 # Deployed
+
+|                                      What                                      |    Explain     |
+| :----------------------------------------------------------------------------: | :------------: |
+| [`https://mx-pfl-1-pfla-p3.vercel.app/`](https://mx-pfl-1-pfla-p3.vercel.app/) | Flask Endpoint |

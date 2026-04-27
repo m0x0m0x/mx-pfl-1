@@ -47,7 +47,7 @@ body {
 
 /* Hero section */
 .hero {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background: linear-gradient(125deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: #f0f0f0;
   padding: 4rem 0;
   margin-bottom: 2.5rem;
