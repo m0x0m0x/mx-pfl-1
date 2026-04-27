@@ -8,3 +8,48 @@ Hello from pyz!
 
 
 
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run ./pyz/app.py ---
+Traceback (most recent call last):
+  File "/workspaces/mx-pfl-1/W/pfla/p3/./pyz/app.py", line 6, in <module>
+    from flask import Flask
+ModuleNotFoundError: No module named 'flask'
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run ./pyz/app.py ---
+Traceback (most recent call last):
+  File "/workspaces/mx-pfl-1/W/pfla/p3/./pyz/app.py", line 6, in <module>
+    from flask import Flask
+ModuleNotFoundError: No module named 'flask'
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run ./pyz/app.py ---
+error: Failed to spawn: `./pyz/app.py`
+  Caused by: No such file or directory (os error 2)
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+UV Setup 1 with FastAPI$
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- Executing uv run app.py ---
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.5.195:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 755-622-451
+127.0.0.1 - - [27/Apr/2026 10:12:56] "GET / HTTP/1.1" 200 -

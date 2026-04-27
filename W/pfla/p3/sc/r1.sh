@@ -34,7 +34,7 @@ uv_s1() {
 	hea1 "UV Setup 1 with FastAPI"
 
 	# UC Commands
-	CO1="uv run ./pyz/app.py"
+	CO1="uv run app.py"
 
 	## RUN Above Commands
 	echo -e "--- Executing ${CO1} ---"
