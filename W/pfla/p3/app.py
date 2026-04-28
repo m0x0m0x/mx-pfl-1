@@ -48,6 +48,21 @@ def filter1():
     some_text = "Sniff Her Ass"
     return render_template('filter.html', some_text=some_text)
 
+# These are customn filters
+# Reverse String
+
+
+@app.template_filter('reverse_string')
+def reverse_string(a):
+    return a[::-1]
+
+# Repeat Letters
+
+
+@app.template_filter('repeat')
+def repeat(b, times=2):
+    return b * times
+
 
 if __name__ == '__main__':
     app.run(
