@@ -3,19 +3,23 @@
 # -------------------
 
 # --- Imports ---
-from flask import Flask
+from flask import Flask, render_template
 from flask_cors import CORS
 
 # --- Main Code ---
-app = Flask(__name__)
+app = Flask(__name__, template_folder='tempz')
 CORS(app)
 
 # --- Execution Function ---
 
+# Index Ropute is rendering the file index.html from ./tempz folder
+
 
 @app.route("/")
 def index():
-    return "Booty Scents"
+    myValue = 'Booty Smeller'  # Varaible Being Called in HTML
+    myResult = 10 + 30  # Variable being called in HTML
+    return render_template('index.html', myResult=myResult, myValue=myValue)
 
 
 if __name__ == '__main__':

@@ -10,10 +10,11 @@
 
 # Dirz
 
-|      Dir      |       What        |
-| :-----------: | :---------------: |
-| [`sc`](./sc/) | Execution Scripts |
-| [`do`](./do/) |     HTML Docs     |
+|         Dir         |         What         |
+| :-----------------: | :------------------: |
+|    [`sc`](./sc/)    |  Execution Scripts   |
+|    [`do`](./do/)    |      HTML Docs       |
+| [`tempz`](./tempz/) | HTML Template Folder |
 
 # Deployed
 
