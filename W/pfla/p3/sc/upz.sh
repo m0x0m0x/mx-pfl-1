@@ -37,10 +37,10 @@ up_1() {
 		"../../../g"
 
 		# docs vercel prod
-		"cd doc && vercel --prod"
+		"pwd && cd doc && vercel --prod"
 
 		# Then Main app upload which is on root
-		"vercel --prod"
+		"pwd && vercel --prod"
 
 	)
 
