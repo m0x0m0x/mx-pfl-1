@@ -4,9 +4,11 @@
 
 # --- Imports ---
 from flask import Flask
+from flask_cors import CORS
 
 # --- Main Code ---
 app = Flask(__name__)
+CORS(app)
 
 # --- Execution Function ---
 
