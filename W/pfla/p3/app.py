@@ -19,7 +19,8 @@ CORS(app)
 def index():
     myValue = 'Booty Smeller'  # Varaible Being Called in HTML
     myResult = 10 + 30  # Variable being called in HTML
-    return render_template('index.html', myResult=myResult, myValue=myValue)
+    mylist = [10, 20, 30, 24]
+    return render_template('index.html', myResult=myResult, myValue=myValue, mylist=mylist)
 
 
 if __name__ == '__main__':
