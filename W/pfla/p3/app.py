@@ -28,6 +28,17 @@ def index():
     return render_template('index.html', myResult=myResult, myValue=myValue, mylist=mylist, mylist2=mylist2)
 
 
+@app.route("/i2")
+def i2():
+    # Variabeles for jinja templating
+    myValue = 'Booty Smeller'  # Varaible Being Called in HTML
+    myResult = 10 + 30  # Variable being called in HTML
+    mylist = [10, 20, 30, 24]
+    mylist2 = [random.randint(1, 100) for _ in range(10)]
+
+    return render_template('i2.html', myResult=myResult, myValue=myValue, mylist=mylist, mylist2=mylist2)
+
+
 if __name__ == '__main__':
     app.run(
         host='0.0.0.0',
