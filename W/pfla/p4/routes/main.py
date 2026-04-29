@@ -9,5 +9,5 @@ def home():
 
 
 @bp.route('/other')
-def about():
-    return "panty"
+def other():
+    return render_template('other.html')

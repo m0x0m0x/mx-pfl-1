@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %} IndexRoute {% endblock %}</title>
+    <title>{% block title %}Flask Study{% endblock %}</title>
 
-    <!-- Google Font: Orbitron -->
+    <!-- Google Font: Quantico -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.lime.min.css" />
 
-    <!-- Apply Orbitron font -->
     <style>
       body,
       button,
@@ -31,8 +30,8 @@
         background: linear-gradient(
           135deg,
           #ff0000 0%,
-          /* Green */ #0000ff 17%,
-          /* Indigo */ #9400d3 100% /* Violet */
+          #0000ff 17%,
+          #9400d3 100%
         );
         -webkit-background-clip: text;
         background-clip: text;
@@ -47,26 +46,44 @@
         border-radius: 4px;
         display: inline-block;
       }
-
-      .terminal-red {
-        color: #ff2600e0;
-        background-color: rgba(0, 0, 0, 0.7);
-        text-shadow: 0 0 5px #0f0;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        display: inline-block;
-      }
     </style>
   </head>
-  <body
-    style="
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-    "
-    class="pico-theme-jade">
-    {% block content %} {% endblock %}
+  <body>
+    <!-- PicoCSS Navigation -->
+    {#
+    <nav class="container">
+      <ul>
+        <li><strong>Flask Study</strong></li>
+      </ul>
+      <ul>
+        <li><a href="{{ url_for('main.home') }}" role="button">Home</a></li>
+        <li><a href="{{ url_for('main.other') }}" role="button">/other</a></li>
+      </ul>
+    </nav>
+    #}
+    <nav class="container" style="padding: 1rem; margin-bottom: 2rem">
+      <ul>
+        <li><strong>My Flask App</strong></li>
+      </ul>
+      <ul>
+        <li>
+          <a
+            href="{{ url_for('main.home') }}"
+            class="{% if request.endpoint == 'main.home' %}secondary{% else %}contrast{% endif %}">
+            🏠 Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="{{ url_for('main.other') }}"
+            class="{% if request.endpoint == 'main.contact' %}secondary{% else %}contrast{% endif %}">
+            📝 /other
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">{% block content %}{% endblock %}</main>
   </body>
 </html>
