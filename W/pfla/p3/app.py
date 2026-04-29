@@ -78,7 +78,7 @@ def other():
     return render_template('other.html')
 
 
-# Redirect
+# Redirecting to Endpoints
 
 
 @app.route('/redirect_ep')
