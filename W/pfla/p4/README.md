@@ -6,7 +6,9 @@
 
 # What
 
-1. This version if
+1. This proejct is for testing forms
+2. The project is structured for isolating `routes` using `blueprint` a feature of flask
+3. Strucuture is little complicated
 
 # Dirz
 
@@ -18,7 +20,10 @@
 
 # Deployed
 
-|                                      What                                      |    Explain     |
-| :----------------------------------------------------------------------------: | :------------: |
-| [`https://mx-pfl-1-pfla-p3.vercel.app/`](https://mx-pfl-1-pfla-p3.vercel.app/) | Flask Endpoint |
-|  [`https://mx-pfla-p4-docz.vercel.app/`](https://mx-pfla-p4-docz.vercel.app/)  |      Docs      |
+|                                     What                                     |    Explain     |
+| :--------------------------------------------------------------------------: | :------------: |
+|  [`https://mx-pfla-p4-api.vercel.app/`](https://mx-pfla-p4-api.vercel.app/)  | Flask Endpoint |
+| [`https://mx-pfla-p4-docz.vercel.app/`](https://mx-pfla-p4-docz.vercel.app/) |      Docs      |
+
+- Notice the naming convention
+- `https://mx-pfla-p4-XXX.vercel.app` - `XXX` defines whether it is app or docs

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IndexRoute</title>
+    <title>Indexpanty</title>
 
     <!-- Google Font: Orbitron -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -47,7 +47,7 @@
         border-radius: 4px;
         display: inline-block;
       }
-      
+
       .terminal-red {
         color: #ff2600e0;
         background-color: rgba(0, 0, 0, 0.7);
@@ -73,40 +73,11 @@
         Note the values below are dynamically passed from the flask app, it is
         terminal green bg
       </p>
-      <article>
-        <p class="terminal-green">myResult: {{ myResult }}</p>
-        <p class="terminal-green">myValue: {{ myValue }}</p>
-        <p class="terminal-green">myList: {{ mylist }}</p>
-      </article>
+
       <button onclick="window.open('https://tinyurl.com/2usd6fpd', '_blank')">
         BootySmell
       </button>
 
-      <div>
-        <article>
-          <p><strong>Ordered List</strong></p>
-          <p>The list items in your list termed <code>mylist</code></p>
-          <ul>
-            {% for item in mylist %}
-            <li class="terminal-green">{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </article>
-
-      <div>
-        <article>
-          <p><strong>Ordered List With Conditions</strong></p>
-          <p>The list items in your list termed <code>mylist2</code></p>
-          <ul>
-            {% for item in mylist2 %}
-              {% if item <= 20 %}
-              <li class="terminal-red">{{ item }}</li>
-              {% endif %}
-              <li class="terminal-green">{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </article>
-      </div>
       <!-- Below are tags for the main body, everything must be above -->
     </main>
   </body>
