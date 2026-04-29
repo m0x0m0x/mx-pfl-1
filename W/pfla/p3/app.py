@@ -5,7 +5,7 @@
 # --- Imports ---
 import random
 
-from flask import Flask, render_template
+from flask import Flask, redirect, render_template, url_for
 from flask_cors import CORS
 
 # --- Main Code ---
@@ -69,6 +69,21 @@ def repeat(b, times=2):
 @app.template_filter('alt_case')
 def alt_case(s):
     return ''.join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(s)])
+
+# Other endpoint
+
+
+@app.route('/other')
+def other():
+    return render_template('other.html')
+
+
+# Redirect
+
+
+@app.route('/redirect_ep')
+def redirectep():
+    return redirect(url_for('other'))
 
 
 # --- Main App Run ---
