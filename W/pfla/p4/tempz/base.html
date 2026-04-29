@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} IndexRoute {% endblock %}</title>
+
+    <!-- Google Font: Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+
+    <!-- PicoCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css" />
+
+    <!-- Apply Orbitron font -->
+    <style>
+      body,
+      button,
+      input,
+      h1,
+      textarea {
+        font-family: 'Quantico', monospace;
+      }
+
+      h1 {
+        background: linear-gradient(
+          135deg,
+          #ff0000 0%,
+          /* Green */ #0000ff 17%,
+          /* Indigo */ #9400d3 100% /* Violet */
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .terminal-green {
+        color: #0f0;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-shadow: 0 0 5px #0f0;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        display: inline-block;
+      }
+
+      .terminal-red {
+        color: #ff2600e0;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-shadow: 0 0 5px #0f0;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    "
+    class="pico-theme-jade">
+    {% block content %} {% endblock %}
+  </body>
+</html>

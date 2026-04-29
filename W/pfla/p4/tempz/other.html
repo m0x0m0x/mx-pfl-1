@@ -1,0 +1,25 @@
+{% extends "base.html"%} {% block title %}Other-Redirect{%endblock%} {% block content %}
+
+<main class="container" style="text-align: center">
+  <h1>ROUTE = <code> Other.html - /other </code></h1>
+  <p>EndPoint Made for redirection</p>
+
+  <article>
+    other.html - Reached this enpoint after being redirected from
+    <code>/redirect_ep</code>
+  </article>
+
+  <!-- GIF here -->
+  <div>
+    <img
+      src="https://i.giphy.com/hbVpVolxsa162Jj0Ka.webp"
+      alt="Cool GIF"
+      style="margin: 1rem 0; max-width: 100%; border-radius: 8px" />
+
+    <button onclick="window.open('https://tinyurl.com/2usd6fpd', '_blank')">
+      BootySmell
+    </button>
+  </div>
+</main>
+
+{% endblock %}

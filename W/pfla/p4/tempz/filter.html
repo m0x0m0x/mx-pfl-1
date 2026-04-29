@@ -1,0 +1,40 @@
+{% extends "base.html"%} {% block title %}Filter{%endblock%} {% block content %}
+
+<main class="container" style="text-align: center">
+  <h1>ROUTE = <code> filter.html - /f1 </code></h1>
+  <p>Filter In Jinja</p>
+  
+  <!-- Note - the text between is  asdasd-->
+  <article>
+  <p>The following are filter operations on the variable <code>some_text</code>  </p>
+  <div>
+    <p class="terminal-green">normal = {{ some_text  }}</p>
+  </div>
+  <div>
+    <p class="terminal-green">Filter to uppercase = {{ some_text | upper }}</p>
+  </div>
+  <div>
+    <p class="terminal-green">Filter to LowerCase = {{ some_text | lower }}</p>
+  </div>
+  <div>
+    <p class="terminal-green">Replacing Characater = {{ some_text | replace('S', 'k') }}</p>
+  </div>
+  <div>
+    <p class="terminal-green">Reverse A String = {{ some_text | reverse_string }}</p>
+  </div>
+  <div>
+    <p class="terminal-green">Repeat String = {{ some_text | repeat }}</p>
+  </div>
+  <div>
+    <p class="terminal-green">Alter Case = {{ some_text | alt_case }}</p>
+  </div>
+
+  </article>
+
+  <button onclick="window.open('https://tinyurl.com/2usd6fpd', '_blank')">
+    BootySmell
+  </button>
+
+    {% endblock %}
+  </div>
+</main>

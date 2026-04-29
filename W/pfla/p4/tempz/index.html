@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IndexRoute</title>
+
+    <!-- Google Font: Orbitron -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+
+    <!-- PicoCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.jade.min.css" />
+
+    <!-- Apply Orbitron font -->
+    <style>
+      body,
+      button,
+      input,
+      h1,
+      textarea {
+        font-family: 'Quantico', monospace;
+      }
+
+      h1 {
+        background: linear-gradient(
+          135deg,
+          #ff0000 0%,
+          /* Green */ #0000ff 17%,
+          /* Indigo */ #9400d3 100% /* Violet */
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .terminal-green {
+        color: #0f0;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-shadow: 0 0 5px #0f0;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        display: inline-block;
+      }
+      
+      .terminal-red {
+        color: #ff2600e0;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-shadow: 0 0 5px #0f0;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    "
+    class="pico-theme-jade">
+    <main class="container" style="text-align: center">
+      <h1>ROUTE = <code>index.html</code></h1>
+      <p>
+        Note the values below are dynamically passed from the flask app, it is
+        terminal green bg
+      </p>
+      <article>
+        <p class="terminal-green">myResult: {{ myResult }}</p>
+        <p class="terminal-green">myValue: {{ myValue }}</p>
+        <p class="terminal-green">myList: {{ mylist }}</p>
+      </article>
+      <button onclick="window.open('https://tinyurl.com/2usd6fpd', '_blank')">
+        BootySmell
+      </button>
+
+      <div>
+        <article>
+          <p><strong>Ordered List</strong></p>
+          <p>The list items in your list termed <code>mylist</code></p>
+          <ul>
+            {% for item in mylist %}
+            <li class="terminal-green">{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </article>
+
+      <div>
+        <article>
+          <p><strong>Ordered List With Conditions</strong></p>
+          <p>The list items in your list termed <code>mylist2</code></p>
+          <ul>
+            {% for item in mylist2 %}
+              {% if item <= 20 %}
+              <li class="terminal-red">{{ item }}</li>
+              {% endif %}
+              <li class="terminal-green">{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </article>
+      </div>
+      <!-- Below are tags for the main body, everything must be above -->
+    </main>
+  </body>
+</html>
