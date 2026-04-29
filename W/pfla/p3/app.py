@@ -63,7 +63,15 @@ def reverse_string(a):
 def repeat(b, times=2):
     return b * times
 
+# Alternate Case
 
+
+@app.template_filter('alt_case')
+def alt_case(s):
+    return ''.join([c.upper() if i % 2 == 0 else c.lower() for i, c in enumerate(s)])
+
+
+# --- Main App Run ---
 if __name__ == '__main__':
     app.run(
         host='0.0.0.0',
