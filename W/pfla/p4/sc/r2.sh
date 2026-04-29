@@ -28,21 +28,30 @@ hea1() {
 	echo -e "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 }
 
-# UV Setup
+# Oneoff Coommands
 
-uv_s1() {
-	hea1 "UV Setup 1 with FastAPI"
+oneOFF() {
 
-	# UC Commands
-	CO1="uv run app.py"
+	declare -a CMD=(
 
-	## RUN Above Commands
-	echo -e "--- Executing ${CO1} ---"
-	eval "$CO1"
-	echo -e ""
-	echo -e ""
-	echo -e ""
+		#0 -  View all routes
+		"uv run flask routes"
 
+	)
+
+	CMDEXEC="${CMD[0]}"
+	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
+	echo -e "${BBLUE} · · ────── One OFf Commands ────── · ·"
+	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
+	date
+	echo -e "Executing:${BMAGENTA}\n${CMDEXEC}\n${RESET}"
+	echo -e "///////////"
+	eval "${CMDEXEC}"
+	echo -e "\n///////////"
+	echo -e "${BGREEN}\nDone!"
+	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
+	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
+	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
 }
 
 # Sending Curl requests to the Flask Endpoint for testing
@@ -161,8 +170,8 @@ se_cu_lo() {
 
 # --- Execution ---
 panty() {
-	# uv_s1 2>&1 | tee -a scr/logz/runz.sh.txt
-	sendCurl 2>&1 | tee -a scr/logz/runz.sh.txt
-	# se_cu_lo 2>&1 | tee -a scr/logz/runz.sh.txt
+	oneOFF 2>&1 | tee -a scr/logz/r2.sh.txt
+	# sendCurl 2>&1 | tee -a scr/logz/r2.sh.txt
+	# se_cu_lo 2>&1 | tee -a scr/logz/r2.sh.txt
 }
 panty
