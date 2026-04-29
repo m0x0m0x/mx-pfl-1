@@ -1,13 +1,13 @@
 from flask import render_template
 
-from routes import bp  # Import the blueprint from __init__
+from routes import bp
 
 
 @bp.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 
-@bp.route('/about')
+@bp.route('/other')
 def about():
-    return render_template('about.html')
+    return "panty"

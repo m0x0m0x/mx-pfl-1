@@ -9,7 +9,8 @@ from flask import Flask
 from routes import bp  # Import the blueprint
 
 # --- App Execution ---
-app = Flask(__name__)
+app = Flask(__name__, template_folder='tempz')
+
 # Register the blueprint
 app.register_blueprint(bp)
 
