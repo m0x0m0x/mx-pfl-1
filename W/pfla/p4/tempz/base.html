@@ -84,7 +84,7 @@
         <li>
           <a
             href="{{ url_for('main.other') }}"
-            class="{% if request.endpoint == 'main.contact' %}secondary{% else %}contrast{% endif %}">
+            class="{% if request.endpoint == 'main.other' %}secondary{% else %}contrast{% endif %}">
             📝 /other
           </a>
         </li>
@@ -93,6 +93,13 @@
             href="{{ url_for('posts.posts') }}"
             class="{% if request.endpoint == 'posts.posts' %}secondary{% else %}contrast{% endif %}">
             📝 /posts
+          </a>
+        </li>
+        <li>
+          <a
+            href="{{ url_for('main.f1') }}"
+            class="{% if request.endpoint == 'main.f1' %}secondary{% else %}contrast{% endif %}">
+            📝 /f1
           </a>
         </li>
       </ul>

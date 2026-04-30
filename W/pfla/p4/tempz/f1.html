@@ -1,11 +1,23 @@
-{% extends "base.html" %} {% block title %}Posts{% endblock %} {% block
+{% extends "base.html" %} {% block title %}f1- Forms{% endblock %} {% block
 content%}
 
 <div style="text-align: center">
-  <h1>ROUTE = <code>posts.html</code></h1>
+  <h1>ROUTE = <code>f1.html</code></h1>
 
-  <p class="terminal-green">Posts Html</p>
-  <p>This page corresponds to function in <code>routes/posts.py</code></p>
+  <p class="terminal-green">f1.html</p>
+
+  <p>This page corresponds to function in <code>routes/main.py</code></p>
+
+  <div>
+    <article style="display: inline-block; width: auto; text-align: center">
+      <h3>Form Test from main.py</h3>
+      <form method="POST" action="{{ url_for('main.f1') }}">
+        <input type="text" name="username" placeholder="PantyName" />
+        <input type="password" name="password" placeholder="PantyPass" />
+        <input type="submit" value="login" />
+      </form>
+    </article>
+  </div>
 
   <button onclick="window.open('https://tinyurl.com/2usd6fpd', '_blank')">
     BootySmell

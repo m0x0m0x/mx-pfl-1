@@ -23,6 +23,6 @@ def f1():
     if request.method == 'GET':
         return render_template('f1.html')
     elif request.method == 'POST':
-        return ""
+        return "Smell Booty"
 
     return render_template('f1.html')
