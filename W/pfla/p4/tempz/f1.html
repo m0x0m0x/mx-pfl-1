@@ -6,13 +6,15 @@ content%}
 
   <p class="terminal-green">f1.html</p>
 
-  <p>This page corresponds to function in <code>routes/main.py</code></p>
+  <p>This page corresponds to function in <code>routes/posts.py</code></p>
 
   <div>
     <article style="display: inline-block; width: auto; text-align: center">
-      <h3>Form Test from main.py</h3>
-      <form method="POST" action="{{ url_for('main.f1') }}">
+      <h3 style="color: oklch(76.8% 0.233 130.85)">Form Test from posts.py</h3>
+      <form method="POST" action="{{ url_for('posts.f1') }}">
+        Enter some panty text
         <input type="text" name="username" placeholder="PantyName" />
+        Entery password to smell panty
         <input type="password" name="password" placeholder="PantyPass" />
         <input type="submit" value="login" />
       </form>
