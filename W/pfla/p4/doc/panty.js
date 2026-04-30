@@ -1,4 +1,8 @@
-// For Card 7 - POST /hello
+// -------------------------------------------------------
+// NOte these are needed when doing interactions with the api
+// Then these functions will become useful
+// -------------------------------------------------------
+
 async function testHelloCard() {
   const responseDiv = document.getElementById('hello-response')
   const output = document.getElementById('hello-output')
