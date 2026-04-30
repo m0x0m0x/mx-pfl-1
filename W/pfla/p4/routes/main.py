@@ -1,6 +1,13 @@
+# ----------------------------------
+# Routes here will be imported in __init__.py , which is being imported via blueprints into app.py
+# ----------------------------------
+
+# -- Imports ---
 from flask import render_template
 
 from routes import bp
+
+# --- Routes ---
 
 
 @bp.route('/')
