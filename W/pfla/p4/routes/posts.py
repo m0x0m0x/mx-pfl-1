@@ -1,3 +1,6 @@
+# -----------------------------------
+# This file has routes of posts - was made for testing the project structure for multiple files
+# -----------------------------------
 
 from flask import Blueprint, render_template
 
