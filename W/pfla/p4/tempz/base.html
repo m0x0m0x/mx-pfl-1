@@ -17,6 +17,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.lime.min.css" />
 
+    <!-- Open Graph Image -->
+    <meta property="og:image" content="https://i.ibb.co/hxBT104f/image.png" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://i.ibb.co/1fxXrKxy/image.png"
+      type="image/png" />
+
     <style>
       body,
       button,
@@ -78,6 +86,13 @@
             href="{{ url_for('main.other') }}"
             class="{% if request.endpoint == 'main.contact' %}secondary{% else %}contrast{% endif %}">
             📝 /other
+          </a>
+        </li>
+        <li>
+          <a
+            href="{{ url_for('posts.posts') }}"
+            class="{% if request.endpoint == 'posts.posts' %}secondary{% else %}contrast{% endif %}">
+            📝 /posts
           </a>
         </li>
       </ul>
