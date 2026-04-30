@@ -4,12 +4,15 @@
 # -----------------------------
 
 # --- Imports---
+import secrets
+
 from flask import Flask
 
 from routes import main_bp, posts_bp
 
 # --- Setup Flask App ---
 app = Flask(__name__, template_folder='tempz')
+app.secret_key = secrets.token_hex(16)
 
 # --- Register Blueprints
 app.register_blueprint(main_bp)

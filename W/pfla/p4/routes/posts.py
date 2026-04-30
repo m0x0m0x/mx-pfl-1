@@ -2,7 +2,7 @@
 # This file has routes of posts - was made for testing the project structure for multiple files
 # -----------------------------------
 
-from flask import Blueprint, flash, render_template, request
+from flask import Blueprint, render_template, request
 
 posts_bp = Blueprint('posts', __name__)
 
@@ -17,15 +17,15 @@ def posts():
 
 @posts_bp.route('/f1', methods=['GET', 'POST'])
 def f1():
-    if request.method == 'GET':
-        return render_template('f1.html')
-    elif request.method == 'POST':
+    message = None  # Simple variable instead of flash
+
+    if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
 
         if username == 'pantysmeller' and password == 'sniff':
-            return flash('Login Successful! , Welcome Stink Lover!')
+            message = 'Login Successful! Welcome Stink Lover!'
         else:
-            return flash('Login Failed! , Fuckk Off')
+            message = 'FuckOff Bastards.'
 
-    return render_template('f1.html')
+    return render_template('f1.html', message=message)
