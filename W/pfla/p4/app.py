@@ -3,18 +3,18 @@
 # Note - This project will also be organized
 # -----------------------------
 
-# -- Imports ---
+# --- Imports---
 from flask import Flask
 
-from routes import bp  # Import the blueprint
+from routes import main_bp, posts_bp
 
-# --- App Execution ---
+# --- Setup Flask App ---
 app = Flask(__name__, template_folder='tempz')
 
-# Register the blueprint
-app.register_blueprint(bp)
+# --- Register Blueprints
+app.register_blueprint(main_bp)
+app.register_blueprint(posts_bp)
 
-# --- logic ---
 
 # --- init ---
 if __name__ == '__main__':

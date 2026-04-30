@@ -1,7 +1,5 @@
-from routes import main
-from flask import Blueprint
+# Just collect and export all blueprints
+from .main import main_bp
+from .posts import posts_bp
 
-# Create main blueprint
-bp = Blueprint('main', __name__)
-
-# Import routes (must be at bottom to avoid circular imports)
+__all__ = ['main_bp', 'posts_bp']
