@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Pico CSS | Distinct Hero & Action Cards</title>
+    <!-- Pico CSS (Latest v2) - Minimal, semantic, elegant -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <style>
+      /* ========== CUSTOM ENHANCEMENTS ========== */
+      :root {
+        --hero-overlay-gradient: linear-gradient(
+          135deg,
+          rgba(0, 20, 40, 0.7),
+          rgba(30, 10, 40, 0.6)
+        );
+      }
+
+      /* Distinct Hero - full width with bold background, layered styling */
+      .distinct-hero {
+        position: relative;
+        background: linear-gradient(125deg, #0a192f 0%, #1e2a3e 100%);
+        border-radius: 1.5rem;
+        margin: 1.5rem 0 2rem 0;
+        padding: 3rem 2rem;
+        overflow: hidden;
+        box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Animated accent element for extra flair */
+      .distinct-hero::before {
+        content: '';
+        position: absolute;
+        top: -30%;
+        right: -20%;
+        width: 280px;
+        height: 280px;
+        background: radial-gradient(
+          circle,
+          rgba(0, 200, 255, 0.2),
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .distinct-hero::after {
+        content: '';
+        position: absolute;
+        bottom: -20%;
+        left: -10%;
+        width: 240px;
+        height: 240px;
+        background: radial-gradient(
+          circle,
+          rgba(210, 70, 255, 0.18),
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      /* Hero content styling - modern, elevated */
+      .hero-content-wrapper {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        backdrop-filter: blur(2px);
+      }
+
+      .distinct-hero h1 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        background: linear-gradient(135deg, #fff, #b3e5ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 0.75rem;
+      }
+
+      .distinct-hero .hero-lead {
+        font-size: 1.25rem;
+        color: rgba(255, 255, 245, 0.92);
+        margin-bottom: 1.5rem;
+        font-weight: 450;
+      }
+
+      .hero-badge {
+        display: inline-block;
+        background: rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(4px);
+        padding: 0.3rem 1rem;
+        border-radius: 40px;
+        font-size: 0.8rem;
+        letter-spacing: 0.3px;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+      }
+
+      .button-group-hero {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 0.8rem;
+      }
+
+      /* Card grid: consistent card layout with nice hover */
+      .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.8rem;
+        margin: 1.5rem 0 1rem;
+      }
+
+      .card-grid article {
+        flex: 1 1 280px;
+        display: flex;
+        flex-direction: column;
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+        border-radius: 1rem;
+        background: var(--pico-card-background-color);
+        border: 1px solid var(--pico-card-border-color);
+      }
+
+      .card-grid article:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 28px -12px rgba(0, 0, 0, 0.2);
+        border-color: var(--pico-primary-focus);
+      }
+
+      /* ensure card content uses full height for footer alignment */
+      .card-grid article > * {
+        flex: initial;
+      }
+
+      .card-grid article footer {
+        margin-top: auto;
+        border-top: none;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      /* Card icon style */
+      .card-icon {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        margin-bottom: 0.25rem;
+        display: inline-block;
+      }
+
+      /* Custom button spacing inside cards - make them consistent */
+      .card-buttons {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+      }
+
+      .card-buttons a {
+        margin-bottom: 0;
+      }
+
+      /* Additional section styling */
+      .section-title {
+        margin-top: 2rem;
+      }
+
+      footer.app-footer {
+        margin-top: 3.5rem;
+        text-align: center;
+        border-top: 1px solid var(--pico-muted-border-color);
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      /* remove default nav margins if any, because nav element is omitted */
+      body > main.container {
+        padding-top: 0.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .distinct-hero h1 {
+          font-size: 2.2rem;
+        }
+        .distinct-hero {
+          padding: 2rem 1rem;
+        }
+        .hero-lead {
+          font-size: 1rem;
+        }
+      }
+
+      /* extra micro-interaction for buttons */
+      a[role='button'] {
+        transition: all 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <!-- ========== DISTINCT / ENHANCED HERO (no nav, more distinctive) ========== -->
+      <div class="distinct-hero">
+        <div class="hero-content-wrapper">
+          <div class="hero-badge">✨ Pico CSS v2 • Modern & Semantic</div>
+          <h1>Craft interfaces with<br />unmatched elegance</h1>
+          <p class="hero-lead">
+            Lightweight, classless, yet fully customizable.
+            <strong>Pico CSS</strong> brings design harmony without the bloat.
+            Build faster with responsive grids, beautiful cards, and native dark
+            mode.
+          </p>
+          <div class="button-group-hero">
+            <a
+              href="#"
+              role="button"
+              class="contrast"
+              style="
+                background: white;
+                color: #0a192f;
+                border-color: white;
+                font-weight: 600;
+              "
+              >Get Started →</a
+            >
+            <a
+              href="#"
+              role="button"
+              class="outline"
+              style="border-color: rgba(255, 255, 255, 0.6); color: white"
+              >Documentation</a
+            >
+          </div>
+          <small style="display: inline-block; margin-top: 1.2rem; opacity: 0.8"
+            >⭐ No JavaScript required • Accessible by design</small
+          >
+        </div>
+      </div>
+
+      <!-- ========== CARDS SECTION WITH BUTTONS ========== -->
+      <hgroup class="section-title">
+        <h2>Why developers choose Pico</h2>
+        <p>
+          Feature-rich cards with interactive actions — each card includes
+          call-to-action buttons
+        </p>
+      </hgroup>
+
+      <div class="card-grid">
+        <!-- Card 1 : theming + buttons -->
+        <article>
+          <header>
+            <span class="card-icon">🎨</span>
+            <h3>Adaptive theming</h3>
+          </header>
+          <p>
+            Automatic dark/light mode based on user preference. Customize
+            colors, spacing, and radii via CSS variables. Puts design control in
+            your hands.
+          </p>
+          <footer>
+            <div class="card-buttons">
+              <a href="#" role="button" class="primary">Preview Theme</a>
+              <a href="#" role="button" class="secondary outline">Customize</a>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Card 2 : responsive grid -->
+        <article>
+          <header>
+            <span class="card-icon">📱⚡</span>
+            <h3>Fully Responsive</h3>
+          </header>
+          <p>
+            Fluid grid and typography scaling across all devices. Mobile-first
+            approach with no extra work. Your layout looks crisp on iphone,
+            tablet, and 4K screens.
+          </p>
+          <footer>
+            <div class="card-buttons">
+              <a href="#" role="button" class="primary">Live demo</a>
+              <a href="#" role="button" class="secondary outline"
+                >Grid system</a
+              >
+            </div>
+          </footer>
+        </article>
+
+        <!-- Card 3 : components & forms -->
+        <article>
+          <header>
+            <span class="card-icon">🧩</span>
+            <h3>Rich Components</h3>
+          </header>
+          <p>
+            Native-styled buttons, modals, accordions, navbars, cards, forms —
+            all without adding CSS classes. Write semantic HTML, get
+            professional design.
+          </p>
+          <footer>
+            <div class="card-buttons">
+              <a href="#" role="button" class="primary">Explore</a>
+              <a href="#" role="button" class="secondary outline">Examples →</a>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Card 4 : accessibility (extra card with two distinct buttons) -->
+        <article>
+          <header>
+            <span class="card-icon">♿</span>
+            <h3>Accessible Core</h3>
+          </header>
+          <p>
+            Built with WCAG guidelines in mind, proper focus indicators,
+            semantic landmarks, and screen-reader friendly markup
+            out-of-the-box.
+          </p>
+          <footer>
+            <div class="card-buttons">
+              <a href="#" role="button" class="primary">A11y Guide</a>
+              <a href="#" role="button" class="contrast outline">Learn more</a>
+            </div>
+          </footer>
+        </article>
+      </div>
+
+      <!-- Second row: additional cards to showcase versatility and more buttons 
+             but we also ensure spacing is coherent -->
+      <div class="card-grid" style="margin-top: 0.5rem">
+        <!-- Card 5 : performance focused -->
+        <article>
+          <header>
+            <span class="card-icon">🚀</span>
+            <h3>Ultra Lightweight</h3>
+          </header>
+          <p>
+            Less than 10kB minified and gzipped, no dependencies. Keep your
+            pages blazing fast and SEO friendly without sacrificing style.
+          </p>
+          <footer>
+            <div class="card-buttons">
+              <a href="#" role="button" class="contrast">Performance</a>
+              <a href="#" role="button" class="outline">Size details</a>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Card 6 : customization & variables -->
+        <article>
+          <header>
+            <span class="card-icon">🎛️</span>
+            <h3>CSS Variables</h3>
+          </header>
+          <p>
+            Override primary color, border radius, font family, spacing —
+            integrate Pico with your brand identity in just a few lines.
+          </p>
+          <footer>
+            <div class="card-buttons">
+              <a href="#" role="button" class="primary">Style guide</a>
+              <a href="#" role="button" class="secondary outline"
+                >Variables →</a
+              >
+            </div>
+          </footer>
+        </article>
+
+        <!-- Card 7 : easy integration -->
+        <article>
+          <header>
+            <span class="card-icon">📦</span>
+            <h3>Zero Config</h3>
+          </header>
+          <p>
+            Use with any framework or plain HTML. Drop the CDN and start
+            building production-ready interfaces in minutes. No build steps
+            required.
+          </p>
+          <footer>
+            <div class="card-buttons">
+              <a href="#" role="button" class="primary">Get started</a>
+              <a href="#" role="button" class="secondary outline">CDN link</a>
+            </div>
+          </footer>
+        </article>
+      </div>
+
+      <!-- Testimonial + small callout to fill content -->
+      <div class="grid" style="margin-top: 2rem">
+        <div style="padding: 1rem 0">
+          <blockquote style="margin-bottom: 0">
+            “Pico CSS is a game changer — I styled an entire landing page using
+            only semantic HTML. No <code>.card</code> or
+            <code>.btn</code> classes needed, it just works.”
+            <footer>— <cite>Sarah Chen, Frontend Architect</cite></footer>
+          </blockquote>
+        </div>
+        <div
+          style="display: flex; align-items: center; justify-content: flex-end">
+          <a href="#" role="button" class="outline" style="min-width: 150px"
+            >⭐ Star on GitHub</a
+          >
+        </div>
+      </div>
+
+      <!-- Additional demo form / micro CTA (optional but shows button + card-like style) -->
+      <hr />
+      <div class="grid" style="align-items: center">
+        <div>
+          <h3>Ready to start your next project?</h3>
+          <p>
+            Get the full power of Pico CSS with 0 friction — just include the
+            stylesheet and write clean HTML.
+          </p>
+        </div>
+        <div>
+          <a
+            href="#"
+            role="button"
+            class="primary"
+            style="width: 100%; text-align: center"
+            >Download / Install →</a
+          >
+        </div>
+      </div>
+
+      <!-- Footer with simple links (no nav, but footer credits) -->
+      <footer class="app-footer">
+        <small>
+          © 2025 Pico Showcase — Built with
+          <strong>Pico CSS (latest)</strong> &nbsp;|&nbsp;
+          <a href="#">Documentation</a> • <a href="#">GitHub</a> •
+          <a href="#">License MIT</a>
+          <br />
+          <span style="opacity: 0.7"
+            >✨ No nav, distinctive hero + button-rich cards ✨</span
+          >
+        </small>
+      </footer>
+    </main>
+  </body>
+</html>
