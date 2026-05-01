@@ -327,6 +327,243 @@ a[role='button'] {
 }
 
 /* ============================================================
+   SECTION 9: URL / LINK STYLING SYSTEM
+   ============================================================
+   A complete system for styling different types of links/URLs
+   
+   HOW TO USE:
+   Add these classes to any <a> tag to get different visual styles
+   
+   Example:
+   <a href="https://example.com" class="url-link url-primary">Click me</a>
+   
+   ============================================================ */
+
+/* Base URL link style - applied to all links with .url-link class */
+.url-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+/* Add icon spacing for external links (optional) */
+.url-link-external::after {
+  content: '↗';
+  font-size: 0.85em;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.url-link-external:hover::after {
+  transform: translate(2px, -2px);
+}
+
+/* ---------- PRIMARY URL STYLE (Main action links) ---------- */
+.url-primary {
+  background: var(--pico-primary);
+  color: var(--pico-primary-inverse);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.url-primary:hover {
+  background: var(--pico-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- SECONDARY URL STYLE (Outline style) ---------- */
+.url-secondary {
+  background: transparent;
+  color: var(--pico-primary);
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid var(--pico-primary);
+}
+
+.url-secondary:hover {
+  background: var(--pico-primary);
+  color: var(--pico-primary-inverse);
+  transform: translateY(-2px);
+}
+
+/* ---------- GRAY/MUTED URL STYLE (Subtle links) ---------- */
+.url-muted {
+  color: var(--pico-muted);
+  padding: 0.25rem 0;
+  border-bottom: 1px dotted var(--pico-muted-border-color);
+}
+
+.url-muted:hover {
+  color: var(--pico-primary);
+  border-bottom-color: var(--pico-primary);
+}
+
+/* ---------- DANGER/DELETE URL STYLE (Destructive actions) ---------- */
+.url-danger {
+  background: #dc2626;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.url-danger:hover {
+  background: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+/* ---------- SUCCESS URL STYLE (Positive actions) ---------- */
+.url-success {
+  background: #10b981;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.url-success:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+/* ---------- WARNING URL STYLE (Caution actions) ---------- */
+.url-warning {
+  background: #f59e0b;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.url-warning:hover {
+  background: #d97706;
+  transform: translateY(-2px);
+}
+
+/* ---------- DARK URL STYLE (High contrast) ---------- */
+.url-dark {
+  background: #1f2937;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+
+.url-dark:hover {
+  background: #111827;
+  transform: translateY(-2px);
+}
+
+/* ---------- PILL SHAPE VARIANT (Use with any color above) ---------- */
+.url-pill {
+  border-radius: 50px !important;
+}
+
+/* ---------- SMALL SIZE VARIANT ---------- */
+.url-sm {
+  padding: 0.25rem 0.75rem !important;
+  font-size: 0.85rem;
+}
+
+/* ---------- LARGE SIZE VARIANT ---------- */
+.url-lg {
+  padding: 0.75rem 1.5rem !important;
+  font-size: 1.1rem;
+}
+
+/* ---------- ICON SUPPORT (for links with icons) ---------- */
+.url-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.url-with-icon svg,
+.url-with-icon img {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+/* ---------- URL LIST GROUP (for multiple links stacked) ---------- */
+.url-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.url-list .url-link {
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* ---------- BREADCRUMB STYLE (navigation between URLs) ---------- */
+.url-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--pico-muted);
+}
+
+.url-breadcrumb a {
+  color: var(--pico-primary);
+  text-decoration: none;
+}
+
+.url-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.url-breadcrumb-separator {
+  color: var(--pico-muted);
+  user-select: none;
+}
+
+/* ---------- CARD CONTAINER FOR URLS (group links in a card) ---------- */
+.url-card {
+  background: var(--pico-card-background-color);
+  border: 1px solid var(--pico-card-border-color);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: all 0.2s ease;
+}
+
+.url-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.url-card-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.url-card-url {
+  font-size: 0.85rem;
+  color: var(--pico-muted);
+  word-break: break-all;
+}
+
+/* ---------- RESPONSIVE URL STACK (stacks on mobile) ---------- */
+@media (max-width: 768px) {
+  .url-stack-mobile {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .url-stack-mobile .url-link {
+    justify-content: center;
+  }
+}
+
+/* ============================================================
    QUICK CUSTOMIZATION GUIDE
    ============================================================
    
