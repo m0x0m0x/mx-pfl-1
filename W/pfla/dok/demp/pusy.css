@@ -1,0 +1,347 @@
+/* ============================================================
+   CUSTOM STYLES FOR PICO CSS LANDING PAGE
+   ============================================================
+   
+   This file contains all custom styling that enhances Pico CSS.
+   Each section is labeled with comments explaining:
+   - What the style does
+   - How to modify it (colors, sizes, spacing, etc.)
+   
+   TO LINK THIS FILE TO YOUR HTML:
+   Add the following line inside the <head> section of your HTML file:
+   
+   <link rel="stylesheet" href="styles.css">
+   
+   Make sure:
+   1. This file is saved as "styles.css" in the same folder as your HTML file
+   2. The Pico CSS CDN comes BEFORE this file (so Pico provides the base styles)
+   
+   Example order in <head>:
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+   <link rel="stylesheet" href="styles.css">
+   
+   ============================================================ */
+
+/* ============================================================
+   SECTION 1: CSS VARIABLES (GLOBAL DESIGN TOKENS)
+   ============================================================
+   These are custom properties that control repeated values across the page.
+   HOW TO ALTER: Change any of these values and all related styles update automatically.
+   ============================================================ */
+:root {
+  /* Hero gradient overlay colors - controls the semi-transparent overlay on hero */
+  --hero-overlay-gradient: linear-gradient(
+    135deg,
+    rgba(0, 20, 40, 0.7),
+    rgba(30, 10, 40, 0.6)
+  );
+
+  /* Card hover shadow - intensity and spread of shadow when hovering cards */
+  --card-hover-shadow: 0 20px 28px -12px rgba(0, 0, 0, 0.2);
+
+  /* Card border radius - how rounded the card corners are (increase for rounder, decrease for sharper) */
+  --card-border-radius: 1rem;
+
+  /* Hero gradient colors (dark theme) - change these to match your brand */
+  --hero-gradient-start: #0a192f; /* Dark navy blue */
+  --hero-gradient-end: #1e2a3e; /* Slightly lighter slate */
+
+  /* Accent glow colors for hero background orbs */
+  --hero-glow-cyan: rgba(0, 200, 255, 0.2);
+  --hero-glow-purple: rgba(210, 70, 255, 0.18);
+}
+
+/* ============================================================
+   SECTION 2: DISTINCT HERO SECTION
+   ============================================================
+   This creates a bold, eye-catching hero area with gradient background,
+   rounded corners, subtle glow effects, and proper contrast.
+   
+   HOW TO ALTER:
+   - Change background colors: modify --hero-gradient-start and --hero-gradient-end in :root
+   - Change corner roundness: modify the 'border-radius' value
+   - Change shadow intensity: modify 'box-shadow' values
+   - Change padding: adjust the 'padding' values (top/bottom left/right)
+   ============================================================ */
+.distinct-hero {
+  /* Position relative allows pseudo-elements (glows) to be positioned absolutely inside */
+  position: relative;
+
+  /* Gradient background - creates a smooth transition between two dark colors */
+  background: linear-gradient(
+    125deg,
+    var(--hero-gradient-start) 0%,
+    var(--hero-gradient-end) 100%
+  );
+
+  /* Rounded corners - gives modern, friendly appearance */
+  border-radius: 1.5rem;
+
+  /* Spacing around hero content (top/bottom = 3rem, left/right = 2rem) */
+  /* To make hero taller: increase first value (e.g., 5rem 2rem) */
+  margin: 1.5rem 0 2rem 0;
+  padding: 3rem 2rem;
+
+  /* Hides any overflowing glow effects */
+  overflow: hidden;
+
+  /* Subtle shadow for depth - x-offset, y-offset, blur, spread, color */
+  box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.25);
+
+  /* Subtle border that adds definition without being overwhelming */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Decorative glow orb - top right corner */
+/* Creates a soft radial gradient circle that adds visual interest */
+.distinct-hero::before {
+  content: ''; /* Required for pseudo-element to appear */
+  position: absolute; /* Positioned relative to .distinct-hero */
+  top: -30%; /* Partially off-screen top */
+  right: -20%; /* Partially off-screen right */
+  width: 280px; /* Size of the glow orb - increase for larger glow */
+  height: 280px;
+
+  /* Radial gradient creates a soft circular glow effect */
+  background: radial-gradient(circle, var(--hero-glow-cyan), transparent 70%);
+  border-radius: 50%; /* Makes it perfectly circular */
+  pointer-events: none; /* Allows clicking through the glow to buttons below */
+}
+
+/* Decorative glow orb - bottom left corner */
+.distinct-hero::after {
+  content: '';
+  position: absolute;
+  bottom: -20%; /* Positioned at bottom, partially off-screen */
+  left: -10%; /* Positioned at left, partially off-screen */
+  width: 240px;
+  height: 240px;
+
+  /* Purple-ish glow for contrast with the cyan one */
+  background: radial-gradient(circle, var(--hero-glow-purple), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Hero content container - ensures text is above the glow orbs */
+.hero-content-wrapper {
+  position: relative; /* Creates new stacking context */
+  z-index: 2; /* Places content above the ::before/::after orbs */
+  max-width: 800px; /* Limits text width for better readability */
+  margin: 0 auto; /* Centers horizontally */
+  text-align: center;
+
+  /* Optional: adds slight blur protection behind text (modern effect) */
+  /* Remove or adjust if you don't want the blur effect */
+  backdrop-filter: blur(2px);
+}
+
+/* Hero main title - gradient text effect */
+.distinct-hero h1 {
+  /* Large, bold heading */
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em; /* Slightly tighter letter spacing for modern look */
+  margin-bottom: 0.75rem;
+
+  /* --- GRADIENT TEXT (cutting-edge effect) --- */
+  /* Creates text that transitions between white and light blue */
+  background: linear-gradient(135deg, #fff, #b3e5ff);
+  /* These two lines make the gradient apply to the text instead of background */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Hides solid color, shows gradient through text */
+
+  /* Subtle shadow for depth behind text */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero lead paragraph text */
+.distinct-hero .hero-lead {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 245, 0.92); /* Near-white with slight transparency */
+  margin-bottom: 1.5rem;
+  font-weight: 450; /* Slightly bolder than normal */
+}
+
+/* Small badge / tag above hero title */
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18); /* Semi-transparent white */
+  backdrop-filter: blur(4px); /* Glass-morphism blur effect */
+  padding: 0.3rem 1rem;
+  border-radius: 40px; /* Pill shape */
+  font-size: 0.8rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Subtle border for definition */
+}
+
+/* Hero button group container */
+.button-group-hero {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+  justify-content: center;
+  flex-wrap: wrap; /* Buttons wrap on mobile */
+  margin-top: 0.8rem;
+}
+
+/* ============================================================
+   SECTION 3: CARD GRID SYSTEM
+   ============================================================
+   Creates responsive flexbox grid for cards.
+   
+   HOW TO ALTER:
+   - Gap between cards: change 'gap' value (e.g., 2rem for more space)
+   - Minimum card width: change '280px' in flex-basis (higher = wider cards)
+   - Card hover lift: modify 'transform: translateY(-6px)' value
+   ============================================================ */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem; /* Space between cards */
+  margin: 1.5rem 0 1rem;
+}
+
+/* Individual card styling */
+.card-grid article {
+  /* Flex grow/shrink basis - cards try to be at least 280px wide, then grow equally */
+  flex: 1 1 280px;
+
+  /* Vertical flex layout for consistent footer positioning */
+  display: flex;
+  flex-direction: column;
+
+  /* Smooth transitions for hover effects */
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+
+  /* Rounded corners - uses variable for easy global change */
+  border-radius: var(--card-border-radius);
+
+  /* Uses Pico's card background/border variables to stay consistent with theme */
+  background: var(--pico-card-background-color);
+  border: 1px solid var(--pico-card-border-color);
+}
+
+/* Card hover effect - lifts card and adds shadow for depth */
+.card-grid article:hover {
+  transform: translateY(-6px); /* Lifts card upward - increase for more lift */
+  box-shadow: var(--card-hover-shadow); /* Shadow defined in :root */
+  border-color: var(
+    --pico-primary-focus
+  ); /* Highlights border with primary color */
+}
+
+/* Ensures card footer sticks to bottom for consistent card heights */
+.card-grid article footer {
+  margin-top: auto; /* Pushes footer to bottom of flex container */
+  border-top: none; /* Removes default border from Pico */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Card icon styling (emoji or icon font) */
+.card-icon {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+}
+
+/* ============================================================
+   SECTION 4: CARD BUTTONS
+   ============================================================
+   Buttons inside cards - arranged in a row with spacing.
+   
+   HOW TO ALTER:
+   - Gap between buttons: change 'gap' value
+   - Button width: currently auto (adjust with 'min-width' if needed)
+   ============================================================ */
+.card-buttons {
+  display: flex;
+  gap: 0.75rem; /* Space between buttons inside card */
+  flex-wrap: wrap; /* Wraps on small screens */
+  margin-top: 0.5rem;
+}
+
+/* Remove bottom margin from buttons inside card-buttons for consistent spacing */
+.card-buttons a {
+  margin-bottom: 0;
+}
+
+/* ============================================================
+   SECTION 5: SECTION TITLE STYLING
+   ============================================================ */
+.section-title {
+  margin-top: 2rem; /* Space above section headings */
+}
+
+/* ============================================================
+   SECTION 6: FOOTER STYLING
+   ============================================================ */
+.app-footer {
+  margin-top: 3.5rem;
+  text-align: center;
+  border-top: 1px solid var(--pico-muted-border-color); /* Subtle top border */
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* ============================================================
+   SECTION 7: RESPONSIVE BREAKPOINTS (MOBILE ADJUSTMENTS)
+   ============================================================
+   These styles apply only on screens narrower than 768px (tablets/phones).
+   
+   HOW TO ALTER: 
+   - Change '768px' to different value for different breakpoints
+   - Adjust font sizes and padding to your preference
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Smaller hero title on mobile */
+  .distinct-hero h1 {
+    font-size: 2.2rem; /* Reduced from 3.2rem for mobile */
+  }
+
+  /* Less padding on hero for mobile */
+  .distinct-hero {
+    padding: 2rem 1rem;
+  }
+
+  /* Smaller lead text on mobile */
+  .hero-lead {
+    font-size: 1rem;
+  }
+}
+
+/* ============================================================
+   SECTION 8: BUTTON MICRO-INTERACTIONS
+   ============================================================
+   Smooth transition for all buttons on the page.
+   ============================================================ */
+a[role='button'] {
+  transition: all 0.2s; /* Smooth transition for hover/active states */
+}
+
+/* ============================================================
+   QUICK CUSTOMIZATION GUIDE
+   ============================================================
+   
+   Want to change the look? Here's what to modify:
+   
+   | What to Change                    | Where to Find It                          |
+   |-----------------------------------|-------------------------------------------|
+   | Hero background colors            | :root → --hero-gradient-start, --hero-gradient-end |
+   | Card corner roundness             | :root → --card-border-radius              |
+   | Card hover lift amount            | .card-grid article:hover → transform: translateY() |
+   | Spacing between cards             | .card-grid → gap                          |
+   | Hero title size                   | .distinct-hero h1 → font-size             |
+   | Hero padding (top/bottom)         | .distinct-hero → padding                  |
+   | Glow orb colors                   | :root → --hero-glow-cyan, --hero-glow-purple |
+   | Button gap in cards               | .card-buttons → gap                       |
+   | Mobile breakpoint                 | @media (max-width: 768px) → change 768px  |
+   
+   ============================================================ */
