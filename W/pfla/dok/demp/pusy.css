@@ -1,5 +1,5 @@
 /* ============================================================
-   CUSTOM STYLES FOR PICO CSS LANDING PAGE
+   CUSTOM STYLES FOR PICO CSS API DOCUMENTATION PAGE
    ============================================================
    
    This file contains all custom styling that enhances Pico CSS.
@@ -14,7 +14,7 @@
    
    Make sure:
    1. This file is saved as "styles.css" in the same folder as your HTML file
-   2. The Pico CSS CDN comes BEFORE this file (so Pico provides the base styles)
+   2. The Pico CSS CDN comes BEFORE this file
    
    Example order in <head>:
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
@@ -564,21 +564,213 @@ a[role='button'] {
 }
 
 /* ============================================================
+   SECTION 10: API ENDPOINT STYLES
+   ============================================================
+   Specialized styles for documenting API endpoints in cards
+   
+   HOW TO USE:
+   Add these classes to display HTTP methods, endpoints, and response info
+   
+   Example:
+   <span class="api-method api-method-get">GET</span>
+   <div class="api-endpoint">/api/v1/users</div>
+   <div class="api-response">{"status": "ok"}</div>
+   
+   ============================================================ */
+
+/* API Method Badge - for HTTP verbs */
+.api-method {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: 'Monaco', 'Menlo', monospace;
+}
+
+/* HTTP Method Colors */
+.api-method-get {
+  background: #10b981;
+  color: white;
+}
+
+.api-method-post {
+  background: #3b82f6;
+  color: white;
+}
+
+.api-method-put {
+  background: #f59e0b;
+  color: white;
+}
+
+.api-method-patch {
+  background: #8b5cf6;
+  color: white;
+}
+
+.api-method-delete {
+  background: #ef4444;
+  color: white;
+}
+
+/* API Endpoint URL Display */
+.api-endpoint {
+  background: var(--pico-code-background-color);
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+  font-size: 0.85rem;
+  margin: 0.75rem 0;
+  word-break: break-all;
+  border: 1px solid var(--pico-code-border-color, rgba(0, 0, 0, 0.1));
+}
+
+/* Path variable highlighting (e.g., {user_id}) */
+.api-path-var {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--pico-primary);
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+/* API Response Preview - for JSON examples */
+.api-response {
+  background: var(--pico-code-background-color);
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.75rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+  border-left: 3px solid var(--pico-primary);
+}
+
+/* API Parameter List Container */
+.api-params {
+  margin: 0.75rem 0;
+}
+
+/* Individual Parameter Row */
+.api-param {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--pico-muted-border-color);
+  font-size: 0.85rem;
+}
+
+/* Parameter Name */
+.api-param-name {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--pico-primary);
+}
+
+/* Parameter Type (string, integer, boolean, etc.) */
+.api-param-type {
+  color: var(--pico-muted);
+  font-size: 0.75rem;
+}
+
+/* Required Parameter Badge */
+.api-param-required {
+  color: #ef4444;
+  font-size: 0.7rem;
+  margin-left: 0.3rem;
+}
+
+/* Optional Parameter Badge */
+.api-param-optional {
+  color: var(--pico-muted);
+  font-size: 0.7rem;
+  margin-left: 0.3rem;
+}
+
+/* API Status Code Badge */
+.api-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-family: monospace;
+}
+
+/* Success Status (2xx codes) */
+.api-status-success {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+/* Error Status (4xx, 5xx codes) */
+.api-status-error {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+}
+
+/* API Endpoint Card Modifier - adds left accent border */
+.api-card {
+  border-left: 4px solid var(--pico-primary) !important;
+}
+
+/* Try it button for API endpoints - interactive test button */
+.api-try-btn {
+  background: transparent;
+  border: 1px solid var(--pico-primary);
+  color: var(--pico-primary);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.api-try-btn:hover {
+  background: var(--pico-primary);
+  color: white;
+}
+
+/* ============================================================
+   SECTION 11: CODE BLOCK ENHANCEMENTS
+   ============================================================
+   Additional styling for code elements within API responses
+   ============================================================ */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  font-size: 0.85em;
+}
+
+/* ============================================================
    QUICK CUSTOMIZATION GUIDE
    ============================================================
    
    Want to change the look? Here's what to modify:
    
-   | What to Change                    | Where to Find It                          |
-   |-----------------------------------|-------------------------------------------|
-   | Hero background colors            | :root → --hero-gradient-start, --hero-gradient-end |
-   | Card corner roundness             | :root → --card-border-radius              |
-   | Card hover lift amount            | .card-grid article:hover → transform: translateY() |
-   | Spacing between cards             | .card-grid → gap                          |
-   | Hero title size                   | .distinct-hero h1 → font-size             |
-   | Hero padding (top/bottom)         | .distinct-hero → padding                  |
-   | Glow orb colors                   | :root → --hero-glow-cyan, --hero-glow-purple |
-   | Button gap in cards               | .card-buttons → gap                       |
-   | Mobile breakpoint                 | @media (max-width: 768px) → change 768px  |
+   | What to Change                          | Where to Find It                                      |
+   |-----------------------------------------|-------------------------------------------------------|
+   | Hero background colors                  | :root → --hero-gradient-start, --hero-gradient-end   |
+   | Card corner roundness                   | :root → --card-border-radius                          |
+   | Card hover lift amount                  | .card-grid article:hover → transform: translateY()    |
+   | Spacing between cards                   | .card-grid → gap                                      |
+   | Hero title size                         | .distinct-hero h1 → font-size                         |
+   | Hero padding (top/bottom)               | .distinct-hero → padding                              |
+   | Glow orb colors                         | :root → --hero-glow-cyan, --hero-glow-purple         |
+   | Button gap in cards                     | .card-buttons → gap                                   |
+   | Mobile breakpoint                       | @media (max-width: 768px) → change 768px             |
+   | API method badge colors                 | .api-method-get, .api-method-post, etc.              |
+   | API response border color               | .api-response → border-left-color                    |
+   | "Try it" button hover color             | .api-try-btn:hover → background                      |
    
    ============================================================ */

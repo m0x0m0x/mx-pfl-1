@@ -1,291 +1,171 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask API Learning - m0x0m0x/mx-pfl-1</title>
 
-    <!-- ========== SEO & META TAGS ========== -->
-    <title>Pico CSS | Modern Landing Page with Cards & Hero</title>
-    <meta
-      name="description"
-      content="A stunning landing page built with Pico CSS v2 featuring a distinctive hero section, button-rich cards, and fully responsive design." />
-    <meta name="author" content="Pico Showcase" />
-    <meta
-      name="keywords"
-      content="Pico CSS, modern design, landing page, responsive cards, HTML5, CSS framework" />
-
-    <!-- ========== FAVICON (multi-format support) ========== -->
-    <!-- SVG favicon for modern browsers (best quality) -->
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a192f'/%3E%3Ccircle cx='50' cy='50' r='40' fill='%234fc3f7'/%3E%3Cpath d='M50 30 L65 50 L50 70 L35 50 Z' fill='white'/%3E%3C/svg%3E" />
-    <!-- Fallback PNG favicon (32x32) -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABu0lEQVR4nO2WPUvDUBaGT5o4WBRBQVwU6iBdXDp1quoPcHQQ/AP6Dxx0cXLSrZPoD3BxchJx6iToL3B00EUEQRGKBm1pk9I0Jpd7PZqkNTWQgoUzJISc855z3vtwL4QQ+E9S6kMhVKVzRK8rdJCG49KMEtFJKK5K5xyhLafjdFwa+z2AT2nAy/qpE5fWfrfjcFkHcA4YbB/s02CEHWjTtL+OugCXALe1A03bxm0dwGYAfH88Ae8zeXyI9ePYbIzvF9d6p8OxxYF9yJftdth3qRwApQJgqlSmnK4CqLQySqTSnwBqPVv/RdKJw3EAPBxH+34K0B4CjQBUgmcOT1CzG/fU/kkA1QDAeQUAbimDVdlvoT8JpkI+81N2s1eUgYVzAJJrv/GMkG/LE1iuAOB6dS1GvNPh8AMAbQCFZt/hKeWl7GazqAZ0HQD5mQrY0SPS6YTXB0B+BGAxbzNabGj7mEBHAei+A+qiPwqbz+3YfNcBnU6R5wCwCQBk/hJ6ARyKfAdAu/0EHBeXQa/bnZ8AWHyDJKAqr5wAhdL4KqP0dw9H+Nf/AJ/UOor6pUDYAAAAAElFTkSuQmCC" />
-    <!-- Apple Touch Icon for iOS devices -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8klEQVR4nO3dMW7CQBCF4Q0oEhUNF0h0VJQ0lJSeEhU3oKTiBhQpiZIKCQkNJb1LpOyKxHFeiRWZZdneyPqk0e5qPJqdfbO2EwBwPwQAAAAAAACA+qlpWZbXnsdxnOfDMOyGYSAAj/M8z8/zPJ9nWRbGcZyHYSAAj/O6ruu6rhuGYRiGIRgYAgAAAAAAAAAAAAAAAAAAAAAAAADwX2maNmmaFAR4HmB3HMcVhhkMDAF4HmBHURQVBgYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4pfu6rvvTNE3TNE0DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAd/V9nud5nudhGAjAozzP8zyP4zgQBgLwOI/jOBAAwOMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE+Fpmn7LMu2LMtAAB7naZo+z7IswzAQgMcBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPy8H6MZUPsS4u8AAAAAAElFTkSuQmCC" />
-
-    <!-- ========== OPEN GRAPH (OG) IMAGE FOR SOCIAL SHARING ========== -->
-    <!-- This image appears when sharing on Facebook, LinkedIn, WhatsApp, Telegram, etc. -->
-    <meta property="og:title" content="Pico CSS | Modern Landing Page" />
-    <meta
-      property="og:description"
-      content="A beautiful landing page with distinctive hero section, interactive cards, and full responsiveness. Built with Pico CSS v2." />
-    <meta
-      property="og:image"
-      content="https://placehold.co/1200x630/0a192f/4fc3f7?text=Pico+CSS+Landing" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-
-    <!-- ========== TWITTER CARD (for X/Twitter sharing) ========== -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Pico CSS | Modern Landing Page" />
-    <meta
-      name="twitter:description"
-      content="Beautiful landing page with distinctive hero, cards, and Pico CSS v2." />
-    <meta
-      name="twitter:image"
-      content="https://placehold.co/1200x600/0a192f/4fc3f7?text=Pico+CSS+Showcase" />
-
-    <!-- ========== PICO CSS (Latest v2) ========== -->
+    <!-- Pico CSS latest (v2) from CDN -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
 
-    <!-- ========== CUSTOM STYLESHEET ========== -->
-    <!-- See styles.css file for all custom styling with detailed labels -->
+    <!-- Custom styles -->
     <link rel="stylesheet" href="pusy.css" />
   </head>
   <body>
-    <main class="container">
-      <!-- ========== DISTINCT / ENHANCED HERO (no nav, more distinctive) ========== -->
-      <div class="distinct-hero">
-        <div class="hero-content-wrapper">
-          <div class="hero-badge">✨ mx-pfl-1/W/pfla</div>
-          <h1>Python Flask API <br />Testing</h1>
-          <p class="hero-lead">
-            This website lists all the python flask project
-            <strong>Doc Sites</strong>
-          </p>
-          <small style="display: inline-block; margin-top: 1.2rem; opacity: 0.8"
-            >⭐ Fask is purely for learning, actual API will be built in
-            FastAPI</small
-          >
-        </div>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <div class="container">
+        <a href="#hero" class="nav-brand">🐍 FlaskAPI</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#footer">Contact</a>
       </div>
+    </nav>
 
-      <!-- ========== CARDS SECTION WITH BUTTONS ========== -->
-      <hgroup class="section-title">
-        <h2>Why developers choose Pico</h2>
-        <p>
-          Feature-rich cards with interactive actions — each card includes
-          call-to-action buttons
-        </p>
-      </hgroup>
-
-      <div class="card-grid">
-        <!-- Card 1 : theming + buttons -->
-        <article>
-          <header>
-            <span class="card-icon">🎨</span>
-            <h3>Adaptive theming</h3>
-          </header>
+    <main class="container-fluid" style="padding: 0">
+      <!-- Hero Section -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <h1>🐍 Flask REST API Learning - m0x0m0x mx-pfl-1</h1>
+          <h2>
+            Deployed from -
+            <a
+              href="https://github.com/m0x0m0x/mx-pfl-1/tree/main/W/pfla/p2"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="endpoint-tag">
+              https://github.com/m0x0m0x/mx-pfl-1/tree/main/W/pfla/p2
+            </a>
+          </h2>
           <p>
-            Automatic dark/light mode based on user preference. Customize
-            colors, spacing, and radii via CSS variables. Puts design control in
-            your hands.
+            This flask api has been deployed based on your learning, check
+            app.py
           </p>
-          <footer>
-            <div class="card-buttons">
-              <a href="#" role="button" class="primary">Preview Theme</a>
-              <a href="#" role="button" class="secondary outline">Customize</a>
-            </div>
-          </footer>
-        </article>
-
-        <!-- Card 2 : responsive grid -->
-        <article>
-          <header>
-            <span class="card-icon">📱⚡</span>
-            <h3>Fully Responsive</h3>
-          </header>
-          <p>
-            Fluid grid and typography scaling across all devices. Mobile-first
-            approach with no extra work. Your layout looks crisp on iphone,
-            tablet, and 4K screens.
-          </p>
-          <footer>
-            <div class="card-buttons">
-              <a href="#" role="button" class="primary">Live demo</a>
-              <a href="#" role="button" class="secondary outline"
-                >Grid system</a
-              >
-            </div>
-          </footer>
-        </article>
-
-        <!-- Card 3 : components & forms -->
-        <article>
-          <header>
-            <span class="card-icon">🧩</span>
-            <h3>Rich Components</h3>
-          </header>
-          <p>
-            Native-styled buttons, modals, accordions, navbars, cards, forms —
-            all without adding CSS classes. Write semantic HTML, get
-            professional design.
-          </p>
-          <footer>
-            <div class="card-buttons">
-              <a href="#" role="button" class="primary">Explore</a>
-              <a href="#" role="button" class="secondary outline">Examples →</a>
-            </div>
-          </footer>
-        </article>
-
-        <!-- Card 4 : accessibility -->
-        <article>
-          <header>
-            <span class="card-icon">♿</span>
-            <h3>Accessible Core</h3>
-          </header>
-          <p>
-            Built with WCAG guidelines in mind, proper focus indicators,
-            semantic landmarks, and screen-reader friendly markup
-            out-of-the-box.
-          </p>
-          <footer>
-            <div class="card-buttons">
-              <a href="#" role="button" class="primary">A11y Guide</a>
-              <a href="#" role="button" class="contrast outline">Learn more</a>
-            </div>
-          </footer>
-        </article>
-      </div>
-
-      <!-- Second row: additional cards -->
-      <div class="card-grid" style="margin-top: 0.5rem">
-        <!-- Card 5 : performance -->
-        <article>
-          <header>
-            <span class="card-icon">🚀</span>
-            <h3>Ultra Lightweight</h3>
-          </header>
-          <p>
-            Less than 10kB minified and gzipped, no dependencies. Keep your
-            pages blazing fast and SEO friendly without sacrificing style.
-          </p>
-          <footer>
-            <div class="card-buttons">
-              <a href="#" role="button" class="contrast">Performance</a>
-              <a href="#" role="button" class="outline">Size details</a>
-            </div>
-          </footer>
-        </article>
-
-        <!-- Card 6 : variables -->
-        <article>
-          <header>
-            <span class="card-icon">🎛️</span>
-            <h3>CSS Variables</h3>
-          </header>
-          <p>
-            Override primary color, border radius, font family, spacing —
-            integrate Pico with your brand identity in just a few lines.
-          </p>
-          <footer>
-            <div class="card-buttons">
-              <a href="#" role="button" class="primary">Style guide</a>
-              <a href="#" role="button" class="secondary outline"
-                >Variables →</a
-              >
-            </div>
-          </footer>
-        </article>
-
-        <!-- Card 7 : zero config -->
-        <article>
-          <header>
-            <span class="card-icon">📦</span>
-            <h3>Zero Config</h3>
-          </header>
-          <p>
-            Use with any framework or plain HTML. Drop the CDN and start
-            building production-ready interfaces in minutes. No build steps
-            required.
-          </p>
-          <footer>
-            <div class="card-buttons">
-              <a href="#" role="button" class="primary">Get started</a>
-              <a href="#" role="button" class="secondary outline">CDN link</a>
-            </div>
-          </footer>
-        </article>
-      </div>
-
-      <!-- Testimonial + callout -->
-      <div class="grid" style="margin-top: 2rem">
-        <div style="padding: 1rem 0">
-          <blockquote style="margin-bottom: 0">
-            “Pico CSS is a game changer — I styled an entire landing page using
-            only semantic HTML. No <code>.card</code> or
-            <code>.btn</code> classes needed, it just works.”
-            <footer>— <cite>Sarah Chen, Frontend Architect</cite></footer>
-          </blockquote>
-        </div>
-        <div
-          style="display: flex; align-items: center; justify-content: flex-end">
-          <a href="#" role="button" class="outline" style="min-width: 150px"
-            >⭐ Star on GitHub</a
-          >
-        </div>
-      </div>
-
-      <!-- CTA section -->
-      <hr />
-      <div class="grid" style="align-items: center">
-        <div>
-          <h3>Ready to start your next project?</h3>
-          <p>
-            Get the full power of Pico CSS with 0 friction — just include the
-            stylesheet and write clean HTML.
-          </p>
-        </div>
-        <div>
+          Deployed at -
           <a
-            href="#"
-            role="button"
-            class="primary"
-            style="width: 100%; text-align: center"
-            >Download / Install →</a
-          >
+            href="https://ftut1.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="badge">
+            https://ftut1.vercel.app/
+          </a>
         </div>
+      </section>
+
+      <!-- Cards Section – Features -->
+      <div class="container section-spacing" id="features">
+        <h2 class="section-title">📦 Core Features</h2>
+
+        <div class="card-grid">
+          <!-- Card 1: Entry point -->
+          <article class="card-custom">
+            <header>
+              <h3>1️⃣ Entry point</h3>
+              <span class="endpoint-tag"> / </span>
+            </header>
+            <div class="card-body">
+              <p>Default entry point shows message</p>
+              <ul>
+                <li>Return Statement NO Templates</li>
+              </ul>
+            </div>
+            <footer>
+              <a
+                href="https://ftut1.vercel.app/"
+                role="button"
+                class="outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Vercel Deployed</a
+              >
+            </footer>
+          </article>
+
+          <!-- Card 2: Return Greeting -->
+          <article class="card-custom">
+            <header>
+              <h3>2️⃣ Return Greeting</h3>
+              <span class="endpoint-tag"> /greet/name</span>
+            </header>
+            <div class="card-body">
+              <p>Returns string with name</p>
+              <ul>
+                <li>Enter text afer the /</li>
+              </ul>
+            </div>
+            <footer>
+              <a
+                href="https://ftut1.vercel.app/greet/SmellPanty"
+                role="button"
+                class="outline"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GreetName</a
+              >
+            </footer>
+          </article>
+
+          <!-- End Card Section -->
+          <!-- End Card Section -->
+          <!-- End Card Section -->
+        </div>
+        <!-- End Card Container -->
+        <!-- End Card Container -->
+        <!-- End Card Container -->
       </div>
 
-      <!-- Footer -->
-      <footer class="app-footer">
-        <small>
-          © 2025 Pico Showcase — Built with
-          <strong>Pico CSS (latest)</strong> &nbsp;|&nbsp;
-          <a href="#">Documentation</a> • <a href="#">GitHub</a> •
-          <a href="#">License MIT</a>
-          <br />
-          <span style="opacity: 0.7"
-            >✨ No nav, distinctive hero + button-rich cards ✨</span
-          >
-        </small>
-      </footer>
+      <!-- Third Section – About / Text -->
+      <div class="container section-spacing" id="about">
+        <h2 class="section-title">💡 Why This Flask API?</h2>
+        <div class="text-section">
+          <p>
+            This API was built with <strong>simplicity</strong> and
+            <strong>developer experience</strong> in mind. Every endpoint
+            follows RESTful conventions and returns consistent JSON responses.
+            The project structure is modular, making it easy to extend with new
+            resources without touching existing code.
+          </p>
+
+          <h3>🛠️ Tech Stack</h3>
+          <div class="tech-stack">
+            <span class="tech-item">Python 3.12</span>
+            <span class="tech-item">Flask 3.0</span>
+            <span class="tech-item">PostgreSQL 16</span>
+            <span class="tech-item">SQLAlchemy 2.0</span>
+            <span class="tech-item">JWT</span>
+            <span class="tech-item">Docker</span>
+            <span class="tech-item">Pytest</span>
+          </div>
+
+          <p style="margin-top: 2rem">
+            <strong>Get started in minutes.</strong> Clone the repository, set
+            your environment variables, and run <code>docker compose up</code>.
+            The API comes with a built-in Swagger UI at <code>/docs</code> for
+            easy exploration and testing.
+          </p>
+        </div>
+      </div>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="#hero">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#">Documentation</a>
+            <a href="#">GitHub</a>
+          </div>
+          <p class="copyright">
+            © 2026 FlaskAPI · Built with ❤️ using Python & Pico CSS -
+            LickAssAndPussy
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
