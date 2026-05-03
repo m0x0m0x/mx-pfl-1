@@ -1,21 +1,26 @@
 {% extends "base.html" %} {% block title %}FileUpload{% endblock %} {% block
-content%}
+content %}
 
 <div style="text-align: center">
   <h1>ROUTE = <code>fup.html</code></h1>
 
   <p class="terminal-green">fup.html</p>
-
   <p>This page corresponds to function in <code>routes/posts.py</code></p>
 
-  <!-- Display message if it exists -->
+  <!-- ✅ Message Display -->
   {% if message %}
   <div
-    style="margin: 20px auto; padding: 10px; width: 50%; border-radius: 5px; {% if 'Successful' in message %}background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;{% else %}background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;{% endif %}">
+    style="margin: 20px auto; padding: 10px; width: 50%; border-radius: 5px; 
+      {% if 'Successful' in message or '✅' in message %}
+        background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;
+      {% else %}
+        background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;
+      {% endif %}">
     {{ message }}
   </div>
   {% endif %}
 
+  <!-- ✅ Upload Form -->
   <div>
     <article style="display: inline-block; width: auto; text-align: center">
       <h3 style="color: oklch(76.8% 0.233 130.85)">Upload Form</h3>
@@ -23,11 +28,37 @@ content%}
         method="POST"
         action="{{ url_for('posts.file_upload') }}"
         enctype="multipart/form-data">
-        <input type="file" name="file" accept=".txt, .csv" />
-        <input type="submit" , value="UploadPanty" />
+        <input type="file" name="file" accept=".txt,.csv" />
+        <input type="submit" value="UploadPanty" />
       </form>
     </article>
   </div>
+
+  <!-- ✅ TABLE DISPLAY BLOCK — ADD THIS SECTION 👇 -->
+  {% if table_html %}
+  <div
+    style="
+      margin: 30px auto;
+      width: 90%;
+      max-width: 1000px;
+      overflow-x: auto;
+      text-align: left;
+    ">
+    <h4 style="color: oklch(76.8% 0.233 130.85); margin-bottom: 10px">
+      📊 Preview
+    </h4>
+    <div
+      style="
+        background: #1e1e1e;
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid #444;
+      ">
+      {{ table_html|safe }}
+    </div>
+  </div>
+  {% endif %}
+  <!-- ✅ TABLE BLOCK ENDS HERE 👆 -->
 
   <button onclick="window.open('https://tinyurl.com/2usd6fpd', '_blank')">
     BootySmell
