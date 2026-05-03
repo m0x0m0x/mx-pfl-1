@@ -33,6 +33,6 @@ def f1():
 # Uploading Files
 
 
-@posts_bp.route('/file_upload')
+@posts_bp.route('/file_upload', methods=['POST'])
 def file_upload():
     return render_template('fup.html')
