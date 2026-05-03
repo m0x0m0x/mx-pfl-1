@@ -39,7 +39,7 @@ pussy1() {
 
 	)
 
-	CMDEXEC="${CMD[1]}"
+	CMDEXEC="${CMD[2]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── PantySmellling ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"

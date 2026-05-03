@@ -53,3 +53,22 @@ installed vercel@52.0.0 with binaries:
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
 ───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── PantySmellling ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Sun May  3 09:15:53 AM UTC 2026
+Executing:[1;95mcurl -fsSL https://raw.githubusercontent.com/pranshuparmar/witr/main/install.sh | bash[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0 6072k    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 6072k  100 6072k    0     0  4014k      0  0:00:01  0:00:01 --:--:-- 6480k
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  2187  100  2187    0     0   3781      0 --:--:-- --:--:-- --:--:--  3781
+witr installed successfully to /usr/local/bin/witr (version: v0.3.1, os: linux, arch: amd64)
+Man page installed to /usr/local/share/man/man1/witr.1
+[1;92mDone!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
