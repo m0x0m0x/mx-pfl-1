@@ -29,3 +29,10 @@ def f1():
             message = 'FuckOff Bastards.'
 
     return render_template('f1.html', message=message)
+
+# Uploading Files
+
+
+@posts_bp.route('/file_upload')
+def file_upload():
+    return render_template('fup.html')

@@ -102,6 +102,13 @@
             📝 /f1
           </a>
         </li>
+        <li>
+          <a
+            href="{{ url_for('posts.file_upload') }}"
+            class="{% if request.endpoint == 'posts.file_upload' %}secondary{% else %}contrast{% endif %}">
+            📝 /file_upload
+          </a>
+        </li>
       </ul>
     </nav>
 
