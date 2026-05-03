@@ -3,11 +3,10 @@ content %}
 
 <div style="text-align: center">
   <h1>ROUTE = <code>fup.html</code></h1>
-
   <p class="terminal-green">fup.html</p>
   <p>This page corresponds to function in <code>routes/posts.py</code></p>
 
-  <!-- ✅ Message Display -->
+  <!-- ✅ Message -->
   {% if message %}
   <div
     style="margin: 20px auto; padding: 10px; width: 50%; border-radius: 5px; 
@@ -34,7 +33,7 @@ content %}
     </article>
   </div>
 
-  <!-- ✅ TABLE DISPLAY BLOCK — ADD THIS SECTION 👇 -->
+  <!-- ✅ CSV Table Display -->
   {% if table_html %}
   <div
     style="
@@ -44,9 +43,7 @@ content %}
       overflow-x: auto;
       text-align: left;
     ">
-    <h4 style="color: oklch(76.8% 0.233 130.85); margin-bottom: 10px">
-      📊 Preview
-    </h4>
+    <h4>📊 CSV Preview</h4>
     <div
       style="
         background: #1e1e1e;
@@ -58,7 +55,26 @@ content %}
     </div>
   </div>
   {% endif %}
-  <!-- ✅ TABLE BLOCK ENDS HERE 👆 -->
+
+  <!-- ✅ TEXT File Display (NEW) -->
+  {% if text_content %}
+  <div
+    style="margin: 30px auto; width: 90%; max-width: 800px; text-align: left">
+    <h4>📄 Text Preview</h4>
+    <pre
+      style="
+        background: #1e1e1e;
+        padding: 15px;
+        border-radius: 8px;
+        border: 1px solid #444;
+        white-space: pre-wrap;
+        font-family: monospace;
+        color: #e0e0e0;
+      ">
+{{ text_content }}</pre
+    >
+  </div>
+  {% endif %}
 
   <button onclick="window.open('https://tinyurl.com/2usd6fpd', '_blank')">
     BootySmell

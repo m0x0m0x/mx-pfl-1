@@ -36,24 +36,24 @@ def f1():
 
 @posts_bp.route('/file_upload', methods=['GET', 'POST'])
 def file_upload():
-    table_html = None  # 👈 New variable for the table
+    table_html = None
+    text_content = None  # 👈 New variable for text files
+    message = None
 
     if request.method == 'POST':
         file = request.files.get('file')
 
         if not file or file.filename == '':
-            return render_template('fup.html', message="⚠️ No file selected")
-
-        if file.content_type == 'text/csv':
+            message = "⚠️ No file selected"
+        elif file.content_type == 'text/csv':
             df = pd.read_csv(file.stream)
-            # 👈 Generate table HTML
-            table_html = df.to_html(classes='dataframe', index=False)
+            table_html = df.to_html(index=False)
             message = f"✅ Loaded {len(df)} rows"
-
         elif file.content_type == 'text/plain':
-            content = file.read().decode('utf-8')
-            print(content)
-            message = f"✅ Text file: {len(content)} chars"
+            text_content = file.read().decode('utf-8')
+            message = f"✅ Text file: {len(text_content)} chars"
 
-    # 👇 Pass both message AND table_html to template
-    return render_template('fup.html', message=message, table_html=table_html)
+    return render_template('fup.html',
+                           message=message,
+                           table_html=table_html,
+                           text_content=text_content)
