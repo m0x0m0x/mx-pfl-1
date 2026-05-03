@@ -34,6 +34,9 @@ pussy1() {
 		#1 -  Install Vercel Cli -Docs - https://vercel.com/docs/cli?package-manager=bun
 		"bun add -g vercel"
 
+		#2 - Witr Installation - Tool fo understanding process -https://github.com/pranshuparmar/witr
+		"curl -fsSL https://raw.githubusercontent.com/pranshuparmar/witr/main/install.sh | bash"
+
 	)
 
 	CMDEXEC="${CMD[1]}"

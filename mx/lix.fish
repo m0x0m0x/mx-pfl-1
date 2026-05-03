@@ -13,6 +13,9 @@ cargo --version
 # Wormhole Install
 sudo apt install -y magic-wormhole
 
+# WITR Install - https://github.com/pranshuparmar/witr
+curl -fsSL https://raw.githubusercontent.com/pranshuparmar/witr/main/install.sh | bash
+
 # Fish Install
 sudo apt-add-repository ppa:fish-shell/release-4 -y
 sudo apt update -y
