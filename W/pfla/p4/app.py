@@ -8,7 +8,7 @@ import secrets
 
 from flask import Flask
 
-from limiter_config import limiter
+from limiter_config import limiter  # Importing limite_config.py
 from routes import main_bp, posts_bp, tezt_bp
 
 # --- Setup Flask App ---
