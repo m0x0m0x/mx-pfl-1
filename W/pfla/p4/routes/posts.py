@@ -14,6 +14,7 @@ def posts():
 
 # Route for Doing posts -
 # Note this form functin is for f1.html - Note the POST is to this function located as posts.f1
+# Fiel types are restricted in fup.html - Where we define the explicit files that can be uploaded
 
 
 @posts_bp.route('/f1', methods=['GET', 'POST'])
@@ -32,6 +33,8 @@ def f1():
     return render_template('f1.html', message=message)
 
 # Uploading Files
+# This code will check if any file is upploaded and then display a df or text content based on file type
+# The file types are restricted -
 
 
 @posts_bp.route('/file_upload', methods=['GET', 'POST'])

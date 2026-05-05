@@ -1,0 +1,126 @@
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue May  5 11:28:39 AM UTC 2026
+Executing:[1;95m
+curl -I https://mx-pfla-p4-api.vercel.app/
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Tue, 05 May 2026 11:28:39 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::xn7wb-1777980519343-48a764a48021
+content-length: 2765
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue May  5 11:28:46 AM UTC 2026
+Executing:[1;95m
+curl -I https://mx-pfla-p4-api.vercel.app/
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Tue, 05 May 2026 11:28:47 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::t74hb-1777980527073-5e34f9ea3833
+content-length: 2765
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue May  5 11:29:12 AM UTC 2026
+Executing:[1;95m
+curl -I https://mx-pfla-p4-api.vercel.app/
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Tue, 05 May 2026 11:29:12 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::ff46h-1777980552600-91ac3099c8fb
+content-length: 2765
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue May  5 11:29:21 AM UTC 2026
+Executing:[1;95m
+curl -I https://mx-pfla-p4-api.vercel.app/
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 200 
+age: 0
+cache-control: public, max-age=0, must-revalidate
+content-type: text/html; charset=utf-8
+date: Tue, 05 May 2026 11:29:21 GMT
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-vercel-cache: MISS
+x-vercel-enable-rewrite-caching: 1
+x-vercel-id: bom1::iad1::llwmd-1777980561182-26fb0d7370ae
+content-length: 2765
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
