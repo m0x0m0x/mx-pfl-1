@@ -14,10 +14,6 @@ from routes import main_bp, posts_bp
 app = Flask(__name__, template_folder='tempz')
 app.secret_key = secrets.token_hex(16)
 
-# --- Register Blueprints
-app.register_blueprint(main_bp)
-app.register_blueprint(posts_bp)
-
 # --- Custom Headers ---
 # Custom headers are for info for features requires seperate implementation
 
@@ -28,6 +24,11 @@ def add_custom_headers(response):
     response.headers['X-Greeting'] = 'Smell her Farts'
     response.headers['X-Rape-Kill'] = 'Lick Asss and pussy'
     return response
+
+
+# --- Register Blueprints
+app.register_blueprint(main_bp)
+app.register_blueprint(posts_bp)
 
 
 # --- init ---

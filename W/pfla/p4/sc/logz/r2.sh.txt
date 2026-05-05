@@ -1,85 +1,24 @@
 [1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
 [1;94m · · ────── Sending Curl Requests ────── · ·
 [1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
-Tue May  5 11:28:39 AM UTC 2026
+Tue May  5 02:48:40 PM UTC 2026
 Executing:[1;95m
-curl -I https://mx-pfla-p4-api.vercel.app/
+curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev//file_upload
 [0m
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-HTTP/2 200 
-age: 0
-cache-control: public, max-age=0, must-revalidate
-content-type: text/html; charset=utf-8
-date: Tue, 05 May 2026 11:28:39 GMT
-server: Vercel
-strict-transport-security: max-age=63072000; includeSubDomains; preload
-x-vercel-cache: MISS
-x-vercel-enable-rewrite-caching: 1
-x-vercel-id: bom1::iad1::xn7wb-1777980519343-48a764a48021
-content-length: 2765
-
-
-///////////
-[1;92m
-Done!
-───── ⋆⋅☆⋅⋆ ─────[0m
-───── ⋆⋅☆⋅⋆ ─────[0m
-───── ⋆⋅☆⋅⋆ ─────[0m
-[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
-[1;94m · · ────── Sending Curl Requests ────── · ·
-[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
-Tue May  5 11:28:46 AM UTC 2026
-Executing:[1;95m
-curl -I https://mx-pfla-p4-api.vercel.app/
-[0m
-///////////
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-HTTP/2 200 
-age: 0
-cache-control: public, max-age=0, must-revalidate
-content-type: text/html; charset=utf-8
-date: Tue, 05 May 2026 11:28:47 GMT
-server: Vercel
-strict-transport-security: max-age=63072000; includeSubDomains; preload
-x-vercel-cache: MISS
-x-vercel-enable-rewrite-caching: 1
-x-vercel-id: bom1::iad1::t74hb-1777980527073-5e34f9ea3833
-content-length: 2765
-
-
-///////////
-[1;92m
-Done!
-───── ⋆⋅☆⋅⋆ ─────[0m
-───── ⋆⋅☆⋅⋆ ─────[0m
-───── ⋆⋅☆⋅⋆ ─────[0m
-[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
-[1;94m · · ────── Sending Curl Requests ────── · ·
-[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
-Tue May  5 11:29:12 AM UTC 2026
-Executing:[1;95m
-curl -I https://mx-pfla-p4-api.vercel.app/
-[0m
-///////////
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-HTTP/2 200 
-age: 0
-cache-control: public, max-age=0, must-revalidate
-content-type: text/html; charset=utf-8
-date: Tue, 05 May 2026 11:29:12 GMT
-server: Vercel
-strict-transport-security: max-age=63072000; includeSubDomains; preload
-x-vercel-cache: MISS
-x-vercel-enable-rewrite-caching: 1
-x-vercel-id: bom1::iad1::ff46h-1777980552600-91ac3099c8fb
-content-length: 2765
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 401 
+date: Tue, 05 May 2026 14:48:40 GMT
+www-authenticate: tunnel
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-remaining: HttpRequestRatePerPort:1499
+ratelimit-reset: HttpRequestRatePerPort:29s
+vssaas-request-id: 39ebf663-ac52-4bb4-97ff-f0aa4a5b94c7
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
 
 
 ///////////
@@ -94,25 +33,69 @@ Done!
 [1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
 [1;94m · · ────── Sending Curl Requests ────── · ·
 [1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
-Tue May  5 11:29:21 AM UTC 2026
+Tue May  5 02:51:40 PM UTC 2026
 Executing:[1;95m
-curl -I https://mx-pfla-p4-api.vercel.app/
+curl -I https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev//file_upload
 [0m
 ///////////
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  2765    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3323    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  3323    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
 HTTP/2 200 
-age: 0
-cache-control: public, max-age=0, must-revalidate
+date: Tue, 05 May 2026 14:51:40 GMT
 content-type: text/html; charset=utf-8
-date: Tue, 05 May 2026 11:29:21 GMT
+content-length: 3323
+cache-control: no-cache,no-store
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+pragma: no-cache
+set-cookie: .Tunnels.Relay.WebForwarding.Cookies=CfDJ8NJJuTEdEi5KqensronCVW0tYnCKn1n08jjG3jVR9pNQgSOrUp9q7elHOLswlNV4OP1-VwjyCKK7kibEkJBgF1_U159XjCfgWccKs7zD45qQInhI1A5bfi9RBVH7C2yPTZ5dPJ7MkaIFg41Mfte5HxRKDPOv8RK4slrDr24QAiBSFQNcryolplavhb7HMknMkl-cepVWfNAio58j2hjrwmY1O-X033HYBuU2gN97pOkR8gnwksEGQRptmQ9rZscqH2ep5fJZn-FiRlS7TW8MsrRmDkfoItFMNOSsEB3zrT1PlZUPbq_2UHYVAnpxnHCNnJ-wPP0nmMIlyQTNFj1Wffw6FO2i4QthHgwGcm7QgUHkzoFECESLbyXZg5wPwGSwpZQFh2rpE3A37gn32AEYnNrP-8WJ1o5rd8WO6FaENFjABAsVhCs8Q5xZyNTyDsaZptU1Q6Sfre6CgGnqaxiVQ7nZdekHc7ZRtKueaHfEWWdABSLW_xsDLFhWPgT1wh6DXNyxpGeRSspFBrHI95ybMrQ4IfsfiSChyx-lPjp6OqCfZ6nc9B8R5kbWGUXG3pNEH07eqGz523AXEF0PXhlpsl6Hr3Aq43cuw7kt7MGxqkaxspou7FplCwloXmyRL3vlFY73G7zjeYSW9KnFHgTYUbfEGkjqlWn6uoDB6Ed7TNMIb3kHRYWB4-tD_VHN8B2YH_ffdQP7z03tCbVsIZmZgirbXjkMEw4qJK3v1ocHskntojwOkUMlg0Ng8_hVo8i4RHjObyr1_JJdI0kgrD2lk2zlhFYsLnof3jrwB_O3CKIVFcYZmvkyHx-xa4BZfFwNXzTJN81-FKsFZpresUHj6l2JzV69hDxhOGpJo3iSH5H_8fEagnL6i8JLPUjFT7_rg6dLl0M4aOpLQdn73Fbt6sgUUt2Ixk_JUnSe7t49j9szKgzahzzUujljX9KsPJAqT558XZ7Ud_yI6jFYD5_Vzt0vMrI7mR2UhEBrfTYR_99t; path=/; secure; samesite=none; Partitioned
+x-content-type-options: nosniff
+ratelimit-limit: HttpRequestRatePerPort:1500/m
+ratelimit-remaining: HttpRequestRatePerPort:1499
+ratelimit-reset: HttpRequestRatePerPort:54s
+x-report-abuse: https://msrc.microsoft.com/report/abuse
+x-ms-ratelimit-limit: 1500
+x-ms-ratelimit-remaining: 1498
+x-ms-ratelimit-used: 2
+x-ms-ratelimit-reset: 0
+x-greeting: Smell her Farts
+x-rape-kill: Lick Asss and pussy
+x-robots-tag: noindex, nofollow
+referrer-policy: same-origin
+vssaas-request-id: 184baab1-05de-45fe-b74c-e23541858a84
+strict-transport-security: max-age=31536000; includeSubDomains
+x-served-by: tunnels-prod-rel-inc1-v3-cluster
+
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue May  5 02:52:02 PM UTC 2026
+Executing:[1;95m
+curl -I https://mx-pfla-p4-api.vercel.app//file_upload
+[0m
+///////////
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+HTTP/2 308 
+cache-control: public, max-age=0, must-revalidate
+content-type: text/plain
+date: Tue, 05 May 2026 14:52:02 GMT
+location: /file_upload
+refresh: 0;url=/file_upload
 server: Vercel
 strict-transport-security: max-age=63072000; includeSubDomains; preload
-x-vercel-cache: MISS
-x-vercel-enable-rewrite-caching: 1
-x-vercel-id: bom1::iad1::llwmd-1777980561182-26fb0d7370ae
-content-length: 2765
+x-vercel-id: bom1::26kxx-1777992722656-fc86cd26431b
 
 
 ///////////

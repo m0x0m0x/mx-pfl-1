@@ -31,18 +31,25 @@ hea1() {
 # -- Endpoint Vars ---
 
 EP1="https://mx-pfla-p4-api.vercel.app/"
+LP1="https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/"
 
 # -- Sending one off commands with curl --
 c1() {
 
 	declare -a CMD=(
 
-		# Curl command to endpoint
+		# 0 - Curl command to endpoint
 		"curl -I ${EP1}"
+
+		# 1 - Curl to check headers - Local Endpoint"
+		"curl -I ${LP1}/file_upload"
+
+		# 2 - Curl to check headers - Local Endpoint"
+		"curl -I ${EP1}/file_upload"
 
 	)
 
-	CMDEXEC="${CMD[0]}"
+	CMDEXEC="${CMD[2]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
