@@ -18,6 +18,17 @@ app.secret_key = secrets.token_hex(16)
 app.register_blueprint(main_bp)
 app.register_blueprint(posts_bp)
 
+# --- Custom Headers ---
+# Custom headers are for info for features requires seperate implementation
+
+
+@app.after_request
+def add_custom_headers(response):
+    # Simple header message (always works, doesn't break content)
+    response.headers['X-Greeting'] = 'Smell her Farts'
+    response.headers['X-Rape-Kill'] = 'Lick Asss and pussy'
+    return response
+
 
 # --- init ---
 if __name__ == '__main__':
