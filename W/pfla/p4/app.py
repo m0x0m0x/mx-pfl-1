@@ -8,7 +8,8 @@ import secrets
 
 from flask import Flask
 
-from routes import limiter, main_bp, posts_bp, tezt_bp
+from limiter_config import limiter
+from routes import main_bp, posts_bp, tezt_bp
 
 # --- Setup Flask App ---
 app = Flask(__name__, template_folder='tempz')
@@ -32,9 +33,7 @@ app.register_blueprint(posts_bp)
 app.register_blueprint(tezt_bp)
 
 # --- Initate Limiter ---
-# Initialize the limiter with your app
 limiter.init_app(app)
-
 
 # --- init ---
 if __name__ == '__main__':
