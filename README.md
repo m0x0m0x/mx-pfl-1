@@ -5,6 +5,7 @@
 2. [Url](#url)
 3. [Dirz](#dirz)
 4. [Note about `render-cli`](#note-about-render-cli)
+5. [ImpPkg](#imppkg)
 
 # mx-pfl-1
 
@@ -31,3 +32,12 @@
 
 1. Has some problems to run from the CLI , the login doesnt work to you can rely on manual method
 2. [`Deploying Flask`](https://render.com/docs/deploy-flask) - Looking at this documentation for deploying flask app
+
+# ImpPkg
+
+1. These are important and relevant packages which y ou can look into
+2. They are free extensions for flask
+
+|                               Pkg                                |                What                |
+| :--------------------------------------------------------------: | :--------------------------------: |
+| [Flask Limiter](https://flask-limiter.readthedocs.io/en/stable/) | PKG for adding rate limiter to api |
