@@ -12,11 +12,14 @@
 
 # Dirz
 
-|         Dir         |         What         |
-| :-----------------: | :------------------: |
-|    [`sc`](./sc/)    |  Execution Scripts   |
-|    [`do`](./do/)    |      HTML Docs       |
-| [`tempz`](./tempz/) | HTML Template Folder |
+|                     Dir                     |                 What                  |
+| :-----------------------------------------: | :-----------------------------------: |
+|                [`sc`](./sc/)                |           Execution Scripts           |
+|                [`do`](./do/)                |               HTML Docs               |
+|             [`tempz`](./tempz/)             |         HTML Template Folder          |
+|            [`routes`](./routes/)            | Folder where routes are being defined |
+|            [`app.py`](./app.py/)            |        Application entry point        |
+| [`limiter_config.py`](./limiter_config.py/) |         Flask Limiter Global          |
 
 # Deployed
 
