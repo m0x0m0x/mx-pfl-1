@@ -19,4 +19,31 @@ content%}
     BootySmell
   </button>
 </div>
+
+{# JS for the button click event #}
+
+<script type="text/javascript">
+  const postButton = document.getElementById('post_button')
+
+  const jsonData = {
+    name: 'PussyLicker',
+    greeting: 'Smell Panty',
+  }
+
+  postButton.addEventListener('click', () => {
+    fetch('{{ url_for("jsa.handle_post") }}', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+      },
+      body: JSON.stringify(jsonData),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log('Success:', data))
+      .catch((error) => {
+        console.error('Error:', error)
+      })
+  })
+</script>
+
 {% endblock %}
