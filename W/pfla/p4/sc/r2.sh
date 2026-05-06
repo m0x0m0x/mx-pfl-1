@@ -47,9 +47,12 @@ c1() {
 		# 2 - Curl to check headers - Local Endpoint"
 		"curl -I ${EP1}/file_upload"
 
+		# 3 - Curl Loop to check rate limiter EP
+		"curl_loop "
+
 	)
 
-	CMDEXEC="${CMD[2]}"
+	CMDEXEC="${CMD[3]}"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
 	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
 	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
@@ -102,6 +105,27 @@ c1_l() {
 		echo # Add blank line between commands
 	done
 }
+
+# -- Miscellaneous Commands ---
+
+# This Curl loop is being written to test rate limiter functionality
+curl_loop() {
+	for i in {1..10}; do
+		echo "Sending request $i..."
+
+		# Basic curl request (you can customize this)
+		curl -I -L -s ${EP1}/file_upload/ | head -n 1
+
+		# Optional: small delay between requests (uncomment if needed)
+		# sleep 0.5
+	done
+}
+
+# Fish Shell Loop - NOTE THIS WILL NOT WORK IN BASH
+# for i in (seq 1 10)
+# 	echo "Sending request $i..."
+# 	curl -I -s "${EP1}/file_upload/" | head -n 1
+# end
 
 # --- Execution ---
 panty() {

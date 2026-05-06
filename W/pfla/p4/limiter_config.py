@@ -19,6 +19,6 @@ def custom_429_response(request_limit):
 
 limiter = Limiter(
     get_remote_address,
-    default_limits=["100 per day", "10 per hour", "1 per minute"],
+    default_limits=["100 per day", "10 per hour", "5 per minute"],
     on_breach=custom_429_response  # Attach the handler here
 )
