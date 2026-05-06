@@ -33,28 +33,35 @@ content %}
     </article>
   </div>
 
-  <!-- ✅ Convert to CSV Button -->
-  {% if text_content %}
-  <div style="margin: 20px auto">
-    <form
-      method="POST"
-      action="{{ url_for('posts.convert_to_csv') }}"
-      style="display: inline">
-      <input
-        type="submit"
-        value="🔄 Convert to CSV"
-        style="
-          background-color: #28a745;
-          color: white;
-          padding: 10px 20px;
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-        " />
-    </form>
+  <!-- ✅ Convert to CSV Form -->
+  <div>
+    <article style="display: inline-block; width: auto; text-align: center">
+      <h4 style="color: oklch(76.8% 0.233 130.85)">Convert Text to CSV</h4>
+      <form
+        method="POST"
+        action="{{ url_for('posts.convert_to_csv') }}"
+        enctype="multipart/form-data">
+        <input type="file" name="file" accept=".txt" />
+        <input type="submit" value="🔄 Convert Text to CSV" />
+      </form>
+    </article>
   </div>
-  {% endif %}
+
+  <!-- ✅ Convert to CSV Form -->
+  <div>
+    <article style="display: inline-block; width: auto; text-align: center">
+      <h4 style="color: oklch(76.8% 0.233 130.85)">
+        Convert Text to CSV with reponse
+      </h4>
+      <form
+        method="POST"
+        action="{{ url_for('posts.convert_to_csv_response') }}"
+        enctype="multipart/form-data">
+        <input type="file" name="file" accept=".txt" />
+        <input type="submit" value="🔄 Convert Text to CSV" style="" />
+      </form>
+    </article>
+  </div>
 
   <!-- ✅ CSV Table Display -->
   {% if table_html %}

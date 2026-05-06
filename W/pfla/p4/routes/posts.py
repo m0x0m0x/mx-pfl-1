@@ -3,7 +3,7 @@
 # -----------------------------------
 
 import pandas as pd
-from flask import Blueprint, render_template, request
+from flask import Blueprint, Response, render_template, request
 
 posts_bp = Blueprint('posts', __name__)
 
@@ -80,3 +80,31 @@ def convert_to_csv():
             return csv_content, 200, {'Content-Type': 'text/csv'}
 
     return "Invalid file type. Please upload a text file.", 400
+
+# This route is going to be the same as above but using reposne
+
+
+@posts_bp.route('/convert_to_csv_response', methods=['POST'])
+def convert_to_csv_response():
+    file = request.files.get('file')
+
+    if not file or not file.filename:
+        return "No file provided", 400
+
+    if not file.filename.endswith('.txt'):
+        return "Invalid file type. Please upload a .txt file", 400
+
+    try:
+        text_content = file.stream.read().decode('utf-8')
+        lines = [line.strip()
+                 for line in text_content.split('\n') if line.strip()]
+        df = pd.DataFrame({'text': lines})
+        csv_content = df.to_csv(index=False)
+
+        return Response(
+            csv_content,
+            mimetype='text/csv',
+            headers={'Content-Disposition': 'attachment; filename=converted.csv'}
+        )
+    except Exception as e:
+        return f"Error: {str(e)}", 400
