@@ -33,6 +33,29 @@ content %}
     </article>
   </div>
 
+  <!-- ✅ Convert to CSV Button -->
+  {% if text_content %}
+  <div style="margin: 20px auto">
+    <form
+      method="POST"
+      action="{{ url_for('posts.convert_to_csv') }}"
+      style="display: inline">
+      <input
+        type="submit"
+        value="🔄 Convert to CSV"
+        style="
+          background-color: #28a745;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+        " />
+    </form>
+  </div>
+  {% endif %}
+
   <!-- ✅ CSV Table Display -->
   {% if table_html %}
   <div

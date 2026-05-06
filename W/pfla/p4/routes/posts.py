@@ -60,3 +60,23 @@ def file_upload():
                            message=message,
                            table_html=table_html,
                            text_content=text_content)
+
+# Convert file to csv
+
+
+@posts_bp.route('/convert_to_csv', methods=['POST'])
+def convert_to_csv():
+    if request.method == 'POST':
+        file = request.files.get('file')
+        if file and file.content_type == 'text/plain':
+            # Read the text file
+            text_content = file.stream.read().decode('utf-8')
+
+            # Convert text to DataFrame (one row with the text content)
+            df = pd.DataFrame({'text': [text_content]})
+
+            # Convert to CSV
+            csv_content = df.to_csv(index=False)
+            return csv_content, 200, {'Content-Type': 'text/csv'}
+
+    return "Invalid file type. Please upload a text file.", 400
