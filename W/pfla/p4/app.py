@@ -9,7 +9,7 @@ import secrets
 from flask import Flask
 
 from limiter_config import limiter  # Importing limite_config.py
-from routes import main_bp, posts_bp, tezt_bp
+from routes import jsa_bp, main_bp, posts_bp, tezt_bp
 
 # --- Setup Flask App ---
 app = Flask(__name__, template_folder='tempz')
@@ -31,6 +31,7 @@ def add_custom_headers(response):
 app.register_blueprint(main_bp)
 app.register_blueprint(posts_bp)
 app.register_blueprint(tezt_bp)
+app.register_blueprint(jsa_bp)
 
 # --- Initate Limiter ---
 limiter.init_app(app)

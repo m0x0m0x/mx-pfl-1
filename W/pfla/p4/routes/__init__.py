@@ -1,6 +1,7 @@
 # Just collect and export all blueprints
+from .jsa import jsa_bp
 from .main import main_bp
 from .posts import posts_bp
 from .tezt import tezt_bp
 
-__all__ = ['main_bp', 'posts_bp', 'tezt_bp']
+__all__ = ['main_bp', 'posts_bp', 'tezt_bp', 'jsa_bp']

@@ -109,6 +109,13 @@
             📝 /file_upload
           </a>
         </li>
+        <li>
+          <a
+            href="{{ url_for('jsa.jsa1') }}"
+            class="{% if request.endpoint == 'jsa.jsa1' %}secondary{% else %}contrast{% endif %}">
+            📝 /jsa
+          </a>
+        </li>
       </ul>
     </nav>
 
