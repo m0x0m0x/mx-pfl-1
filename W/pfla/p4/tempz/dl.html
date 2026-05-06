@@ -1,29 +1,87 @@
-{% extends "base.html" %} {% block title %}FileUpload{% endblock %} {% block
+{% extends "base.html" %} {% block title %}Download CSV{% endblock %} {% block
 content %}
 
-<div style="text-align: center">
-  <h1>ROUTE = <code>dl.html - for /dl_cv</code></h1>
-  <p class="terminal-green">fup.html</p>
-  <p>This page corresponds to function in <code>routes/posts.py</code></p>
+<style>
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-  <!-- ✅ Message -->
-  {% if message %}
-  <div
-    style="margin: 20px auto; padding: 10px; width: 50%; border-radius: 5px; 
-      {% if 'Successful' in message or '✅' in message %}
-        background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;
-      {% else %}
-        background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;
-      {% endif %}">
-    {{ message }}
-  </div>
-  {% endif %}
+  /* Background GIF - behind everything */
+  .bg-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
 
-  <!-- ✅ Upload Form -->
-  <div>
-    <article style="display: inline-block; width: auto; text-align: center">
-      <h3 style="color: oklch(76.8% 0.233 130.85)">Upload Form</h3>
-    </article>
+  /* Content - in front */
+  .content-wrapper {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .content-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  h1 {
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .download-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+
+  .download-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+</style>
+
+<!-- Background GIF -->
+<img
+  src="https://i.giphy.com/3o85xzkvl1siB2rHSo.webp"
+  class="bg-gif"
+  alt="background" />
+
+<!-- Content -->
+<div class="content-wrapper">
+  <div class="content-box">
+    <h1>Download Your Converted CSV</h1>
+
+    {% if filename %}
+    <div>
+      <a
+        href="{{ url_for('posts.dlf', filename=filename) }}"
+        class="download-btn">
+        ⬇️ Download CSV File
+      </a>
+    </div>
+    {% else %}
+    <p style="color: white">No file available. Please upload a file first.</p>
+    {% endif %}
   </div>
 </div>
+
 {% endblock %}

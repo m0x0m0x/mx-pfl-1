@@ -6,7 +6,7 @@ import os
 import uuid
 
 import pandas as pd
-from flask import Blueprint, Response, render_template, request
+from flask import Blueprint, Response, render_template, request, send_from_directory
 
 posts_bp = Blueprint('posts', __name__)
 
@@ -115,16 +115,25 @@ def convert_to_csv_response():
 # Returning the converted file in a seperate download page
 
 
-@posts_bp.route('/dl_cv')
-def dl_c():
-    file = request.files['file']
+@posts_bp.route('/dl_cv', methods=['POST'])
+def dl_cv():
+    file = request.files.get('file')
+    if not file or file.filename == '':
+        return "No file provided", 400
 
-    df.pd_read_csv(file)
-
-    if not os.path.exists('Downloads'):
-        return "No diraz"
+    if not os.path.exists('dlz'):
+        os.makedirs('dlz')
 
     filename = f'{uuid.uuid4()}.csv'
-    df.to_csv(os.path.join('Downloads', filename))
+    filepath = os.path.join('dlz', filename)
+    file.save(filepath)  # Save directly without pandas
 
-    # return render_template('dl.html')
+    return render_template('dl.html', filename=filename)
+
+# In order for the above route to work , whe have to make another route
+# Download from endpoint
+
+
+@posts_bp.route('/dl/<filename>')
+def dlf(filename):
+    return send_from_directory('dlz', filename, download_name='result.csv')

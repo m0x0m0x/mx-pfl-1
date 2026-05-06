@@ -63,6 +63,22 @@ content %}
     </article>
   </div>
 
+  <!-- ✅ Convert to CSV And DL in seperate page -->
+  <div>
+    <article style="display: inline-block; width: auto; text-align: center">
+      <h4 style="color: oklch(76.8% 0.233 130.85)">
+        Convert Text to CSV with reponse
+      </h4>
+      <form
+        method="POST"
+        action="{{ url_for('posts.dl_cv') }}"
+        enctype="multipart/form-data">
+        <input type="file" name="file" accept=".txt" />
+        <input type="submit" value="🔄 Convert Text to CSV" style="" />
+      </form>
+    </article>
+  </div>
+
   <!-- ✅ CSV Table Display -->
   {% if table_html %}
   <div
