@@ -2,6 +2,9 @@
 # This file has routes of posts - was made for testing the project structure for multiple files
 # -----------------------------------
 
+import os
+import uuid
+
 import pandas as pd
 from flask import Blueprint, Response, render_template, request
 
@@ -108,3 +111,20 @@ def convert_to_csv_response():
         )
     except Exception as e:
         return f"Error: {str(e)}", 400
+
+# Returning the converted file in a seperate download page
+
+
+@posts_bp.route('/dl_cv')
+def dl_c():
+    file = request.files['file']
+
+    df.pd_read_csv(file)
+
+    if not os.path.exists('Downloads'):
+        return "No diraz"
+
+    filename = f'{uuid.uuid4()}.csv'
+    df.to_csv(os.path.join('Downloads', filename))
+
+    # return render_template('dl.html')
