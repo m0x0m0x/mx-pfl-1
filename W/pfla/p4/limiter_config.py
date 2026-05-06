@@ -7,10 +7,10 @@ def custom_429_response(request_limit):
     # request_limit contains info about the specific limit that was hit
     html = f'''
     <html>
-    <body style="background:black; color:red; text-align:center; padding-top:20%">
+    <body style="background:black; color:red; text-align:center; padding-top:10%">
         <h1 style="text-shadow:0 0 20px red">RATE LIMIT REACHED!</h1>
         <p>Limit: {request_limit.limit}</p>
-        <img src="https://i.ibb.co/hxYyJHVv/image.png" width="300">
+        <img src="https://i.ibb.co/hxYyJHVv/image.png" width="900">
     </body>
     </html>
     '''
