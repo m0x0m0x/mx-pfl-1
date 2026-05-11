@@ -1,0 +1,53 @@
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── UV Command Run ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: uv init .
+Initialized project `p5` at `/workspaces/mx-pfl-1/W/pfla/p5`
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── UV Command Run ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: uv run main.py
+Using CPython 3.14.4 interpreter at: /usr/local/python/current/bin/python3.14
+Creating virtual environment at: .venv
+Hello from p5!
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── UV Command Run ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: uv add flask flask-cors routes
+Resolved 13 packages in 885ms
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 11 packages in 477ms
+ + blinker==1.9.0
+ + click==8.3.3
+ + flask==3.1.3
+ + flask-cors==6.0.2
+ + itsdangerous==2.2.0
+ + jinja2==3.1.6
+ + markupsafe==3.0.3
+ + repoze-lru==0.7
+ + routes==2.5.1
+ + six==1.17.0
+ + werkzeug==3.1.8
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+

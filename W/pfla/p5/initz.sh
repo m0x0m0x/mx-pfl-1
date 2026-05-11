@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # -------------------------
-#  UV Run
+#  initz.sh - Script to setup the project
 # -------------------------
 
 # Error Handling
@@ -28,71 +28,20 @@ hea1() {
 	echo -e "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 }
 
-# -- Endpoint Vars ---
-
-EP1="https://mx-pfla-p4-api.vercel.app/"
-LP1="https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/"
-
-# -- Sending one off commands with curl --
-c1() {
+# Setup UV Project and run
+uv1() {
 
 	declare -a CMD=(
 
-		# 0 - Curl command to endpoint
-		"curl -I ${EP1}"
-
-		# 1 - Curl to check headers - Local Endpoint"
-		"curl -I ${LP1}/file_upload"
-
-		# 2 - Curl to check headers - Local Endpoint"
-		"curl -I ${EP1}/file_upload"
-
-		# 3 - Curl Loop to check rate limiter EP
-		"curl_loop "
-
-	)
-
-	CMDEXEC="${CMD[3]}"
-	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
-	echo -e "${BBLUE} · · ────── Sending Curl Requests ────── · ·"
-	echo -e "${BBLUE} · · ────── ꒰ঌ·✦·໒꒱ ────── · ·"
-	date
-	echo -e "Executing:${BMAGENTA}\n${CMDEXEC}\n${RESET}"
-	echo -e "///////////"
-	eval "${CMDEXEC}"
-	echo -e "\n///////////"
-	echo -e "${BGREEN}\nDone!"
-	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
-	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
-	echo -e "───── ⋆⋅☆⋅⋆ ─────${RESET}"
-	echo
-	echo
-	echo
-}
-
-# Loop Commands
-c1_l() {
-
-	# Deployed Endpoint
-	EP="https://ftut1.vercel.app"
-
-	declare -a CMD=(
-
-		#Test the custom response headers for multiple routes
-		"curl -I ${EP}"
-		"curl -I ${EP}/pusy"
-		"curl -I ${EP}/hello"
-		"curl -I ${EP}/hellopg"
-		"curl -I ${EP}/customz"
-		"curl -I ${EP}/customz2"
-		"curl -I ${EP}/customz3"
-		"curl -I ${EP}/cu4"
+		"uv init ."
+		"uv run main.py"
+		"uv add flask flask-cors routes"
 
 	)
 
 	for CMDEXEC in "${CMD[@]}"; do
 		echo -e "${BBLUE}────── ꒰ঌ·✦·໒꒱ ──────${RESET}"
-		echo -e "${BBLUE}────── Curl -I on Deployed endpoints ──────${RESET}"
+		echo -e "${BBLUE}────── UV Command Run ──────${RESET}"
 		echo -e "${BBLUE}────── ꒰ঌ·✦·໒꒱ ──────${RESET}"
 		echo -e "Executing: ${CMDEXEC}"
 		eval "${CMDEXEC}"
@@ -106,31 +55,9 @@ c1_l() {
 	done
 }
 
-# -- Miscellaneous Commands ---
-
-# This Curl loop is being written to test rate limiter functionality
-curl_loop() {
-	for i in {1..10}; do
-		echo "Sending request $i..."
-
-		# Basic curl request (you can customize this)
-		curl -I -L -s ${EP1}/file_upload/ | head -n 1
-
-		# Optional: small delay between requests (uncomment if needed)
-		# sleep 0.5
-	done
-}
-
-# Fish Shell Loop - NOTE THIS WILL NOT WORK IN BASH
-# for i in (seq 1 10)
-# 	echo "Sending request $i..."
-# 	curl -I -s "${EP1}/file_upload/" | head -n 1
-# end
-
 # --- Execution ---
 panty() {
-	c1 2>&1 | tee -a sc/logz/r2.sh.txt
-	# c1_l 2>&1 | tee -a sc/logz/r2.sh.txt
+	uv1 2>&1 | tee -a ./sc/logz/initz.sh.txt
 
 }
 panty
