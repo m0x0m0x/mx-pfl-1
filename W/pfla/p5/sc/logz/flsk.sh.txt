@@ -1,0 +1,172 @@
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Mon May 11 12:04:06 PM UTC 2026
+Executing:[1;95m
+uv run flask --help
+[0m
+///////////
+/workspaces/mx-pfl-1/W/pfla/p5/.venv/lib/python3.14/site-packages/flask_limiter/_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+Usage: flask [OPTIONS] COMMAND [ARGS]...
+
+  A general utility script for Flask applications.
+
+  An application to load must be given with the '--app' option, 'FLASK_APP'
+  environment variable, or with a 'wsgi.py' or 'app.py' file in the current
+  directory.
+
+Options:
+  -e, --env-file FILE   Load environment variables from this file, taking
+                        precedence over those set by '.env' and '.flaskenv'.
+                        Variables set directly in the environment take highest
+                        precedence. python-dotenv must be installed.
+  -A, --app IMPORT      The Flask application or factory function to load, in
+                        the form 'module:name'. Module can be a dotted import
+                        or file path. Name is not required if it is 'app',
+                        'application', 'create_app', or 'make_app', and can be
+                        'name(args)' to pass arguments.
+  --debug / --no-debug  Set debug mode.
+  --version             Show the Flask version.
+  --help                Show this message and exit.
+
+Commands:
+  limiter  Flask-Limiter maintenance & utility commands
+  routes   Show the routes for the app.
+  run      Run a development server.
+  shell    Run a shell in the app context.
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── flask cli Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Mon May 11 12:09:12 PM UTC 2026
+Executing:[1;95m
+uv run flask routes
+[0m
+///////////
+/workspaces/mx-pfl-1/W/pfla/p5/.venv/lib/python3.14/site-packages/flask_limiter/_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+Endpoint   Methods  Rule                   
+---------  -------  -----------------------
+main.home  GET      /                      
+static     GET      /static/<path:filename>
+tezt.api   GET      /tezt_api              
+tezt.tezt  GET      /tezt                  
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── flask cli Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Mon May 11 12:09:58 PM UTC 2026
+Executing:[1;95m
+uv run flask limiter --help
+[0m
+///////////
+Usage: flask limiter [OPTIONS] COMMAND [ARGS]...
+
+  Flask-Limiter maintenance & utility commands
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  clear   Clear limits for a specific key
+  config  View the extension configuration
+  limits  Enumerate details about all routes with rate limits
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: uv flask limiter config
+error: unrecognized subcommand 'flask'
+
+Usage: uv [OPTIONS] <COMMAND>
+
+For more information, try '--help'.
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: uv run flask limiter config
+/workspaces/mx-pfl-1/W/pfla/p5/.venv/lib/python3.14/site-packages/flask_limiter/_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+                                                Flask-Limiter Config                                                
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Notes                    ┃ Configuration                  ┃ Value                                                ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ Enabled                  │ RATELIMIT_ENABLED              │ True                                                 │
+│ Key Function             │ RATELIMIT_KEY_FUNC             │ flask_limiter.util.get_remote_address()              │
+│ Key Prefix               │ RATELIMIT_KEY_PREFIX           │ ''                                                   │
+│ Rate Limiting Config     │ RATELIMIT_STRATEGY             │ FixedWindowRateLimiter                               │
+│                          │ ├── RATELIMIT_STORAGE_URI      │ └── N/A                                              │
+│                          │ │   ├── Instance               │     ├── MemoryStorage                                │
+│                          │ │   └── Backend                │     ├── Counter()                                    │
+│                          │ ├── RATELIMIT_STORAGE_OPTIONS  │     ├── {}                                           │
+│                          │ └── Status                     │     └── OK                                           │
+│ ApplicationLimits Limits │ RATELIMIT_APPLICATION          │ []                                                   │
+│ Default Limits           │ RATELIMIT_DEFAULT              │ ['100 per 1 day', '10 per 1 hour', '5 per 1 minute'] │
+│                          │ RATELIMIT_DEFAULTS_PER_METHOD  │ False                                                │
+│                          │ RATELIMIT_DEFAULTS_EXEMPT_WHEN │ None                                                 │
+│                          │ RATELIMIT_DEFAULTS_DEDUCT_WHEN │ None                                                 │
+│                          │ RATELIMIT_DEFAULTS_COST        │ 1                                                    │
+│ Header configuration     │ RATELIMIT_HEADERS_ENABLED      │ False                                                │
+│ Fail on first breach     │ RATELIMIT_FAIL_ON_FIRST_BREACH │ True                                                 │
+│ On breach callback       │ RATELIMIT_ON_BREACH_CALLBACK   │ limiter_config.custom_429_response()                 │
+└──────────────────────────┴────────────────────────────────┴──────────────────────────────────────────────────────┘
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+[1;94m────── Curl -I on Deployed endpoints ──────[0m
+[1;94m────── ꒰ঌ·✦·໒꒱ ──────[0m
+Executing: uv run flask limiter limits
+/workspaces/mx-pfl-1/W/pfla/p5/.venv/lib/python3.14/site-packages/flask_limiter/_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
+  warnings.warn(
+main
+└── main.home: /
+    ├── 100 per 1 day
+    ├── 10 per 1 hour
+    └── 5 per 1 minute
+tezt
+├── tezt.tezt: /tezt
+│   ├── 100 per 1 day
+│   ├── 10 per 1 hour
+│   └── 5 per 1 minute
+└── tezt.api: /tezt_api
+    └── 1 per 1 minute
+[1;92mDone![0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+[1;94m───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+
