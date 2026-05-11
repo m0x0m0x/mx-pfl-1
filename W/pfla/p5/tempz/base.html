@@ -81,41 +81,6 @@
             🏠 Home
           </a>
         </li>
-        <li>
-          <a
-            href="{{ url_for('main.other') }}"
-            class="{% if request.endpoint == 'main.other' %}secondary{% else %}contrast{% endif %}">
-            📝 /other
-          </a>
-        </li>
-        <li>
-          <a
-            href="{{ url_for('posts.posts') }}"
-            class="{% if request.endpoint == 'posts.posts' %}secondary{% else %}contrast{% endif %}">
-            📝 /posts
-          </a>
-        </li>
-        <li>
-          <a
-            href="{{ url_for('posts.f1') }}"
-            class="{% if request.endpoint == 'posts.f1' %}secondary{% else %}contrast{% endif %}">
-            📝 /f1
-          </a>
-        </li>
-        <li>
-          <a
-            href="{{ url_for('posts.file_upload') }}"
-            class="{% if request.endpoint == 'posts.file_upload' %}secondary{% else %}contrast{% endif %}">
-            📝 /file_upload
-          </a>
-        </li>
-        <li>
-          <a
-            href="{{ url_for('jsa.jsa1') }}"
-            class="{% if request.endpoint == 'jsa.jsa1' %}secondary{% else %}contrast{% endif %}">
-            📝 /jsa
-          </a>
-        </li>
       </ul>
     </nav>
 
