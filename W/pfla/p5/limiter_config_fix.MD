@@ -1,10 +1,25 @@
+<h3> <code>flask-limiter</code> storage fix</h3>
+
+1. [Regarding the error](#regarding-the-error)
+2. [Fixing Flask-Limiter In-Memory Storage Warning on Vercel](#fixing-flask-limiter-in-memory-storage-warning-on-vercel)
+   1. [✅ Recommended Solution: Use Upstash Redis (Serverless-Friendly)](#-recommended-solution-use-upstash-redis-serverless-friendly)
+      1. [Step 1: Install Dependencies](#step-1-install-dependencies)
+      2. [Step 2: Configure Flask-Limiter with Upstash](#step-2-configure-flask-limiter-with-upstash)
+      3. [Step 3: Set Environment Variables in Vercel](#step-3-set-environment-variables-in-vercel)
+      4. [Step 4: (Optional) Add Fallback for Development](#step-4-optional-add-fallback-for-development)
+   2. [🔧 Alternative Storage Options](#-alternative-storage-options)
+   3. [🧪 Test Your Setup](#-test-your-setup)
+   4. [🚀 Pro Tips for Vercel](#-pro-tips-for-vercel)
+   5. [📦 Full `requirements.txt` Example](#-full-requirementstxt-example)
+
 # Regarding the error
 
 ```sh
 /var/task/_vendor/flask_limiter/_extension.py:364: UserWarning: Using the in-memory storage for tracking rate limits as no storage was explicitly specified. This is not recommended for production use. See: https://flask-limiter.readthedocs.io#configuring-a-storage-backend for documentation about configuring the storage backend.
   warnings.warn(
 ```
-- This error occurs because you were using 
+
+- This error occurs because you were using the limiter and doing it in memory, myou need to try alternative as suggested below
 
 # Fixing Flask-Limiter In-Memory Storage Warning on Vercel
 
