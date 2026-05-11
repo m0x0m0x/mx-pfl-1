@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Flask Study{% endblock %}</title>
+
+    <!-- Google Font: Quantico -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet" />
+
+    <!-- PicoCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.lime.min.css" />
+
+    <!-- Open Graph Image -->
+    <meta property="og:image" content="https://i.ibb.co/hxBT104f/image.png" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="https://i.ibb.co/1fxXrKxy/image.png"
+      type="image/png" />
+
+    <style>
+      body,
+      button,
+      input,
+      h1,
+      textarea {
+        font-family: 'Quantico', monospace;
+      }
+
+      h1 {
+        background: linear-gradient(
+          135deg,
+          #ff0000 0%,
+          #0000ff 17%,
+          #9400d3 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .terminal-green {
+        color: #0f0;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-shadow: 0 0 5px #0f0;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PicoCSS Navigation -->
+    {#
+    <nav class="container">
+      <ul>
+        <li><strong>Flask Study</strong></li>
+      </ul>
+      <ul>
+        <li><a href="{{ url_for('main.home') }}" role="button">Home</a></li>
+        <li><a href="{{ url_for('main.other') }}" role="button">/other</a></li>
+      </ul>
+    </nav>
+    #}
+    <nav class="container" style="padding: 1rem; margin-bottom: 2rem">
+      <ul>
+        <li><strong>My Flask App</strong></li>
+      </ul>
+      <ul>
+        <li>
+          <a
+            href="{{ url_for('main.home') }}"
+            class="{% if request.endpoint == 'main.home' %}secondary{% else %}contrast{% endif %}">
+            🏠 Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="{{ url_for('main.other') }}"
+            class="{% if request.endpoint == 'main.other' %}secondary{% else %}contrast{% endif %}">
+            📝 /other
+          </a>
+        </li>
+        <li>
+          <a
+            href="{{ url_for('posts.posts') }}"
+            class="{% if request.endpoint == 'posts.posts' %}secondary{% else %}contrast{% endif %}">
+            📝 /posts
+          </a>
+        </li>
+        <li>
+          <a
+            href="{{ url_for('posts.f1') }}"
+            class="{% if request.endpoint == 'posts.f1' %}secondary{% else %}contrast{% endif %}">
+            📝 /f1
+          </a>
+        </li>
+        <li>
+          <a
+            href="{{ url_for('posts.file_upload') }}"
+            class="{% if request.endpoint == 'posts.file_upload' %}secondary{% else %}contrast{% endif %}">
+            📝 /file_upload
+          </a>
+        </li>
+        <li>
+          <a
+            href="{{ url_for('jsa.jsa1') }}"
+            class="{% if request.endpoint == 'jsa.jsa1' %}secondary{% else %}contrast{% endif %}">
+            📝 /jsa
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">{% block content %}{% endblock %}</main>
+  </body>
+</html>
