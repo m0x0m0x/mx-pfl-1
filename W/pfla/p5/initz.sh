@@ -36,6 +36,7 @@ uv1() {
 		"uv init ."
 		"uv run main.py"
 		"uv add flask flask-cors routes flask-limiter"
+		"uv add  Flask-Limiter[cli]"
 
 	)
 
