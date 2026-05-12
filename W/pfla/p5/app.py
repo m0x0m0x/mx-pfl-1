@@ -8,15 +8,18 @@ import secrets
 
 from flask import Flask
 
-from limiter_config import limiter  # Importing limite_config.py
+# IMPORTANT: Import limiter BEFORE blueprints that use it
+from limiter_config import limiter
 from routes import main_bp, tezt_bp
 
 # --- Setup Flask App ---
 app = Flask(__name__, template_folder='tempz')
 app.secret_key = secrets.token_hex(16)
 
+# --- Initialize Limiter FIRST (before blueprints) ---
+limiter.init_app(app)  # 👈 Moved BEFORE blueprint registration
+
 # --- Custom Headers ---
-# Custom headers are for info for features requires seperate implementation
 
 
 @app.after_request
@@ -27,12 +30,9 @@ def add_custom_headers(response):
     return response
 
 
-# --- Register Blueprints
+# --- Register Blueprints (after limiter init) ---
 app.register_blueprint(main_bp)
 app.register_blueprint(tezt_bp)
-
-# --- Initate Limiter ---
-limiter.init_app(app)
 
 # --- init ---
 if __name__ == '__main__':
