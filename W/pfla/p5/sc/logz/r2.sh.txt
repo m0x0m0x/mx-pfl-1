@@ -1,0 +1,38 @@
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+[1;94m · · ────── Sending Curl Requests ────── · ·
+[1;94m · · ────── ꒰ঌ·✦·໒꒱ ────── · ·
+Tue May 12 11:17:24 AM UTC 2026
+Executing:[1;95m
+curl_loop 
+[0m
+///////////
+Sending request 1...
+HTTP/2 308 
+Sending request 2...
+HTTP/2 308 
+Sending request 3...
+HTTP/2 308 
+Sending request 4...
+HTTP/2 308 
+Sending request 5...
+HTTP/2 308 
+Sending request 6...
+HTTP/2 308 
+Sending request 7...
+HTTP/2 308 
+Sending request 8...
+HTTP/2 308 
+Sending request 9...
+HTTP/2 308 
+Sending request 10...
+HTTP/2 308 
+
+///////////
+[1;92m
+Done!
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+───── ⋆⋅☆⋅⋆ ─────[0m
+
+
+

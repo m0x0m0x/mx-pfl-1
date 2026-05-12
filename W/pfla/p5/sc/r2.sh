@@ -30,7 +30,7 @@ hea1() {
 
 # -- Endpoint Vars ---
 
-EP1="https://mx-pfla-p4-api.vercel.app/"
+EP1="https://mx-pfla-p5-api.vercel.app/"
 LP1="https://fluffy-telegram-97679qp95pvf4xg-5000.app.github.dev/"
 
 # -- Sending one off commands with curl --
@@ -120,12 +120,6 @@ curl_loop() {
 		# sleep 0.5
 	done
 }
-
-# Fish Shell Loop - NOTE THIS WILL NOT WORK IN BASH
-# for i in (seq 1 10)
-# 	echo "Sending request $i..."
-# 	curl -I -s "${EP1}/file_upload/" | head -n 1
-# end
 
 # --- Execution ---
 panty() {
