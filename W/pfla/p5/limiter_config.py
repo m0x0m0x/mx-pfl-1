@@ -63,6 +63,7 @@ limiter = Limiter(
     default_limits=["100 per day", "10 per hour", "5 per minute"],
     on_breach=custom_429_response,
     storage_uri=storage_uri,
+    key_prefix="my-flask-app-mx-pfla-p5:",
     strategy="fixed-window",
     swallow_errors=True,
     headers_enabled=True,
