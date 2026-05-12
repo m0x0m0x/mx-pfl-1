@@ -8,6 +8,8 @@ import os
 
 from flask import Blueprint
 
+from limiter_config import limiter
+
 debug_bp = Blueprint('debug', __name__)
 
 # -- Routes ---
@@ -16,12 +18,14 @@ debug_bp = Blueprint('debug', __name__)
 
 
 @debug_bp.route('/debug')
+@limiter.limit("2 per hour")
 def debug():
     return "Debug route is working"
 
 
 # 2 - Check Redis configuration
 @debug_bp.route('/debug/check-redis')
+@limiter.limit("2 per hour")
 def check_redis():
     from limiter_config import storage_uri
 
@@ -40,6 +44,7 @@ def check_redis():
 
 # 3 - Test Redis connection (simple)
 @debug_bp.route('/debug/test-redis')
+@limiter.limit("2 per hour")
 def test_redis():
     import redis
 

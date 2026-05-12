@@ -122,7 +122,7 @@ curl_loop2() {
 	# Make 10 requests to generate rate limit counters
 	for i in {1..10}; do
 		# Fetch headers silently, then extract status + rate-limit headers
-		response=$(curl -s -I -w "\n%{http_code}" https://mx-pfla-p5-api.vercel.app/)
+		response=$(curl -s -I -w "\n%{http_code}" https://mx-pfla-p5-api.vercel.app/debug)
 
 		# Extract HTTP status code (last line)
 		status_code=$(echo "$response" | tail -n1)
