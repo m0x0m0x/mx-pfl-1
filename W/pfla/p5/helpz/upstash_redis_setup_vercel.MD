@@ -15,6 +15,7 @@
       9. [**Step 9: Monitor and Debug**](#step-9-monitor-and-debug)
       10. [**Step 10: Production Optimization**](#step-10-production-optimization)
       11. [**Quick Checklist Before Deploying:**](#quick-checklist-before-deploying)
+2. [Code to be used](#code-to-be-used)
 
 ## Step-by-Step Guide to Deploy Rate Limiting with Upstash Redis on Vercel
 
@@ -304,3 +305,9 @@ def health():
 - [ ] Tested locally with `.env` file
 
 That's it! Your rate limiting should now work on Vercel with Upstash Redis. The free tier of Upstash gives you 10,000 commands per day which is plenty for most applications.
+
+# Code to be used
+
+```python
+
+```
