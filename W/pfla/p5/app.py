@@ -10,7 +10,7 @@ from flask import Flask
 
 # IMPORTANT: Import limiter BEFORE blueprints that use it
 from limiter_config import limiter
-from routes import main_bp, tezt_bp
+from routes import debug_bp, main_bp, tezt_bp
 
 # --- Setup Flask App ---
 app = Flask(__name__, template_folder='tempz')
@@ -33,6 +33,7 @@ def add_custom_headers(response):
 # --- Register Blueprints (after limiter init) ---
 app.register_blueprint(main_bp)
 app.register_blueprint(tezt_bp)
+app.register_blueprint(debug_bp)
 
 # --- init ---
 if __name__ == '__main__':
