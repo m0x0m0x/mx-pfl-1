@@ -21,7 +21,7 @@ def get_real_ip():
 def custom_429_response(request_limit):
     ip = get_real_ip()
     print(
-        f"🔴 RATE LIMITED: {request.endpoint} from {ip} - Limit: {request_limit.limit}")
+        f"😡 RATE LIMITED: {request.endpoint} from {ip} - Limit: {request_limit.limit}")
 
     html = f'''
     <html>
