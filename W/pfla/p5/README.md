@@ -35,3 +35,5 @@
 # Regarding Limiter
 
 1. For the limter to function properly we will need to use an online redis service since its deployed to vercel
+2. According to the errors received in vercel , you cant use in memory functions for storing information, no web deployer will allow that , so you have to use an external service, UpstashRedis is suggested, and you will use that
+3. Important stuffs will be env vercel
