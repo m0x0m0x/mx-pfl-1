@@ -117,10 +117,38 @@ curl_loop() {
 	done
 }
 
+# Enhanced , this one will also , extract the reponse code and headers
+curl_loop2() {
+	# Make 10 requests to generate rate limit counters
+	for i in {1..10}; do
+		# Fetch headers silently, then extract status + rate-limit headers
+		response=$(curl -s -I -w "\n%{http_code}" https://mx-pfla-p5-api.vercel.app/)
+
+		# Extract HTTP status code (last line)
+		status_code=$(echo "$response" | tail -n1)
+
+		# Extract common rate-limit headers (case-insensitive)
+		rate_limit_headers=$(echo "$response" | grep -iE '^x-ratelimit-|^ratelimit-|^x-rate-limit-' | tr -d '\r')
+
+		# Print clean summary
+		echo "[$i] Status: $status_code"
+		if [ -n "$rate_limit_headers" ]; then
+			echo "$rate_limit_headers" | while read -r header; do
+				echo "    $(echo "$header" | cut -d: -f1 | tr '[:lower:]' '[:upper:]'): $(echo "$header" | cut -d: -f2- | xargs)"
+			done
+		else
+			echo "    Rate-limit headers: none found"
+		fi
+		echo ""
+	done
+}
+
 # --- Execution ---
 panty() {
-	c1 2>&1 | tee -a sc/logz/r2.sh.txt
+	# c1 2>&1 | tee -a sc/logz/r2.sh.txt
 	# c1_l 2>&1 | tee -a sc/logz/r2.sh.txt
+	# curl_loop 2>&1 | tee -a sc/logz/r2.sh.txt
+	curl_loop2 2>&1 | tee -a sc/logz/r2.sh.txt
 
 }
 panty
