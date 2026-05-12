@@ -67,3 +67,23 @@ def test_redis():
             "error": str(e),
             "tip": "Check if REDIS_URL is correct and Upstash database is active"
         }
+
+
+@debug_bp.route('/debug/my-ip')
+def my_ip():
+    from flask import request
+
+    # Get IP from different sources
+    real_ip = request.headers.get(
+        'X-Forwarded-For', 'not set').split(',')[0].strip()
+    remote_addr = request.remote_addr
+
+    return {
+        "your_real_ip": real_ip,
+        "remote_addr (what you see now)": remote_addr,
+        "all_headers": {
+            "X-Forwarded-For": request.headers.get('X-Forwarded-For'),
+            "X-Real-IP": request.headers.get('X-Real-IP'),
+        },
+        "explanation": "Vercel proxies make requests appear from 127.0.0.1, but X-Forwarded-For has the real IP"
+    }
