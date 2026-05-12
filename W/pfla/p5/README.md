@@ -4,6 +4,7 @@
 2. [Dirz](#dirz)
 3. [Deployed](#deployed)
 4. [Regarding Limiter](#regarding-limiter)
+5. [`routes` - Explanation](#routes---explanation)
 
 # What
 
@@ -41,3 +42,15 @@
 |                    File                    |                                   What                                    |
 | :----------------------------------------: | :-----------------------------------------------------------------------: |
 | [`limiter_config.py`](./limiter_config.py) | Logic for the rate limitd with UpstasRedis EnvPanty is inside VercelPussy |
+
+# [`routes`](./routes/) - Explanation
+
+1. This will be an explanation of the files in this folder
+2. This flask api has the architecture , of using `blueprints` to seperate the routes into its own folder
+
+|                 Route                 |                     What                     |
+| :-----------------------------------: | :------------------------------------------: |
+| [`__init__.py`](./routes/__init__.py) | Important for recognizing the blueprints(BP) |
+|     [`main.py`](./routes/main.py)     |             Main Functions here              |
+|     [`tezt.py`](./routes/tezt.py)     |             General Testing here             |
+|    [`debug.py`](./routes/debug.py)    |      Debug Routes Mostly for redis conn      |
