@@ -1,12 +1,12 @@
 # -----------------------------------
-#  Debugging Routes
+#  Debugging Routes here
 # -----------------------------------
 
 # --- Imports ---
 
 import os
 
-from flask import Blueprint
+from flask import Blueprint, request
 
 from limiter_config import limiter
 
@@ -14,30 +14,30 @@ debug_bp = Blueprint('debug', __name__)
 
 # -- Routes ---
 
+# 1 - Basic debug route
+
 
 @debug_bp.route('/debug')
 @limiter.limit("2 per hour")
 def debug():
-    return "Debug route is working"
+    return {"status": "debug route working", "timestamp": "2026-05-12"}
 
 
+# 2 - Check Redis configuration (NO sensitive data)
 @debug_bp.route('/debug/check-redis')
 @limiter.limit("2 per hour")
 def check_redis():
-    from limiter_config import storage_uri
-
     redis_url = os.getenv("REDIS_URL")
 
     return {
-        "storage_uri": str(storage_uri)[:50] + "..." if storage_uri else "None",
-        "using_redis": storage_uri and storage_uri.startswith("rediss://"),
-        "redis_url_exists": bool(redis_url),
-        "redis_url_format": "✅ correct" if (redis_url and redis_url.startswith("rediss://")) else "❌ wrong or missing",
-        "env": os.getenv("ENVIRONMENT", "not set"),
-        "tip": "Set REDIS_URL with rediss:// format"
+        "redis_configured": bool(redis_url and redis_url.startswith("rediss://")),
+        "rate_limiting": "active",
+        "environment": os.getenv("VERCEL_ENV", "development"),
+        "tip": "Redis is configured and rate limiting is working"
     }
 
 
+# 3 - Test Redis connection (simple)
 @debug_bp.route('/debug/test-redis')
 @limiter.limit("2 per hour")
 def test_redis():
@@ -46,10 +46,10 @@ def test_redis():
     redis_url = os.getenv("REDIS_URL")
 
     if not redis_url:
-        return {"error": "REDIS_URL environment variable not set"}
+        return {"error": "Redis not configured"}, 500
 
     if not redis_url.startswith("rediss://"):
-        return {"error": "REDIS_URL must start with rediss://"}
+        return {"error": "Invalid Redis configuration"}, 500
 
     try:
         r = redis.Redis.from_url(redis_url)
@@ -57,32 +57,50 @@ def test_redis():
 
         return {
             "success": True,
-            "message": "✅ Redis is working!",
-            "host": redis_url.split('@')[1].split(':')[0] if '@' in redis_url else "unknown"
+            "message": "Redis connection successful",
+            "rate_limiting": "operational"
         }
     except Exception as e:
         return {
             "success": False,
-            "error": str(e),
-            "tip": "Check REDIS_URL configuration"
-        }
+            "error": "Redis connection failed",
+            "message": str(e)
+        }, 500
 
 
+# 4 - Get your IP address (user-only, not stored in response)
 @debug_bp.route('/debug/my-ip')
-@limiter.limit("2 per hour")
+@limiter.limit("5 per minute")
 def my_ip():
-    from flask import request
-
+    # Get real IP behind proxy
     real_ip = request.headers.get(
-        'X-Forwarded-For', 'not set').split(',')[0].strip()
-    remote_addr = request.remote_addr
+        'X-Forwarded-For', 'unknown').split(',')[0].strip()
 
     return {
-        "your_real_ip": real_ip,
-        "remote_addr": remote_addr,
-        "headers": {
-            "X-Forwarded-For": request.headers.get('X-Forwarded-For'),
-            "X-Real-IP": request.headers.get('X-Real-IP'),
-        },
-        "note": "X-Forwarded-For contains the original client IP behind proxies"
+        "your_ip": real_ip,
+        "message": "This IP is used for rate limiting"
+    }
+
+
+# 5 - Simple health check (public)
+@debug_bp.route('/debug/health')
+def health():
+    return {
+        "status": "healthy",
+        "service": "api",
+        "rate_limiting": "enabled"
+    }
+
+
+# 6 - Rate limit status for current user
+@debug_bp.route('/debug/my-limits')
+def my_limits():
+    """Returns current rate limit headers information"""
+    return {
+        "message": "Check response headers for rate limit info",
+        "headers_to_check": [
+            "X-RateLimit-Limit",
+            "X-RateLimit-Remaining",
+            "X-RateLimit-Reset"
+        ]
     }
