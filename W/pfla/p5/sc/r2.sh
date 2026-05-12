@@ -110,14 +110,10 @@ c1_l() {
 
 # This Curl loop is being written to test rate limiter functionality
 curl_loop() {
+	# Make 10 requests to generate rate limit counters
 	for i in {1..10}; do
-		echo "Sending request $i..."
-
-		# Basic curl request (you can customize this)
-		curl -I -L -s ${EP1}/file_upload/ | head -n 1
-
-		# Optional: small delay between requests (uncomment if needed)
-		# sleep 0.5
+		curl https://mx-pfla-p5-api.vercel.app/
+		echo "Request $i done"
 	done
 }
 

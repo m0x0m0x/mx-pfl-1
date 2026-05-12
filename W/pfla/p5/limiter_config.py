@@ -6,7 +6,6 @@ from flask_limiter.util import get_remote_address
 
 
 def custom_429_response(request_limit):
-
     from flask import request
     ip = request.headers.get('X-Forwarded-For', request.remote_addr)
     print(
@@ -31,22 +30,24 @@ def custom_429_response(request_limit):
 
 
 # ============================================
-# STORAGE CONFIGURATION
+# STORAGE CONFIGURATION - FIXED FOR REDIS:// URL
 # ============================================
 
-# Use Redis only if running on Vercel with credentials
-redis_url = os.getenv("UPSTASH_REDIS_REST_URL")
-redis_token = os.getenv("UPSTASH_REDIS_REST_TOKEN")
+# Use the CORRECT Redis connection string (not REST API)
+storage_uri = os.getenv("REDIS_URL")  # 👈 Changed to REDIS_URL
 
-if redis_url and redis_token:
-    # Production on Vercel
-    host = redis_url.replace("https://", "").replace("http://", "").rstrip("/")
-    storage_uri = f"rediss://default:{redis_token}@{host}:443"
+if storage_uri and storage_uri.startswith("rediss://"):
+    # ✅ Production on Vercel with correct Redis URL
     print("✅ [limiter_config] Using Upstash Redis (production mode)")
+    # Extract host for logging (hide password)
+    host = storage_uri.split(
+        '@')[1].split(':')[0] if '@' in storage_uri else "unknown"
+    print(f"   Connected to: {host}")
 else:
-    # Local development
+    # 🧪 Local development or missing Redis URL
     storage_uri = "memory://"
     print("✅ [limiter_config] Using in-memory storage (local mode)")
+    print("   Set REDIS_URL environment variable for persistent rate limiting")
 
 
 # ============================================
