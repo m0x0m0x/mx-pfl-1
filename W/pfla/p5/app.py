@@ -10,7 +10,7 @@ from flask import Flask
 
 # IMPORTANT: Import limiter BEFORE blueprints that use it
 from limiter_config import limiter
-from routes import boots1_bp, debug_bp, main_bp, tezt_bp
+from routes import boots1_bp, debug_bp, main_bp, sesh_bp, tezt_bp
 
 # --- Setup Flask App ---
 app = Flask(__name__, template_folder='tempz')
@@ -35,6 +35,7 @@ app.register_blueprint(main_bp)
 app.register_blueprint(tezt_bp)
 app.register_blueprint(debug_bp)
 app.register_blueprint(boots1_bp)
+app.register_blueprint(sesh_bp)
 
 # --- init ---
 if __name__ == '__main__':

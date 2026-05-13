@@ -54,3 +54,5 @@
 |     [`main.py`](./routes/main.py)     |             Main Functions here              |
 |     [`tezt.py`](./routes/tezt.py)     |             General Testing here             |
 |    [`debug.py`](./routes/debug.py)    |      Debug Routes Mostly for redis conn      |
+|   [`boots1.py`](./routes/boots1.py)   |       Routes for Bootstrap - Not Done        |
+|     [`sesh.py`](./routes/sesh.py)     |        Routes for session and secrets        |
