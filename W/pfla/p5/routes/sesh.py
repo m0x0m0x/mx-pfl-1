@@ -4,11 +4,14 @@
 
 # --- Imports ---
 
+import secrets  # Needed for sessions key
+
 from flask import Blueprint
 
 from limiter_config import limiter
 
-sesh_bp = Blueprint('sesh', __name__)
+sesh_bp = Blueprint('sesh', __name__, url_prefix='/session')
+
 
 # -- Routes ---
 
