@@ -81,6 +81,13 @@
             🏠 Home
           </a>
         </li>
+        <li>
+          <a
+            href="{{ url_for('sesh.tezt') }}"
+            class="{% if request.endpoint == 'sesh.tezt' %}secondary{% else %}contrast{% endif %}">
+            🏠 Session
+          </a>
+        </li>
       </ul>
     </nav>
 

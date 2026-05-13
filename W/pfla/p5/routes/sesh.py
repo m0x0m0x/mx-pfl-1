@@ -19,7 +19,7 @@ sesh_bp = Blueprint('sesh', __name__, url_prefix='/session')
 
 @sesh_bp.route('/sesh_tezt')
 def tezt():
-    return (render_template('sesh.html'))
+    return (render_template('sesh.html', message='Session Test Shit'))
 
 
 @sesh_bp.route("/sesh_tezt_api")
@@ -34,4 +34,4 @@ def api():
 def set_data():
     session['name'] = 'Busra'
     session['Fetish'] = 'Fart'
-    return
+    return (render_template('sesh.html', message='Session Data Set Fuck'))
