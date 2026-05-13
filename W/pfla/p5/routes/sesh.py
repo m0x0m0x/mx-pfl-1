@@ -40,6 +40,9 @@ def set_data():
 # Get the data
 @sesh_bp.route('/get-data')
 def get_data():
-    name = session['name']
-    other = session['Fetish']
-    return (render_template('sesh.html', message=f'Name: {name}, love Fetish: {other}'))
+    if 'name' in session.keys() and 'Fetish' in session.keys():
+        name = session['name']
+        other = session['Fetish']
+        return (render_template('sesh.html', message=f'Name: {name}, love Fetish: {other}'))
+    else:
+        return (render_template('sesh.html', message='Session Data Not Found'))
