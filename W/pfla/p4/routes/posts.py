@@ -131,7 +131,7 @@ def dl_cv():
     return render_template('dl.html', filename=filename)
 
 # In order for the above route to work , whe have to make another route
-# Download from endpoint
+# Download from endpoint - Thi just does the downloading of the fil
 
 
 @posts_bp.route('/dl/<filename>')
