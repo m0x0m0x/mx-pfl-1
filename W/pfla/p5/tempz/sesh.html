@@ -8,9 +8,21 @@ content %}
   </p>
 
   <article>
-    <h2>Getting Session Variables</h2>
+    <h2>Setting Session Variables</h2>
     <p>{{ message }}</p>
     <a href="{{ url_for('sesh.set_data') }}">Set Session Data From Href</a>
+  </article>
+
+  <article>
+    <h2>Getting Session Variables</h2>
+    <p>{{ message }}</p>
+    <a href="{{ url_for('sesh.get_data') }}">Get Session Data From Href</a>
+  </article>
+
+  <article>
+    <h2>Current Session Data:</h2>
+    <p>Name: {{ session.get('name', 'Not set') }}</p>
+    <p>Fetish: {{ session.get('Fetish', 'Not set') }}</p>
   </article>
 
   <button onclick="window.open('https://tinyurl.com/2usd6fpd', '_blank')">

@@ -34,4 +34,12 @@ def api():
 def set_data():
     session['name'] = 'Busra'
     session['Fetish'] = 'Fart'
-    return (render_template('sesh.html', message='Session Data Set Fuck'))
+    return (render_template('sesh.html', message='Session Data Set from /set-data'))
+
+
+# Get the data
+@sesh_bp.route('/get-data')
+def get_data():
+    name = session['name']
+    other = session['Fetish']
+    return (render_template('sesh.html', message=f'Name: {name}, love Fetish: {other}'))
