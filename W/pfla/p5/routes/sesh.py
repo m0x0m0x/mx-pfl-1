@@ -4,9 +4,8 @@
 
 # --- Imports ---
 
-import secrets  # Needed for sessions key
 
-from flask import Blueprint
+from flask import Blueprint, render_template, session
 
 from limiter_config import limiter
 
@@ -20,7 +19,7 @@ sesh_bp = Blueprint('sesh', __name__, url_prefix='/session')
 
 @sesh_bp.route('/sesh_tezt')
 def tezt():
-    return "Sessions Test"
+    return (render_template('sesh.html'))
 
 
 @sesh_bp.route("/sesh_tezt_api")
@@ -28,4 +27,11 @@ def tezt():
 def api():
     return "This endpoint is limited to 1 call per minute."
 
-# Route or rendering the bootstrap
+
+# Testing out sessions stting
+
+@sesh_bp.route('/set-data')
+def set_data():
+    session['name'] = 'Busra'
+    session['Fetish'] = 'Fart'
+    return
