@@ -3,16 +3,18 @@ content %}
 <div style="text-align: center">
   <h1>ROUTE = <code>sesh.html</code></h1>
 
-  <p class="terminal-green">
-    Note the values below are dynamically passed from the flask app
-  </p>
+  <div class="container-fluid">
+    <h3>All button operations below have the result in the greenbox</h3>
+    <article>
+      <p class="terminal-green-big">{{ message }}</p>
+    </article>
+  </div>
 
   <div class="container-fluid">
     <h2>Sesions Management</h2>
     <div class="grid">
       <article>
         <h2>Setting Session Variables</h2>
-        <p>{{ message }}</p>
         <a href="{{ url_for('sesh.set_data') }}" role="button" class="outline"
           >Set Session Data From Href</a
         >
@@ -20,7 +22,6 @@ content %}
 
       <article>
         <h2>Getting Session Variables</h2>
-        <p>{{ message }}</p>
         <a href="{{ url_for('sesh.get_data') }}" role="button" class="outline"
           >Get Session Data</a
         >
@@ -34,12 +35,40 @@ content %}
 
       <article>
         <h2>Clear Session</h2>
-        <p>{{ message }}</p>
         <a
           href="{{ url_for('sesh.clear_session') }}"
           role="button"
           class="outline"
           >Clear Session</a
+        >
+      </article>
+    </div>
+
+    <!-- Cookie Management Section -->
+
+    <h2>Cookie Management</h2>
+    <div class="grid">
+      <article>
+        <h2>Set Cookie - Visible in DevTools</h2>
+        <a href="{{ url_for('sesh.set_cookie') }}" role="button" class="outline"
+          >Set Cookie</a
+        >
+      </article>
+
+      <article>
+        <h2>Get Cookie - Get Cookie Value</h2>
+        <a href="{{ url_for('sesh.get_cookie') }}" role="button" class="outline"
+          >Get Cookie</a
+        >
+      </article>
+
+      <article>
+        <h2>Remove Cookie</h2>
+        <a
+          href="{{ url_for('sesh.remove_cookie') }}"
+          role="button"
+          class="outline"
+          >Remove Cookie</a
         >
       </article>
     </div>

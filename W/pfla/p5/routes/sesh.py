@@ -5,7 +5,7 @@
 # --- Imports ---
 
 
-from flask import Blueprint, make_response, render_template, session
+from flask import Blueprint, flash, make_response, render_template, request, session
 
 from limiter_config import limiter
 
@@ -34,6 +34,7 @@ def api():
 def set_data():
     session['name'] = 'Busra'
     session['Fetish'] = 'Fart'
+    flash('Session data has been set successfully!', 'success')
     return (render_template('sesh.html', message='Session Data Set from /set-data'))
 
 
@@ -58,9 +59,35 @@ def clear_session():
 # -- Cookie Tests here ---
 
 
+# Setting Cookie
 @sesh_bp.route('/set-cookie')
 def set_cookie():
     response = make_response(render_template(
         'sesh.html', message='CookeInherAss'))
-    response.set_cookie('cookie_name', 'cookie_value')
+    response.set_cookie('cookie_ass_name', 'cookie_pussy_value')
     return response
+
+# Getting Cookie
+
+
+@sesh_bp.route('/get-cookie')
+def get_cookie():
+    cookie_value = request.cookies['cookie_ass_name']
+    return (render_template('sesh.html', message=f'Cookie Value: {cookie_value}'))
+
+# Remove Cookies
+
+
+@sesh_bp.route('/remove-cookie')
+def remove_cookie():
+    response = make_response(render_template(
+        'sesh.html', message='Cookie Removed'))
+    response.set_cookie('cookie_ass_name', '', expires=0)
+    return response
+
+# Create Login Page
+
+
+@sesh_bp.route('/sesh-login')
+def sesh_login():
+    return render_template('sesh_login.html')
