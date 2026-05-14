@@ -1,7 +1,55 @@
-{% extends "base.html" %} {% block title %}sesh.html{% endblock %} {% block
-content %}
+{% extends "base.html" %} {% block title %}sesh_login.html{% endblock %} {%
+block content %}
 <div style="text-align: center">
   <h1>ROUTE = <code>sesh_login.html</code></h1>
+
+  <article>
+    <form action="{{ url_for('sesh.sesh_login') }}" method="POST">
+      <input
+        type="text"
+        name="username"
+        placeholder="Username"
+        required
+        style="
+          margin: 0.5rem;
+          padding: 0.5rem;
+          width: 200px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+        " />
+      <input
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+        style="
+          margin: 0.5rem;
+          padding: 0.5rem;
+          width: 200px;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+        " />
+      <button
+        type="submit"
+        style="
+          margin: 0.5rem;
+          padding: 0.5rem 1rem;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        ">
+        Login
+      </button>
+    </form>
+  </article>
+  <div>
+    <img
+      src="https://i.ibb.co/zW7r4MT8/ezgif-8a853e10135811ae.gif"
+      alt="Cool GIF"
+      style="margin: 1rem 0; width: 60%; max-width: 100%; border-radius: 3px" />
+  </div>
 
   <button onclick="window.open('https://tinyurl.com/2usd6fpd', '_blank')">
     BootySmell

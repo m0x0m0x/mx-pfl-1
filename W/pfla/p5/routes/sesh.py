@@ -88,6 +88,16 @@ def remove_cookie():
 # Create Login Page
 
 
-@sesh_bp.route('/sesh-login')
+@sesh_bp.route('/sesh-login', methods=['GET', 'POST'])
 def sesh_login():
-    return render_template('sesh_login.html')
+    if request.method == 'GET':
+        return render_template('sesh_login.html')
+    elif request.method == 'POST':
+        username = request.form.get('username')
+        password = request.form.get('password')
+        if username == 'panty' and password == 'smell':
+            flash('Login Successful', 'success')
+            return render_template('sesh_login.html', message='')
+        else:
+            flash('Wrong Creds - Fuck Off', 'error')
+            return render_template('sesh_login.html', message='')
