@@ -58,6 +58,6 @@ def clear_session():
 # -- Cookie Tests here ---
 
 
-@sesh_bp.route('/set-cookie')
-def set_cookie():
-    response =
+# @sesh_bp.route('/set-cookie')
+# def set_cookie():
+#     response =
