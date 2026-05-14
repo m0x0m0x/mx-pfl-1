@@ -3,6 +3,7 @@
 1. [What](#what)
 2. [Rendering Template HTML](#rendering-template-html)
 3. [Regarding templating](#regarding-templating)
+4. [Templte Files Description](#templte-files-description)
 
 # What
 
@@ -30,3 +31,5 @@ app = Flask(__name__, template_folder='tempz')
 
 1. The actual template html is [`base.html`](./base.html) - This serves as the main template , so you dodnt hav to keep writing the same code over and over agin , especially the styling part
 2. Then in subsequent HTML files you can first call the template , eg - [`f1.html`](./f1.html)
+
+# Templte Files Description
