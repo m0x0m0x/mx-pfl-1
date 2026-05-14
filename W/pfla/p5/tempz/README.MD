@@ -33,3 +33,10 @@ app = Flask(__name__, template_folder='tempz')
 2. Then in subsequent HTML files you can first call the template , eg - [`f1.html`](./f1.html)
 
 # Templte Files Description
+
+|             Fil              |            What            |
+| :--------------------------: | :------------------------: |
+|  [`base.html`](./base.html)  |    Base jinja Template     |
+| [`index.html`](./index.html) | Default template for entry |
+|   [`bp1.html`](./bp1.html)   |       BooStrap Test        |
+|  [`sesh.html`](./sesh.html)  |       Sessions Test        |
