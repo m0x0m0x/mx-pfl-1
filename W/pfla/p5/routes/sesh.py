@@ -5,7 +5,7 @@
 # --- Imports ---
 
 
-from flask import Blueprint, render_template, session
+from flask import Blueprint, render_template, session, make_response
 
 from limiter_config import limiter
 
@@ -46,3 +46,18 @@ def get_data():
         return (render_template('sesh.html', message=f'Name: {name}, love Fetish: {other}'))
     else:
         return (render_template('sesh.html', message='Session Data Not Found'))
+
+# Clearing the data
+
+
+@sesh_bp.route('/clear-session')
+def clear_session():
+    session.clear()
+    return (render_template('sesh.html', message='Session Raped'))
+
+# -- Cookie Tests here ---
+
+
+@sesh_bp.route('/set-cookie')
+def set_cookie():
+    response =
