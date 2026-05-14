@@ -5,7 +5,7 @@
 # --- Imports ---
 
 
-from flask import Blueprint, render_template, session, make_response
+from flask import Blueprint, make_response, render_template, session
 
 from limiter_config import limiter
 
@@ -58,6 +58,9 @@ def clear_session():
 # -- Cookie Tests here ---
 
 
-# @sesh_bp.route('/set-cookie')
-# def set_cookie():
-#     response =
+@sesh_bp.route('/set-cookie')
+def set_cookie():
+    response = make_response(render_template(
+        'sesh.html', message='CookeInherAss'))
+    response.set_cookie('cookie_name', 'cookie_value')
+    return response
