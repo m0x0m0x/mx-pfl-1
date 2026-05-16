@@ -41,3 +41,21 @@ p2 v0.1.0
     │   └── mdurl v0.1.2
     └── pygments v2.20.0
 [0;32m***** Installation Completed *****[0m
+./ru.sh: line 68: clean_uv_vercel: command not found
+[fd error]: Search path '.vercel' is not a directory.
+[fd error]: Search path '__pycache__' is not a directory.
+[fd error]: Search path '.vercel' is not a directory.
+[fd error]: Search path '__pycache__' is not a directory.
+./ru.sh: line 68: clean_uv_vercel: command not found
+[fd error]: Search path '.vercel' is not a directory.
+[fd error]: Search path '__pycache__' is not a directory.
+[fd error]: Search path '.vercel' is not a directory.
+[fd error]: Search path '__pycache__' is not a directory.
+removed './p5/__pycache__/limiter_config.cpython-314.pyc'
+removed './p5/__pycache__/app.cpython-314.pyc'
+removed directory './p5/__pycache__'
+removed './p4/__pycache__/limiter_config.cpython-314.pyc'
+removed './p4/__pycache__/app.cpython-314.pyc'
+removed directory './p4/__pycache__'
+removed './p2/__pycache__/app.cpython-314.pyc'
+removed directory './p2/__pycache__'

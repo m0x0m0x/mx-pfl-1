@@ -58,8 +58,14 @@ uv_s1() {
 	echo -e "${GREEN}***** Installation Completed *****${NC}"
 }
 
+# Clean .venv and .vercel from all directories
+clean_uv_vercel_pycache() {
+	fd -H --no-ignore --type d '^\.(venv|vercel)$|^__pycache__$' . --max-depth 2 -X rm -rvf
+}
+
 # --- Execution ---
 panty() {
-	uv_s1 2>&1 | tee -a logz/ru.sh.txt
+	# uv_s1 2>&1 | tee -a logz/ru.sh.txt
+	clean_uv_vercel_pycache 2>&1 | tee -a logz/ru.sh.txt
 }
 panty
