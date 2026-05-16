@@ -10,12 +10,13 @@
 
 # Dirz
 
-|        Dir        |                      What                      |
-| :---------------: | :--------------------------------------------: |
-| [`logz`](./logz/) |                Logs from ru.sh                 |
-|   [`p1`](./p1/)   |                  v1 Flask App                  |
-|   [`p2`](./p2/)   |                  v2 Flask App                  |
-|   [`p3`](./p3/)   |       v2 Flask App - Templates and HTML        |
-|   [`p4`](./p4/)   |                v4 - Forms, Post                |
-|   [`p5`](./p5/)   | v5 - Flask and Flask Limiter With UpstashRedis |
-|  [`dok`](./dok/)  |   HTML Website explaining all project shits    |
+|        Dir        |                             What                             |
+| :---------------: | :----------------------------------------------------------: |
+|  [`dok`](./dok/)  |          HTML Website explaining all project shits           |
+| [`logz`](./logz/) |                       Logs from ru.sh                        |
+|   [`p1`](./p1/)   |                         v1 Flask App                         |
+|   [`p2`](./p2/)   |                         v2 Flask App                         |
+|   [`p3`](./p3/)   |              v2 Flask App - Templates and HTML               |
+|   [`p4`](./p4/)   |                       v4 - Forms, Post                       |
+|   [`p5`](./p5/)   |        v5 - Flask and Flask Limiter With UpstashRedis        |
+|   [`p6`](./p6/)   | v6 - Flask and Flask Limiter With UpstashRedis DB Operations |
